@@ -1,21 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inter:wght@500&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playwrite+DE+VA+Guides&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inter:wght@500&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playwrite+DE+VA+Guides&family=Varela+Round&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.hexagon {
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   }
+
+  .neontext{
+    color: #fff;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 40px #fff,
+    0 0 0px #fff,
+    0 0 4px #00FFFF,
+    0 0 4px #00FFFF,
+    0 0 4px #00FFFF,
+    0 0 4px #00FFFF,
+    0 0 3px #00FFFF;
+
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
