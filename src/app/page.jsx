@@ -12,15 +12,20 @@ import SupportUs from "./components/support-us/page";
 import Testimonials from "./components/testimonials/page";
 import Categories from "./components/categories/page";
 import Blogs from "./components/blogs/page";
-import dynamic from "next/dynamic";
 
-const RobotRnder = dynamic(() => import("./darkrobot/robot"), {
-  ssr: false
-});
-
+import { useRef } from 'react'
+import dynamic from 'next/dynamic'
+const Scene = dynamic(() => import('./canvas/Scene'), { ssr: false })
 
 
-export default function Home() {
+  
+
+
+
+
+export default function Home({children}) {
+  const ref = useRef()
+  
   return (
     // <div>
     // <HeroSection/>
@@ -55,8 +60,32 @@ export default function Home() {
     <>
     {/* <Robot/> */}
     {/* <Modals/> */}
-    <RobotRnder/>
+    {/* <RobotRnder/> */}
        <p>canvass</p>
+       <div
+      ref={ref}
+      style={{
+        position: 'relative',
+        width: ' 100%',
+        height: '100%',
+        overflow: 'auto',
+        touchAction: 'auto',
+      }}
+    >
+      {children}
+      <Scene
+        style={{
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          width: '100vw',
+          height: '100vh',
+          pointerEvents: 'none',
+        }}
+        eventSource={ref}
+        eventPrefix='client'
+      />
+    </div>
   
     </>
   );
