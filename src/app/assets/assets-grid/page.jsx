@@ -1,4 +1,5 @@
-import { useState,React } from "react"
+import  React  from "react"
+import  {useState} from "react"
 import { Lock } from "lucide-react"
 import SupportUs from "../../components/support-us/page"
 
