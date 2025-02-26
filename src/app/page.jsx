@@ -1,6 +1,7 @@
 "use client";
 import AboutUs from "./components/about-us/page";
 import Assets from "./assets/page";
+import ProductDetails from "./productDetails/page";
 import CommunityRender from "./components/community-render/page";
 import ContactUs from "./components/contact-us/page";
 import HeroSection from "./components/heroSection/page";
@@ -116,7 +117,7 @@ export default function Home() {
       {/* <PatrenVideo/> */}
 
       <Assets/>
-
+      {/* <ProductDetails/> */}
 
 
     </>

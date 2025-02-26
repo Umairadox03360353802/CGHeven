@@ -1,3 +1,4 @@
+'use client';
 import { useState } from "react"
 import { ChevronLeft, ChevronRight, Filter } from "lucide-react"
 
