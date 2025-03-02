@@ -1,6 +1,5 @@
 'use client'
 import Link from "next/link"
-// import Image from "next/image"
 import { React, useState } from 'react';
 import { Search ,Download} from "lucide-react"
 
@@ -21,40 +20,7 @@ function Navbar() {
   return (
     <>
 
-      {/* <header className="bg-slate-950 sticky top-0 z-20 ">
-  <nav className="container mx-auto px-2 py-4 ">
-    <div className="flex items-center justify-between ">
-      <div className="text-white font-bold ">
-        <a href="#" className='font-extrabold text-3xl '>CGHEVEN</a>
-      </div>
-      <div className="hidden md:block">
-        <ul className="flex items-center space-x-8">
-          <li><Link href="#" className="text-white font-Montserrat">Assets</Link></li>
-          <li><Link href="#" className="text-white font-Montserrat">Support Us</Link></li>
-          <li><Link href="#" className="text-white font-Montserrat">Gallery</Link></li>
-          <li><Link href="#" className="text-white font-Montserrat">Blog</Link></li>
-          <li><Link href="#" className="text-white font-Montserrat">About/Contact</Link></li>
-        </ul>
-      </div>
-      <div className="md:hidden">
-        <button className="outline-none mobile-menu-button">
-          <svg className="w-6 h-6 text-white" x-show="!showMenu" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
-            <path d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
-        </button>
-      </div>
-    </div>
-    <div className="mobile-menu hidden md:hidden">
-      <ul className="mt-4 space-y-4">
-        <li><a href="#" className="block px-4 py-2 text-white bg-gray-900 rounded">Home</a></li>
-        <li><a href="#" className="block px-4 py-2 text-white bg-gray-900 rounded">About</a></li>
-        <li><a href="#" className="block px-4 py-2 text-white bg-gray-900 rounded">Services</a></li>
-        <li><a href="#" className="block px-4 py-2 text-white bg-gray-900 rounded">Contact</a></li>
-      </ul>
-    </div>
-    
-  </nav>
-</header> */}
+
       <header className="bg-[#14161d] border-b py-5 items-center border-gray-800">
         <div className=" mx-auto w-full px-5">
           <div className="flex items-center justify-between h-16 ">
@@ -105,9 +71,9 @@ function Navbar() {
                   </NavigationMenuContent>
                 </NavigationMenuItem>
 
-                <NavigationMenuItem>
-                  <NavigationMenuTrigger className="text-[#ff6b08] text-md [&_svg]:hidden bg-transparent hover:text-[#ff6b08] hover:bg-transparent">
-                    GRAPHICS
+                <NavigationMenuItem >
+                  <NavigationMenuTrigger className=" text-[#ff6b08] text-md [&_svg]:hidden bg-transparent hover:text-[#ff6b08] hover:bg-transparent">
+                  3D Assets
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <div className="w-[400px] p-4 bg-[#1c1e26] border border-gray-800">
@@ -115,14 +81,14 @@ function Navbar() {
                         <li>
                           <NavigationMenuLink asChild>
                             <Link href="#" className="text-gray-200 hover:text-[#ff6b08]">
-                              Templates
+                              Visual Effects
                             </Link>
                           </NavigationMenuLink>
                         </li>
                         <li>
                           <NavigationMenuLink asChild>
                             <Link href="#" className="text-gray-200 hover:text-[#ff6b08]">
-                              Assets
+                              Particle Effects
                             </Link>
                           </NavigationMenuLink>
                         </li>
@@ -131,9 +97,9 @@ function Navbar() {
                   </NavigationMenuContent>
                 </NavigationMenuItem>
 
-                <NavigationMenuItem>
-                  <NavigationMenuTrigger className="text-[#ff6b08] text-md [&_svg]:hidden bg-transparent hover:text-[#ff6b08] hover:bg-transparent">
-                    3D
+                <NavigationMenuItem >
+                  <NavigationMenuTrigger className=" text-[#ff6b08] text-md [&_svg]:hidden bg-transparent hover:text-[#ff6b08] hover:bg-transparent">
+                    Materials
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <div className="w-[400px] p-4 bg-[#1c1e26] border border-gray-800">
@@ -141,14 +107,14 @@ function Navbar() {
                         <li>
                           <NavigationMenuLink asChild>
                             <Link href="#" className="text-gray-200 hover:text-[#ff6b08]">
-                              3D Models
+                              Visual Effects
                             </Link>
                           </NavigationMenuLink>
                         </li>
                         <li>
                           <NavigationMenuLink asChild>
                             <Link href="#" className="text-gray-200 hover:text-[#ff6b08]">
-                              Textures
+                              Particle Effects
                             </Link>
                           </NavigationMenuLink>
                         </li>
@@ -156,6 +122,112 @@ function Navbar() {
                     </div>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
+
+                <NavigationMenuItem >
+                  <NavigationMenuTrigger className=" text-[#ff6b08] text-md [&_svg]:hidden bg-transparent hover:text-[#ff6b08] hover:bg-transparent">
+                    Flipbooks
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <div className="w-[400px] p-4 bg-[#1c1e26] border border-gray-800">
+                      <ul className="grid gap-2">
+                        <li>
+                          <NavigationMenuLink asChild>
+                            <Link href="#" className="text-gray-200 hover:text-[#ff6b08]">
+                              Visual Effects
+                            </Link>
+                          </NavigationMenuLink>
+                        </li>
+                        <li>
+                          <NavigationMenuLink asChild>
+                            <Link href="#" className="text-gray-200 hover:text-[#ff6b08]">
+                              Particle Effects
+                            </Link>
+                          </NavigationMenuLink>
+                        </li>
+                      </ul>
+                    </div>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+
+                <NavigationMenuItem >
+                  <NavigationMenuTrigger className=" text-[#ff6b08] text-md [&_svg]:hidden bg-transparent hover:text-[#ff6b08] hover:bg-transparent">
+                    VDBs
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <div className="w-[400px] p-4 bg-[#1c1e26] border border-gray-800">
+                      <ul className="grid gap-2">
+                        <li>
+                          <NavigationMenuLink asChild>
+                            <Link href="#" className="text-gray-200 hover:text-[#ff6b08]">
+                              Visual Effects
+                            </Link>
+                          </NavigationMenuLink>
+                        </li>
+                        <li>
+                          <NavigationMenuLink asChild>
+                            <Link href="#" className="text-gray-200 hover:text-[#ff6b08]">
+                              Particle Effects
+                            </Link>
+                          </NavigationMenuLink>
+                        </li>
+                      </ul>
+                    </div>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+
+                <NavigationMenuItem >
+                  <NavigationMenuTrigger className=" text-[#ff6b08] text-md [&_svg]:hidden bg-transparent hover:text-[#ff6b08] hover:bg-transparent">
+                    Tutorials
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <div className="w-[400px] p-4 bg-[#1c1e26] border border-gray-800">
+                      <ul className="grid gap-2">
+                        <li>
+                          <NavigationMenuLink asChild>
+                            <Link href="#" className="text-gray-200 hover:text-[#ff6b08]">
+                              Visual Effects
+                            </Link>
+                          </NavigationMenuLink>
+                        </li>
+                        <li>
+                          <NavigationMenuLink asChild>
+                            <Link href="#" className="text-gray-200 hover:text-[#ff6b08]">
+                              Particle Effects
+                            </Link>
+                          </NavigationMenuLink>
+                        </li>
+                      </ul>
+                    </div>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+
+                <NavigationMenuItem >
+                  <NavigationMenuTrigger className=" text-[#ff6b08] text-md [&_svg]:hidden bg-transparent hover:text-[#ff6b08] hover:bg-transparent">
+                    Gallery
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <div className="w-[400px] p-4 bg-[#1c1e26] border border-gray-800">
+                      <ul className="grid gap-2">
+                        <li>
+                          <NavigationMenuLink asChild>
+                            <Link href="#" className="text-gray-200 hover:text-[#ff6b08]">
+                              Visual Effects
+                            </Link>
+                          </NavigationMenuLink>
+                        </li>
+                        <li>
+                          <NavigationMenuLink asChild>
+                            <Link href="#" className="text-gray-200 hover:text-[#ff6b08]">
+                              Particle Effects
+                            </Link>
+                          </NavigationMenuLink>
+                        </li>
+                      </ul>
+                    </div>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+
+               
 
                
               </NavigationMenuList>
@@ -168,7 +240,7 @@ function Navbar() {
 
               <Button className="bg-[#ff6b08] hover:bg-[#ff8534] font-Oswald  text-lg rounded-xl text-white">Patreon</Button>
             </div> */}
-             <div className="flex items-center space-x-4  text-white">
+             <div className="flex items-center space-x-4 font-Oswald text-white">
               
 
               <Button variant="ghost" className="hidden lg:flex">

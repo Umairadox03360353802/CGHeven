@@ -4,90 +4,96 @@ function Footer() {
   return (
     <>
       <footer className="relative w-full mb-20">
-        <div className="w-full px-8 mx-auto  max-w-7xl">
-          <div className="grid justify-between grid-cols-1 gap-4 md:grid-cols-2">
-            <div className=' mt-0  '>
-              <div className='flex flex-row justify-start items-center'>
-                <img src="/logo.png" className='w-40 h-56' alt="" />
-                <h1 className=" text-4xl font-extrabold text-white">
-                  CGHEVEN
-                </h1>
-              </div>
-              <p className='text-white font-medium font-VarelaRound text-start pl-20 mt-0 text-lg'>Free CG Assets for Everyone</p>
-            </div>
+        <div className="w-full px-8 mx-auto  ">
+          <div className="flex flex-row justify-center px-0">
 
-            <div className="grid justify-between grid-cols-3 gap-6 mt-20">
-              <ul>
-                <p className="block mb-1  text-xl font-Montserrat font-bold  text-white">
+
+
+            <div className="grid justify-between grid-cols-4 gap-x-0 pl-16  mt-20">
+              <div className=' mt-0 font-Oswald  '>
+
+                <div className='flex flex-col justify-start items-start  pl-0'>
+                  <div className='flex flex-row justify-center items-center  relative '>
+
+                    <img src="/rslogo1.png" className='w-12 h-14 right-0  ' alt="" />
+                    <h1 className="  pr-8 text-3xl font-extrabold text-white">
+                      CGHEVEN
+                    </h1>
+                  </div>
+                  <p className='text-white  mt-5 font-medium  text-start pr-24 text-md'>Free CG Assets for Everyone</p>
+                </div>
+              </div>
+              <ul className='pl-5 ml-24'>
+                <p className="block mb-1  text-2xl font-Oswald font-bold  text-white">
                   Product
                 </p>
                 <li>
-                  <a href="#" className="block font-VarelaRound text-white py-1 hover:text-slate-500 focus:text-slate-500 text-lg">
+                  <a href="#" className="block font-Alumni font-semibold text-white py-1 hover:text-slate-500 focus:text-slate-500 text-xl">
                     Overview
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="block font-VarelaRound text-white py-1 hover:text-slate-500 focus:text-slate-500 text-lg">
+                  <a href="#" className="block font-Alumni font-semibold text-white py-1 hover:text-slate-500 focus:text-slate-500 text-xl">
                     Features
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="block font-VarelaRound text-white py-1 hover:text-slate-500 focus:text-slate-500 text-lg">
+                  <a href="#" className="block font-Alumni font-semibold text-white py-1 hover:text-slate-500 focus:text-slate-500 text-xl">
                     Solutions
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="block font-VarelaRound text-white py-1 hover:text-slate-500 focus:text-slate-500 text-lg">
+                  <a href="#" className="block font-Alumni font-semibold text-white py-1 hover:text-slate-500 focus:text-slate-500 text-xl">
                     Tutorials
                   </a>
                 </li>
               </ul>
-              <ul>
-                <p className="block mb-1 text-xl font-Montserrat font-bold text-white">
+              <ul className='ml-24'>
+                <p className="block mb-1 text-2xl font-Oswald font-bold text-white">
                   Company
                 </p>
                 <li>
-                  <a href="#" className="block font-VarelaRound text-white py-1 hover:text-slate-500 focus:text-slate-500 text-lg">
+                  <a href="#" className="block font-Alumni font-semibold text-white py-1 hover:text-slate-500 focus:text-slate-500 text-xl">
                     About us
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="block font-VarelaRound text-white py-1 hover:text-slate-500 focus:text-slate-500 text-lg">
+                  <a href="#" className="block font-Alumni font-semibold text-white py-1 hover:text-slate-500 focus:text-slate-500 text-xl">
                     Careers
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="block font-VarelaRound text-white py-1 hover:text-slate-500 focus:text-slate-500 text-lg">
+                  <a href="#" className="block font-Alumni font-semibold text-white py-1 hover:text-slate-500 focus:text-slate-500 text-xl">
                     Press
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="block font-VarelaRound text-white py-1 hover:text-slate-500 focus:text-slate-500 text-lg">
+                  <a href="#" className="block font-Alumni font-semibold text-white py-1 hover:text-slate-500 focus:text-slate-500 text-xl">
                     News
                   </a>
                 </li>
               </ul>
-              <ul>
-                <p className="block mb-1 text-xl font-Montserrat font-bold text-white">
+              <ul className='ml-24'>
+                <p className="block mb-1 text-2xl font-Oswald font-bold text-white">
                   Resource
                 </p>
                 <li>
-                  <a href="#" className="block font-VarelaRound text-white py-1 hover:text-slate-500 focus:text-slate-500 text-lg">
+                  <a href="#" className="block font-Alumni font-semibold text-white py-1 hover:text-slate-500 focus:text-slate-500 text-xl">
                     Blog
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="block font-VarelaRound text-white py-1 hover:text-slate-500 focus:text-slate-500 text-lg">
+                  <a href="#" className="block font-Alumni font-semibold text-white py-1 hover:text-slate-500 focus:text-slate-500 text-xl">
                     Newsletter
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="block font-VarelaRound text-white py-1 hover:text-slate-500 focus:text-slate-500 text-lg">
+                  <a href="#" className="block font-Alumni font-semibold text-white py-1 hover:text-slate-500 focus:text-slate-500 text-xl">
                     Events
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="block font-VarelaRound text-white py-1 hover:text-slate-500 focus:text-slate-500 text-lg">
+                  <a href="#" className="block font-Alumni font-semibold text-white py-1 hover:text-slate-500 focus:text-slate-500 text-xl">
                     Help center
                   </a>
                 </li>

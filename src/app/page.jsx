@@ -116,8 +116,8 @@ export default function Home() {
       {/* <YoutubeVideo/> */}
       {/* <PatrenVideo/> */}
 
-      <Assets/>
-      {/* <ProductDetails/> */}
+      {/* <Assets/> */}
+      <ProductDetails/>
 
 
     </>

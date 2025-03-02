@@ -23,6 +23,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.js", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "public/page.tsx", "src/app/layout.jsx", "src/app/page.jsx", "public/page.jsx", "next.config.js", "src/app/darkrobot/robot-render.jsx", "tailwind.config.js"],
+  "include": ["next-env.d.js", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "public/page.tsx", "src/app/layout.jsx", "src/app/page.jsx", "public/page.jsx", "next.config.js", "src/app/darkrobot/robot-render.jsx", "tailwind.config.js", "src/app/productDetails/page.jsx"],
   "exclude": ["node_modules"]
 }
