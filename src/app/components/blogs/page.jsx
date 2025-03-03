@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 function Blogs() {
     return (
@@ -15,7 +16,7 @@ function Blogs() {
                         </div>
 
                         <div className='flex flex-row justify-center px-auto pb-4 gap-5 m-auto items-center'>
-
+                             <Link href="/blog-page">
                             <div className="relative grid h-[20rem] w-[40rem] border-gray-700 border px-10 flex-col items-end justify-center overflow-hidden rounded-2xl bg-white">
                                 <div className="absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent bg-[url('https://img.freepik.com/premium-photo/space-ship-with-purple-pink-designs-purple-ship-background_899894-11161.jpg')] bg-cover bg-center">
                                     <div className="to-bg-black-10 absolute inset-0 h-full w-full "></div>
@@ -42,6 +43,8 @@ function Blogs() {
 
                                 </div>
                             </div>
+                             </Link>
+                              <Link href="/blog-page">
                             <div className="relative grid h-[20rem] w-[40rem] border-gray-700 border px-10 flex-col items-end justify-center overflow-hidden rounded-2xl bg-white">
                                
                                 <div className="absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent bg-[url('https://img.freepik.com/premium-photo/space-ship-with-purple-pink-designs-purple-ship-background_899894-11161.jpg')] bg-cover bg-center">
@@ -69,6 +72,8 @@ function Blogs() {
 
                                 </div>
                             </div>
+                              </Link>
+                             <Link href="/blog-page">
                             <div className="relative grid h-[20rem] w-[40rem] border-gray-700 border px-10 flex-col items-end justify-center overflow-hidden rounded-2xl bg-white">
                                 <div className="absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent bg-[url('https://img.freepik.com/premium-photo/space-ship-with-purple-pink-designs-purple-ship-background_899894-11161.jpg')] bg-cover bg-center">
                                     <div className="to-bg-black-10 absolute inset-0 h-full w-full "></div>
@@ -95,6 +100,7 @@ function Blogs() {
 
                                 </div>
                             </div>
+                             </Link>
                             {/* <div className="relative grid h-[20rem] max-w-md border-gray-700 border px-14 flex-col items-end justify-center overflow-hidden rounded-2xl bg-white">
                                 <div className="absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-slate-900  bg-cover bg-center">
                                     <div className="to-bg-black-10 absolute inset-0 h-full w-full"></div>

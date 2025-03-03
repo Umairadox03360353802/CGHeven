@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button } from "@/components/ui/button"
-import Image from "next/image"
+import Link from 'next/link'
 
 
 function AboutUs() {
@@ -34,7 +34,9 @@ function AboutUs() {
               to life.
             </p>
             <p className="text-2xl font-semibold mb-4">- Ammar Khan</p>
+            <Link href="/about-page">
             <Button className="bg-teal-500 hover:bg-teal-600">Follow My Journey</Button>
+            </Link>
           </div>
         </div>
       </section>

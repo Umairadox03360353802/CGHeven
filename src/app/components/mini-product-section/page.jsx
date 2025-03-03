@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardFooter } from "@/componen
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import Link from 'next/link'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation,Pagination } from 'swiper/modules';
@@ -108,7 +109,9 @@ function MiniProductsSection() {
 
 
 								{cards.map((card, index) => (
+									
 									<SwiperSlide key={index} className='py-14'>
+										<Link href="/youTube/video-home" key={index}>
 										<div  class="max-w-xs w-full  bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all">
 											<div class="relative">
 												<img
@@ -138,8 +141,9 @@ function MiniProductsSection() {
 
 											</div>
 										</div>
-									</SwiperSlide>
 
+									</Link>
+									</SwiperSlide>
 
 								))}
 							</Swiper>

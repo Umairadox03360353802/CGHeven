@@ -1,5 +1,5 @@
 import React from 'react'
-import MoreTutorials from '../more-tutorials/page'
+import MoreTutorials from '../../more-tutorials/page'
 
 function PatreonVideo() {
     return (

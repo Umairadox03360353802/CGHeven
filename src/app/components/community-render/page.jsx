@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 function CommunityRender() {
     return (
@@ -59,12 +60,15 @@ function CommunityRender() {
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950   mx-12 "></div>
                 <h3 className="z-20 absolute bottom-[40vh]  text-3xl font-bold text-white flex flex-row justify-center w-full ">
-                <button className="sm:w-fit w-full px-12 py-4 bg-[#40E0D0] hover:bg-[#40E0D0] transition-all duration-700 ease-in-out rounded-lg shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] justify-center items-center flex">
-												<span className="px-1 text-white font-Montserrat text-2xl font-semibold leading-6"> more</span>
-											</button>
+                    <Link href="/gallery-page">
+                    <button className="sm:w-fit w-full px-12 py-4 bg-[#40E0D0] hover:bg-[#40E0D0] transition-all duration-700 ease-in-out rounded-lg shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] justify-center items-center flex">
+
+                        <span className="px-1 text-white font-Montserrat text-2xl font-semibold leading-6"> more</span>
+                    </button>
+                    </Link>
                 </h3>
 
-                
+
 
 
 

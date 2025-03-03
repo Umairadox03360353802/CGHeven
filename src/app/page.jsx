@@ -14,8 +14,8 @@ import Testimonials from "./components/testimonials/page";
 import Categories from "./components/categories/page";
 import Blogs from "./components/blogs/page";
 import VideoHome from "./youTube/video-home/page";
-import YoutubeVideo from "./youTube/youtube-video/page";
-import PatrenVideo from "./youTube/patreon-video/page";
+import YoutubeVideo from "./youTube/video-home/youtube-video/page";
+import PatrenVideo from "./youTube/video-home/patreon-video/page";
 
 
 
@@ -83,7 +83,7 @@ export default function Home() {
 
   return (
     <>
-      {/* <div>
+      <div>
 
         <HeroSection />
         <div className="my-[10vh] bg-black"></div>
@@ -108,7 +108,7 @@ export default function Home() {
         <div className="mb-[10vh] bg-black"></div>
         <PatreonName />
         <div className="border border-gray-700"></div>
-      </div> */}
+      </div>
 
       {/* <ContactUs/> */}
       {/* <Testimonials/> */}
@@ -117,7 +117,7 @@ export default function Home() {
       {/* <PatrenVideo/> */}
 
       {/* <Assets/> */}
-      <ProductDetails/>
+      {/* <ProductDetails/> */}
 
 
     </>

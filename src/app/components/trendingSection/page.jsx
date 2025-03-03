@@ -2,6 +2,7 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
+import Link from 'next/link';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -71,7 +72,9 @@ function TrendingSection() {
 
             {cards.map((card, index) => (
               <SwiperSlide key={index} className='py-12'>
+                <Link href="/productDetails">
                 <Card key={index} title={card.title} description={card.description} />
+                </Link>
 
               </SwiperSlide>
 

@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 function GalleryPage() {
     return (
@@ -6,12 +7,14 @@ function GalleryPage() {
             <div className='py-8'>
                 <div className='mb-16 pr-2 mt-10 text-white flex flex-row justify-center items-center gap-4'>
                     <h1 className='font-extrabold font-Montserrat text-4xl text-center mb-6'>Render Gallery:</h1>
+                    <Link href='/gallery-page/submit-Render'>
                     <button className="flex items-center mb-5 px-6 py-3 bg-[#0a1022] text-white text-xl font-semibold rounded-xl hover:bg-[#88e5e9] focus:outline-none focus:ring-2 focus:ring-blue-500">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v16m8-8H4" />
                         </svg>
                         Add yours
                     </button>
+                    </Link>
 
 
                 </div>

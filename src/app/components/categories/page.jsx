@@ -3,6 +3,7 @@ import React from 'react'
 // import { Card, CardContent, CardHeader, CardTitle, CardFooter } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { FlameIcon as Folder } from "lucide-react"
+import Link from 'next/link'
 
 
 const cards = [
@@ -93,6 +94,8 @@ function Categories() {
                 <h2 className="text-6xl font-Oswald font-bold text-center pb-8 text-white">Categories</h2>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                         {["VFX", "3D Models", "Textures & Materials", "Flipbooks & Particles","VFX", "3D Models", "Textures & Materials", "Flipbooks & Particles"].map((category, index) => (
+                            <Link href="/assets" >
+
                             <div
                                 key={index}
                                 className="bg-gray-700 w-[20rem] font-Oswald p-6 rounded-lg text-center hover:bg-gray-600 transition-colors duration-300"
@@ -100,10 +103,13 @@ function Categories() {
                                 <Folder className="h-16 w-16 mx-auto mb-4 text-teal-500" />
                                 <h3 className="text-xl font-semibold text-white">{category}</h3>
                             </div>
+                            </Link>
                         ))}
                     </div>
                     <div className="text-center mt-12">
+                    <Link href="/assets" >
                         <Button className="bg-teal-500 hover:bg-teal-600">View All Categories</Button>
+                        </Link>
                     </div>
                 </div>
             </section>

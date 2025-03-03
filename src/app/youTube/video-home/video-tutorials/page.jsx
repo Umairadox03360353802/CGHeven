@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link';
 
 function VideoTutorials() {
     return (
@@ -236,6 +237,7 @@ function VideoTutorials() {
                     <section class="w-fit hauto mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-12 mt-10 mb-5">
 
                         {/* <!--   ✅ Product card 1 - Starts Here 👇 --> */}
+                        <Link href="/youTube/video-home/youtube-video">
                         <article class="max-w-xl w-full h-[70vh] bg-white rounded-xl shadow-lg overflow-hidden ">
                         <div className='bg-emerald-500 rounded-xl p-6'>
                             {/* Adjusted tablet size */}
@@ -273,9 +275,11 @@ function VideoTutorials() {
 
 
                     </article>
+                        </Link>
                         {/* <!--   🛑 Product card 1 - Ends Here  --> */}
 
                         {/* <!--   ✅ Product card 2 - Starts Here 👇 --> */}
+                        <Link href="/youTube/video-home/youtube-video">
                         <article class="max-w-xl w-full h-[70vh] bg-white rounded-xl shadow-lg overflow-hidden ">
                         <div className='bg-amber-400 rounded-xl p-6'>
                             {/* Adjusted tablet size */}
@@ -313,9 +317,11 @@ function VideoTutorials() {
 
 
                     </article>
+                        </Link>
                         {/* <!--   🛑 Product card 2- Ends Here  --> */}
 
                         {/* <!--   ✅ Product card 3 - Starts Here 👇 --> */}
+                        <Link href="/youTube/video-home/youtube-video">
                         <article class="max-w-xl w-full h-[70vh] bg-white rounded-xl shadow-lg overflow-hidden ">
                         <div className='bg-rose-300 rounded-xl p-6'>
                             {/* Adjusted tablet size */}
@@ -353,9 +359,11 @@ function VideoTutorials() {
 
 
                     </article>
+                    </Link>
                         {/* <!--   🛑 Product card 3 - Ends Here  --> */}
 
                         {/* <!--   ✅ Product card 4 - Starts Here 👇 --> */}
+                        <Link href="/youTube/video-home/patreon-video">
                         <article class="max-w-xl w-full h-[70vh] bg-white rounded-xl shadow-lg overflow-hidden ">
                         <div className='bg-amber-500 rounded-xl p-6'>
                             {/* Adjusted tablet size */}
@@ -393,9 +401,11 @@ function VideoTutorials() {
 
 
                     </article>
+                    </Link>
                         {/* <!--   🛑 Product card 4 - Ends Here  --> */}
 
                         {/* <!--   ✅ Product card 5 - Starts Here 👇 --> */}
+                        <Link href="/youTube/video-home/patreon-video">
                         <article class="max-w-xl w-full h-[70vh] bg-white rounded-xl shadow-lg overflow-hidden ">
                         <div className='bg-orange-200 rounded-xl p-6'>
                             {/* Adjusted tablet size */}
@@ -433,9 +443,11 @@ function VideoTutorials() {
 
 
                     </article>
+                    </Link>
                         {/* <!--   🛑 Product card 5 - Ends Here  --> */}
 
                         {/* <!--   ✅ Product card 6 - Starts Here 👇 --> */}
+                        <Link href="/youTube/video-home/patreon-video">
                         <article class="max-w-xl w-full h-[70vh] bg-white rounded-xl shadow-lg overflow-hidden ">
                         <div className='bg-rose-300 rounded-xl p-6'>
                             {/* Adjusted tablet size */}
@@ -473,6 +485,7 @@ function VideoTutorials() {
 
 
                     </article>
+                    </Link>
                         {/* <!--   🛑 Product card 6 - Ends Here  --> */}
 
                     </section>

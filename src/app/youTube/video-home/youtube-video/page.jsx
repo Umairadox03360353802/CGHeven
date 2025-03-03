@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import MoreTutorials from '../more-tutorials/page'
+import MoreTutorials from '../../more-tutorials/page'
 import { PiArrowBendDownRightBold } from "react-icons/pi";
 
 

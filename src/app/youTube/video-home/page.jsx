@@ -1,5 +1,5 @@
 import React from 'react'
-import VideoTutorials from '../video-tutorials/page'
+import VideoTutorials from './video-tutorials/page'
 
 
 function VideoHome() {
