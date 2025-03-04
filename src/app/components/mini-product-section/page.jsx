@@ -88,7 +88,7 @@ function MiniProductsSection() {
 					</TabsList>
 					<TabsContent value="all" className="mt-6">
 					<div className="pl-8">
-							<Swiper navigation={true} modules={[Navigation,Pagination]} className="mySwiper"  spaceBetween={30}  pagination={{clickable: true,bulletClass: 'swiper-pagination-bullet !w-3 !h-3 !bg-gray-400 !opacity-100',bulletActiveClass: 'swiper-pagination-bullet-active !bg-teal-400'}}
+							<Swiper navigation={true} modules={[Navigation,Pagination]} className="mySwiper"  spaceBetween={30}  
 							
 							breakpoints={{
 								640: {
@@ -110,25 +110,25 @@ function MiniProductsSection() {
 
 								{cards.map((card, index) => (
 									
-									<SwiperSlide key={index} className='py-14'>
+									<SwiperSlide key={index} className='py-14 px-4'>
 										<Link href="/youTube/video-home" key={index}>
-										<div  class="max-w-xs w-full  bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all">
-											<div class="relative">
+										<div  className="max-w-md w-full  bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all">
+											<div className="relative">
 												<img
 													src="https://placehold.co/400x300"
 													alt="Product"
-													class="w-full h-52 object-cover"
+													className="w-full h-52 object-cover"
 												/>
 
 											</div>
 
-											<div class="p-5 space-y-4">
+											<div className="p-5 space-y-4">
 
 
-												<div class="flex justify-between items-center">
+												<div className="flex justify-between items-center">
 													<div>
-														<h3 class="text-xl font-bold text-gray-900">{card.title}</h3>
-														<p class="text-gray-500 mt-1">Premium cotton blend</p>
+														<h3 className="text-xl font-bold text-gray-900">{card.title}</h3>
+														<p className="text-gray-500 mt-1">Premium cotton blend</p>
 													</div>
 
 													<div className='h-6 w-6 flex flex-col justify-center items-center  mt-2 mr-5 gap-2'>

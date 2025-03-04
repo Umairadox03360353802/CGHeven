@@ -14,34 +14,7 @@ function HeroSection() {
 
       <div className="relative  pt-0 pb-3  xl:pt-0 sm:pb-16 lg:pb-3 xl:pb-3   ">
 
-        <header className="absolute inset-x-0 top-0 z-30 py-2  xl:py-4">
-
-          <div className="px-6 mx-auto sm:px-8 lg:px-12 max-w-7xl">
-
-            <div className="flex items-center font-Oswald  justify-between">
-              <div className="flex flex-shrink-0">
-                <a href="#" title="BakerStreet" className="inline-flex rounded-md focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-offset-secondary focus:ring-primary">
-                  <h1 className='text-5xl  text-white font-bold'>CGHeven</h1>                </a>
-              </div>
-
-              <div className="md:hidden">
-                <h1 className='text-5xl f'>CGHeven</h1>
-              </div>
-
-              <div className="hidden md:flex font-Oswald md:items-center md:space-x-10 lg:ml-28">
-                <a href="#" title="" className=" text-lg font-semibold transition-all duration-200 rounded text-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-primary focus:ring-offset-secondary"> Assets </a>
-
-                <a href="#" title="" className=" text-lg font-semibold transition-all duration-200 rounded text-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-primary focus:ring-offset-secondary"> Gallery </a>
-
-                <a href="#" title="" className=" text-lg font-semibold transition-all duration-200 rounded text-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-primary focus:ring-offset-secondary"> Support Us </a>
-                <a href="#" title="" className=" text-lg font-semibold transition-all duration-200 rounded text-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-primary focus:ring-offset-secondary"> About</a>
-
-
-
-              </div>
-            </div>
-          </div>
-        </header>
+        
         {/* hero section */}
         <section className="relative h-screen flex items-center font-Oswald  justify-center bg-transparent">
           <div className="absolute inset-0 overflow-hidden">
