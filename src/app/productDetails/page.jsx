@@ -34,18 +34,18 @@ function ProductDetails() {
 
                                     <div className="flex flex-row w-full max-w-full  h-screen items-center justify-center mx-auto bg-[#0a1022] border-b border-gray-600">
                                         {/* Square Ad */}
-                                        <div className="overflow-hidden rounded-lg h-[600px] w-[160px] m-4 basis-0.5/3 bg-gradient-to-r from-blue-500/10 to-purple-500/10">
+                                        <div className="overflow-hidden rounded-lg h-full w-[160px] m-4 basis-0.5/3 bg-gradient-to-r from-blue-500/10 to-purple-500/10">
                                             <div className="flex h-full w-full items-center justify-center bg-black/60 backdrop-blur-sm">
                                                 <span className="text-sm text-center text-gray-700">Advertisement</span>
                                             </div>
                                         </div>
 
 
-                                        <div className="flex flex-row  mt-4 p-0 mx-auto h-auto  bg-[#0a1022]">
+                                        <div className="flex flex-row  items-center justify-center  mx-auto h-full w-full bg-[#0a1022]">
 
 
-                                            <div className=' p-8 basis-2/3 bg-slate-800' >
-                                                <img className="h-full max-w-xl  mx-auto rounded-lg" src="https://cdn.polyhaven.com/asset_img/renders/fancy_picture_frame_01/orth_front.png?height=720" alt="" />
+                                            <div className=' p-8 w-full h-full bg-slate-800'>
+                                                <img className="h-full max-w-full  mx-auto rounded-lg" src="https://cdn.polyhaven.com/asset_img/primary/qwantani_noon.png?height=760" alt="" />
                                             </div>
 
                                         </div>
@@ -145,8 +145,8 @@ function ProductDetails() {
                             </div>
                         </main>
                         {/* right side */}
-                        <nav className="flex w-[80vh] h-full bg-slate-950">
-                            <div className="w-full h-full flex flex-col justify-start mx-auto px-0 py-0">
+                        <nav className="flex w-[60vh] h-full bg-slate-950">
+                            <div className="w-full h-full flex flex-col justify-start mx-auto">
 
                                 {/* <div className="flex items-center justify-between bg-[#88e5e9] text-white px-4 py-2 rounded-lg">
                                     <div className="flex flex-col items-center  border-r-white">

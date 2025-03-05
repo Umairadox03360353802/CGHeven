@@ -1,13 +1,29 @@
 import React from 'react'
 import Link from 'next/link';
 
+
+const cards = [
+    { title: "10 EASY", subtitle: "DRAWINGS", logo: "https://www.youtube.com/yt/about/static/images/favicon.ico" },
+    { title: "20 DOODLES", subtitle: "FOR PATRONS", logo: "https://www.patreon.com/favicon.ico" },
+    { title: "PREMIUM", subtitle: "TUTORIAL", logo: "https://www.youtube.com/yt/about/static/images/favicon.ico" },
+    { title: "PREMIUM", subtitle: "TUTORIAL", logo: "https://www.patreon.com/favicon.ico" },
+    { title: "20 DOODLES", subtitle: "FOR PATRONS", logo: "https://www.patreon.com/favicon.ico" },
+    { title: "PREMIUM", subtitle: "TUTORIAL", logo: "https://www.youtube.com/yt/about/static/images/favicon.ico" },
+    { title: "PREMIUM", subtitle: "TUTORIAL", logo: "https://www.patreon.com/favicon.ico" },
+    { title: "20 DOODLES", subtitle: "FOR PATRONS", logo: "https://www.patreon.com/favicon.ico" },
+    { title: "PREMIUM", subtitle: "TUTORIAL", logo: "https://www.youtube.com/yt/about/static/images/favicon.ico" },
+
+
+];
+
+
 function VideoTutorials() {
     return (
         <>
             <div>
 
-                <div className='flex flex-wrap flex-row justify-between items-start mt-10 '>
-                   
+                <div className='flex flex-wrap flex-row justify-between gap-x-3 items-start mt-5 '>
+
                     {/* sidber */}
                     <aside className="w-full p-6 sm:w-96 bg-slate-950 ">
                         <nav className="space-y-8  ">
@@ -234,261 +250,53 @@ function VideoTutorials() {
                     </aside>
 
                     {/* tutorial section */}
-                    <section class="w-fit hauto mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-12 mt-10 mb-5">
 
-                        {/* <!--   ✅ Product card 1 - Starts Here 👇 --> */}
-                        <Link href="/youTube/video-home/youtube-video">
-                        <article class="max-w-xl w-full h-[70vh] bg-white rounded-xl shadow-lg overflow-hidden ">
-                        <div className='bg-emerald-500 rounded-xl p-6'>
-                            {/* Adjusted tablet size */}
-                            <div class="relative mx-auto shadow-xl border-gray-800 dark:border-gray-800 bg-gray-800 border-[5px] rounded-[1.25rem] h-[280px] max-w-[220px] md:h-[360px] md:max-w-[270px] transform transition-transform hover:scale-[1.02]">
-                                {/* Side buttons */}
-                                <div class="h-[14px] w-[2px] bg-gray-800  absolute -start-[6px] top-[28px] rounded-s-lg"></div>
-                                <div class="h-[18px] w-[2px] bg-gray-800  absolute -start-[6px] top-[64px] rounded-s-lg"></div>
-                                <div class="h-[18px] w-[2px] bg-gray-800  absolute -start-[6px] top-[100px] rounded-s-lg"></div>
-                                <div class="h-[24px] w-[2px] bg-gray-800  absolute -end-[6px] top-[84px] rounded-e-lg"></div>
+                    <div className=" mx-auto px-5 py-0   ">
 
-                                {/* Screen area */}
-                                <div class="rounded-[1rem] overflow-hidden h-[270px] md:h-[350px] bg-whit">
-                                    {/* <img src="https://flowbite.s3.amazonaws.com/docs/device-mockups/tablet-mockup-image.png"
-                                        class="dark:hidden h-full w-full object-cover"
-                                        alt="dramatic sky tutorial" /> */}
-                                    <img src="https://images.unsplash.com/photo-1646753522408-077ef9839300?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NjZ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                                        class="hidden dark:block h-full w-full object-cover "
-                                        alt="dramatic sky tutorial dark" />
+
+                        <div className=" grid grid-cols-2 md:grid-cols-3 gap-4">
+
+                            {cards.map((card, index) => (
+                                <Link href="/youTube/video-home/patreon-video" key={index}>
+                                <div key={index} className='py-14'>
+                                    <div className="aspect-square  bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all">
+                                        <div className="relative">
+                                            <img
+                                                src="https://placehold.co/400x300"
+                                                alt="Product"
+                                                className="w-full h-full object-cover"
+                                            />
+
+                                        </div>
+
+                                        <div className="p-5  ">
+
+
+                                            <div className="flex justify-between gap-5 items-center mx-4">
+                                                <div>
+                                                    <h3 className="text-lg font-bold text-gray-900">{card.title}</h3>
+                                                    <p className="text-gray-500 text-sm mt-1">Premium cotton blend</p>
+                                                </div>
+
+                                                <div className='h-5 w-5 flex flex-col justify-center items-center  my-2 gap-2'>
+                                                    <img src="/youtube-logo.png" alt="hh" />
+                                                    <p className='font-semibold font-Montserrat text-xs text-center'>FREE <br />TUTORIAL</p>
+
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
+                                </Link>
+
+
+                            ))}
 
                         </div>
+                    </div>
 
-                        <div className='flex flex-row justify-between items-center mt-6 px-5'>
-                            <div class="flex flex-col gap-1 ">
-                                <h2 class="text-xl font-extrabold font-Montserrat text-black">Converse Sneakers</h2>
-                                <span class="font-semibold font-VarelaRound text-md ">High Top (Lemon Yellow)</span>
-                            </div>
-                            <div className='h-10 w-10 flex flex-col justify-center items-center  mt-5 mr-5 gap-4'>
-                               <img src="./youtube-logo.png" alt="" />
-                               <p className='font-bold font-Montserrat text-sm text-center'>FREE <br />TUTORIAL</p>
-                               
-                            </div>
-                        </div>
-
-
-                    </article>
-                        </Link>
-                        {/* <!--   🛑 Product card 1 - Ends Here  --> */}
-
-                        {/* <!--   ✅ Product card 2 - Starts Here 👇 --> */}
-                        <Link href="/youTube/video-home/youtube-video">
-                        <article class="max-w-xl w-full h-[70vh] bg-white rounded-xl shadow-lg overflow-hidden ">
-                        <div className='bg-amber-400 rounded-xl p-6'>
-                            {/* Adjusted tablet size */}
-                            <div class="relative mx-auto shadow-xl border-gray-800 dark:border-gray-800 bg-gray-800 border-[5px] rounded-[1.25rem] h-[280px] max-w-[220px] md:h-[360px] md:max-w-[270px] transform transition-transform hover:scale-[1.02]">
-                                {/* Side buttons */}
-                                <div class="h-[14px] w-[2px] bg-gray-800  absolute -start-[6px] top-[28px] rounded-s-lg"></div>
-                                <div class="h-[18px] w-[2px] bg-gray-800  absolute -start-[6px] top-[64px] rounded-s-lg"></div>
-                                <div class="h-[18px] w-[2px] bg-gray-800  absolute -start-[6px] top-[100px] rounded-s-lg"></div>
-                                <div class="h-[24px] w-[2px] bg-gray-800  absolute -end-[6px] top-[84px] rounded-e-lg"></div>
-
-                                {/* Screen area */}
-                                <div class="rounded-[1rem] overflow-hidden h-[270px] md:h-[350px] bg-whit">
-                                    {/* <img src="https://flowbite.s3.amazonaws.com/docs/device-mockups/tablet-mockup-image.png"
-                                        class="dark:hidden h-full w-full object-cover"
-                                        alt="dramatic sky tutorial" /> */}
-                                    <img src="https://images.unsplash.com/photo-1651950537598-373e4358d320?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MjV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                                        class="hidden dark:block h-full w-full object-cover "
-                                        alt="dramatic sky tutorial dark" />
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div className='flex flex-row justify-between items-center mt-6 px-5'>
-                            <div class="flex flex-col gap-1 ">
-                                <h2 class="text-xl font-extrabold font-Montserrat text-black">Converse Sneakers</h2>
-                                <span class="font-semibold font-VarelaRound text-md ">High Top (Lemon Yellow)</span>
-                            </div>
-                            <div className='h-10 w-10 flex flex-col justify-center items-center  mt-5 mr-5 gap-4'>
-                               <img src="./patreon.png" alt="" />
-                               <p className='font-bold font-Montserrat text-sm'>PATREON <br />TUTORIAL</p>
-                               
-                            </div>
-                        </div>
-
-
-                    </article>
-                        </Link>
-                        {/* <!--   🛑 Product card 2- Ends Here  --> */}
-
-                        {/* <!--   ✅ Product card 3 - Starts Here 👇 --> */}
-                        <Link href="/youTube/video-home/youtube-video">
-                        <article class="max-w-xl w-full h-[70vh] bg-white rounded-xl shadow-lg overflow-hidden ">
-                        <div className='bg-rose-300 rounded-xl p-6'>
-                            {/* Adjusted tablet size */}
-                            <div class="relative mx-auto shadow-xl border-gray-800 dark:border-gray-800 bg-gray-800 border-[5px] rounded-[1.25rem] h-[280px] max-w-[220px] md:h-[360px] md:max-w-[270px] transform transition-transform hover:scale-[1.02]">
-                                {/* Side buttons */}
-                                <div class="h-[14px] w-[2px] bg-gray-800  absolute -start-[6px] top-[28px] rounded-s-lg"></div>
-                                <div class="h-[18px] w-[2px] bg-gray-800  absolute -start-[6px] top-[64px] rounded-s-lg"></div>
-                                <div class="h-[18px] w-[2px] bg-gray-800  absolute -start-[6px] top-[100px] rounded-s-lg"></div>
-                                <div class="h-[24px] w-[2px] bg-gray-800  absolute -end-[6px] top-[84px] rounded-e-lg"></div>
-
-                                {/* Screen area */}
-                                <div class="rounded-[1rem] overflow-hidden h-[270px] md:h-[350px] bg-whit">
-                                    {/* <img src="https://flowbite.s3.amazonaws.com/docs/device-mockups/tablet-mockup-image.png"
-                                        class="dark:hidden h-full w-full object-cover"
-                                        alt="dramatic sky tutorial" /> */}
-                                    <img src="https://images.unsplash.com/photo-1651950540805-b7c71869e689?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Mjl8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                                        class="hidden dark:block h-full w-full object-cover "
-                                        alt="dramatic sky tutorial dark" />
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div className='flex flex-row justify-between items-center mt-6 px-5'>
-                            <div class="flex flex-col gap-1 ">
-                                <h2 class="text-xl font-extrabold font-Montserrat text-black">Converse Sneakers</h2>
-                                <span class="font-semibold font-VarelaRound text-md ">High Top (Lemon Yellow)</span>
-                            </div>
-                            <div className='h-10 w-10 flex flex-col justify-center items-center  mt-5 mr-5 gap-4'>
-                               <img src="./youtube-logo.png" alt="" />
-                               <p className='font-bold font-Montserrat text-sm text-center'>FREE<br />TUTORIAL</p>
-                               
-                            </div>
-                        </div>
-
-
-                    </article>
-                    </Link>
-                        {/* <!--   🛑 Product card 3 - Ends Here  --> */}
-
-                        {/* <!--   ✅ Product card 4 - Starts Here 👇 --> */}
-                        <Link href="/youTube/video-home/patreon-video">
-                        <article class="max-w-xl w-full h-[70vh] bg-white rounded-xl shadow-lg overflow-hidden ">
-                        <div className='bg-amber-500 rounded-xl p-6'>
-                            {/* Adjusted tablet size */}
-                            <div class="relative mx-auto shadow-xl border-gray-800 dark:border-gray-800 bg-gray-800 border-[5px] rounded-[1.25rem] h-[280px] max-w-[220px] md:h-[360px] md:max-w-[270px] transform transition-transform hover:scale-[1.02]">
-                                {/* Side buttons */}
-                                <div class="h-[14px] w-[2px] bg-gray-800  absolute -start-[6px] top-[28px] rounded-s-lg"></div>
-                                <div class="h-[18px] w-[2px] bg-gray-800  absolute -start-[6px] top-[64px] rounded-s-lg"></div>
-                                <div class="h-[18px] w-[2px] bg-gray-800  absolute -start-[6px] top-[100px] rounded-s-lg"></div>
-                                <div class="h-[24px] w-[2px] bg-gray-800  absolute -end-[6px] top-[84px] rounded-e-lg"></div>
-
-                                {/* Screen area */}
-                                <div class="rounded-[1rem] overflow-hidden h-[270px] md:h-[350px] bg-whit">
-                                    {/* <img src="https://flowbite.s3.amazonaws.com/docs/device-mockups/tablet-mockup-image.png"
-                                        class="dark:hidden h-full w-full object-cover"
-                                        alt="dramatic sky tutorial" /> */}
-                                    <img src="https://images.unsplash.com/photo-1651950519238-15835722f8bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Mjh8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                                        class="hidden dark:block h-full w-full object-cover "
-                                        alt="dramatic sky tutorial dark" />
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div className='flex flex-row justify-between items-center mt-6 px-5'>
-                            <div class="flex flex-col gap-1 ">
-                                <h2 class="text-xl font-extrabold font-Montserrat text-black">Converse Sneakers</h2>
-                                <span class="font-semibold font-VarelaRound text-md ">High Top (Lemon Yellow)</span>
-                            </div>
-                            <div className='h-10 w-10 flex flex-col justify-center items-center  mt-5 mr-5 gap-4'>
-                               <img src="./patreon.png" alt="" />
-                               <p className='font-bold font-Montserrat text-sm'>PATREON <br />TUTORIAL</p>
-                               
-                            </div>
-                        </div>
-
-
-                    </article>
-                    </Link>
-                        {/* <!--   🛑 Product card 4 - Ends Here  --> */}
-
-                        {/* <!--   ✅ Product card 5 - Starts Here 👇 --> */}
-                        <Link href="/youTube/video-home/patreon-video">
-                        <article class="max-w-xl w-full h-[70vh] bg-white rounded-xl shadow-lg overflow-hidden ">
-                        <div className='bg-orange-200 rounded-xl p-6'>
-                            {/* Adjusted tablet size */}
-                            <div class="relative mx-auto shadow-xl border-gray-800 dark:border-gray-800 bg-gray-800 border-[5px] rounded-[1.25rem] h-[280px] max-w-[220px] md:h-[360px] md:max-w-[270px] transform transition-transform hover:scale-[1.02]">
-                                {/* Side buttons */}
-                                <div class="h-[14px] w-[2px] bg-gray-800  absolute -start-[6px] top-[28px] rounded-s-lg"></div>
-                                <div class="h-[18px] w-[2px] bg-gray-800  absolute -start-[6px] top-[64px] rounded-s-lg"></div>
-                                <div class="h-[18px] w-[2px] bg-gray-800  absolute -start-[6px] top-[100px] rounded-s-lg"></div>
-                                <div class="h-[24px] w-[2px] bg-gray-800  absolute -end-[6px] top-[84px] rounded-e-lg"></div>
-
-                                {/* Screen area */}
-                                <div class="rounded-[1rem] overflow-hidden h-[270px] md:h-[350px] bg-whit">
-                                    {/* <img src="https://flowbite.s3.amazonaws.com/docs/device-mockups/tablet-mockup-image.png"
-                                        class="dark:hidden h-full w-full object-cover"
-                                        alt="dramatic sky tutorial" /> */}
-                                    <img src="https://images.unsplash.com/photo-1649261191624-ca9f79ca3fc6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NDd8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                                        class="hidden dark:block h-full w-full object-cover "
-                                        alt="dramatic sky tutorial dark" />
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div className='flex flex-row justify-between items-center mt-6 px-5'>
-                            <div class="flex flex-col gap-1 ">
-                                <h2 class="text-xl font-extrabold font-Montserrat text-black">Converse Sneakers</h2>
-                                <span class="font-semibold font-VarelaRound text-md ">High Top (Lemon Yellow)</span>
-                            </div>
-                            <div className='h-10 w-10 flex flex-col justify-center items-center  mt-5 mr-5 gap-4'>
-                               <img src="./youtube-logo.png" alt="" className='h-full w-full' />
-                               <p className='font-bold font-Montserrat text-sm text-center'>FREE<br />TUTORIAL</p>
-                               
-                            </div>
-                        </div>
-
-
-                    </article>
-                    </Link>
-                        {/* <!--   🛑 Product card 5 - Ends Here  --> */}
-
-                        {/* <!--   ✅ Product card 6 - Starts Here 👇 --> */}
-                        <Link href="/youTube/video-home/patreon-video">
-                        <article class="max-w-xl w-full h-[70vh] bg-white rounded-xl shadow-lg overflow-hidden ">
-                        <div className='bg-rose-300 rounded-xl p-6'>
-                            {/* Adjusted tablet size */}
-                            <div class="relative mx-auto shadow-xl border-gray-800 dark:border-gray-800 bg-gray-800 border-[5px] rounded-[1.25rem] h-[280px] max-w-[220px] md:h-[360px] md:max-w-[270px] transform transition-transform hover:scale-[1.02]">
-                                {/* Side buttons */}
-                                <div class="h-[14px] w-[2px] bg-gray-800  absolute -start-[6px] top-[28px] rounded-s-lg"></div>
-                                <div class="h-[18px] w-[2px] bg-gray-800  absolute -start-[6px] top-[64px] rounded-s-lg"></div>
-                                <div class="h-[18px] w-[2px] bg-gray-800  absolute -start-[6px] top-[100px] rounded-s-lg"></div>
-                                <div class="h-[24px] w-[2px] bg-gray-800  absolute -end-[6px] top-[84px] rounded-e-lg"></div>
-
-                                {/* Screen area */}
-                                <div class="rounded-[1rem] overflow-hidden h-[270px] md:h-[350px] bg-whit">
-                                    {/* <img src="https://flowbite.s3.amazonaws.com/docs/device-mockups/tablet-mockup-image.png"
-                                        class="dark:hidden h-full w-full object-cover"
-                                        alt="dramatic sky tutorial" /> */}
-                                    <img src="https://images.unsplash.com/photo-1649261191606-cb2496e97eee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NDR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                                        class="hidden dark:block h-full w-full object-cover "
-                                        alt="dramatic sky tutorial dark" />
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div className='flex flex-row justify-between items-center mt-6 px-5'>
-                            <div class="flex flex-col gap-1 ">
-                                <h2 class="text-xl font-extrabold font-Montserrat text-black">Converse Sneakers</h2>
-                                <span class="font-semibold font-VarelaRound text-md ">High Top (Lemon Yellow)</span>
-                            </div>
-                            <div className='h-10 w-10 flex flex-col justify-center items-center  mt-5 mr-5 gap-4'>
-                               <img src="./patreon.png" alt="" />
-                               <p className='font-bold font-Montserrat text-sm'>PATREON <br />TUTORIAL</p>
-                               
-                            </div>
-                        </div>
-
-
-                    </article>
-                    </Link>
-                        {/* <!--   🛑 Product card 6 - Ends Here  --> */}
-
-                    </section>
 
                 </div>
             </div>

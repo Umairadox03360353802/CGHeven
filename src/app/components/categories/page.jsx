@@ -74,7 +74,9 @@ function Categories() {
                     </div>
                     <div className="text-center mt-12">
                         <Link href="/assets" >
-                            <Button className="bg-teal-500 hover:bg-teal-600">View All Categories</Button>
+                            {/* <Button className="bg-teal-500 hover:bg-teal-600">View All Categories</Button> */}
+                             <Button className="bg-teal-500 hover:bg-teal-600 text-[1.2rem]">View All Categories</Button>
+                            
                         </Link>
                     </div>
                 </div>

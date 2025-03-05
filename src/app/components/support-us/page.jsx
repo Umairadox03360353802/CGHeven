@@ -7,13 +7,13 @@ function SupportUs() {
   return (
     <>
       
-      <section className="space-y-6 bg-gray-800 font-Alumni p-8 rounded-lg text-white">
+      <section className="space-y-6 bg-gray-800 font-Oswald p-8 rounded-lg text-white">
       <h1 className='font-extrabold font-Oswald text-6xl text-center mb-8 mt-2'>Support CGHeven</h1>
-      <p className="text-center text-gray-300">
+      <p className="text-center text-lg text-gray-300">
           Your support helps us create more free assets and tutorials for the community
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <Card className="bg-gray-700 border-gray-600 text-white">
+          <Card className="bg-gray-700  border-gray-600 text-white">
             <CardHeader>
               <CardTitle className="flex items-center">
                 <Star className="w-6 h-6 text-yellow-400 mr-2" />
@@ -21,7 +21,7 @@ function SupportUs() {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-gray-300">Access Patreon-only assets and tutorials</p>
+              <p className="text-gray-300  text-xl ">Access Patreon-only assets and tutorials</p>
             </CardContent>
           </Card>
           <Card className="bg-gray-700 border-gray-600 text-white">
@@ -32,7 +32,7 @@ function SupportUs() {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-gray-300">Enjoy CGHeven without any advertisements</p>
+              <p className="text-gray-300 text-xl">Enjoy CGHeven without any advertisements</p>
             </CardContent>
           </Card>
           <Card className="bg-gray-700 border-gray-600 text-white">
@@ -43,19 +43,17 @@ function SupportUs() {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-gray-300">Help shape the future of CGHeven</p>
+              <p className="text-gray-300 text-xl">Help shape the future of CGHeven</p>
             </CardContent>
           </Card>
         </div>
-        <div className="text-center mt-8">
-          <div className="text-center" >
-            <a
-              href="#"
-              className="inline-block bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-8 rounded-full text-lg transition-colors"
-            >
-              Join on Patreon
-            </a>
-          </div>
+        <div className="text-center font-Oswald mt-8">
+          
+                          <Button className="bg-teal-500 hover:bg-teal-600 text-[1.2rem]">Join on Patreon</Button>
+            
+              
+          
+          
         </div>
       </section>
 

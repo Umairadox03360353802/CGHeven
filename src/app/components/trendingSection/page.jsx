@@ -12,7 +12,7 @@ import 'swiper/css/pagination';
 
 const Card = ({ title, description }) => {
   return (
-    <div className=" relative flex  flex-col justify-center overflow-hidden h-48 w-full  ">
+    <div className=" relative flex  flex-col justify-center overflow-hidden aspect-video  ">
       <div className="absolute inset-0  "></div>
       <div className="group relative m-0 flex h-full w-full rounded-xl mx-0  ring-gray-800/5 sm:mx-auto sm:max-w-xl">
         <div className="z-10 h-full w-full overflow-hidden rounded-xl border  transition duration-300 ease-in-out group-hover:opacity-100 border-gray-700 opacity-70">

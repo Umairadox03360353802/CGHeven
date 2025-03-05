@@ -112,17 +112,17 @@ function MiniProductsSection() {
 									
 									<SwiperSlide key={index} className='py-14 px-4'>
 										<Link href="/youTube/video-home" key={index}>
-										<div  className="max-w-md w-full  bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all">
+										<div  className="aspect-auto  bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all">
 											<div className="relative">
 												<img
 													src="https://placehold.co/400x300"
 													alt="Product"
-													className="w-full h-52 object-cover"
+													className="w-full h-full object-cover"
 												/>
 
 											</div>
 
-											<div className="p-5 space-y-4">
+											<div className="p-5  space-y-4">
 
 
 												<div className="flex justify-between items-center">

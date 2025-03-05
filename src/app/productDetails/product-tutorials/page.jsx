@@ -14,7 +14,7 @@ const cards = [
 function ProductTutorials() {
   return (
     <>
-    <div className=" mx-auto px-10 py-3  ">
+    <div className=" mx-auto px-5 py-3  ">
     <div className='  text-white'>
                     <h1 className='font-extrabold font-Oswald text-5xl text-center mb-4 mt-2'>Tutorials</h1>
 
@@ -24,20 +24,20 @@ function ProductTutorials() {
 						
 								{cards.map((card, index) => (
 									<div key={index} className='py-14'>
-										<div  className="max-w-xl w-full  bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all">
+										<div  className="aspect-square  bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all">
 											<div className="relative">
 												<img
 													src="https://placehold.co/400x300"
 													alt="Product"
-													className="w-full h-52 object-cover"
+													className="w-full h-full object-cover"
 												/>
 
 											</div>
 
-											<div className="p-5 ">
+											<div className="p-5  ">
 
 
-												<div className="flex justify-between gap-5 items-center mx-5">
+												<div className="flex justify-between gap-5 items-center mx-4">
 													<div>
 														<h3 className="text-lg font-bold text-gray-900">{card.title}</h3>
 														<p className="text-gray-500 text-sm mt-1">Premium cotton blend</p>
