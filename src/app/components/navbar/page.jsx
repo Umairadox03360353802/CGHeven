@@ -21,11 +21,11 @@ function Navbar() {
     <>
 
 
-      <header className="bg-[#14161d] border-b py-1 items-center border-gray-800">
-        <div className=" mx-auto w-full px-5">
+      <header className="bg-[#14161d] border-b pb-1 items-center border-gray-800">
+        <div className=" mx-auto w-full px-6">
           <div className="flex items-center justify-between h-16 ">
             <Link href="/" className="flex flex-row items-center space-x-2">
-              <div className="w-10 h-12 ">
+              <div className="w-8 h-10 ">
 
                 <img
                   src="rslogo1.png"
@@ -34,19 +34,19 @@ function Navbar() {
                   className="w-full h-full"
                 />
               </div>
-              <span className="text-white text-2xl font-Oswald font-semibold">CGHeven</span>
+              <span className="text-white text-xl font-Oswald font-semibold">CGHeven</span>
             </Link>
             {/* dropdown */}
             <NavigationMenu className="py-0 mt-2 flex flex-row items-center left-20 mr-auto ">
               <NavigationMenuList className="gap-1 font-Oswald ">
                 <NavigationMenuItem>
-                  <Link href="/" className="text-[#ff6b08] text-[1.2rem] bg-transparent px-4 py-2 hover:text-[#ff6b08]">
+                  <Link href="/" className="text-[#ff6b08] text-[1rem] bg-transparent px-4 py-2 hover:text-[#ff6b08]">
                     HOME
                   </Link>
                 </NavigationMenuItem>
 
                 <NavigationMenuItem >
-                  <NavigationMenuTrigger className=" text-[#ff6b08] text-[1.2rem] [&_svg]:hidden bg-transparent hover:text-[#ff6b08] hover:bg-transparent">
+                  <NavigationMenuTrigger className=" text-[#ff6b08] text-[1rem] [&_svg]:hidden bg-transparent hover:text-[#ff6b08] hover:bg-transparent">
                     VFX
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
@@ -72,7 +72,7 @@ function Navbar() {
                 </NavigationMenuItem>
 
                 <NavigationMenuItem >
-                  <NavigationMenuTrigger className=" text-[#ff6b08] text-[1.2rem] [&_svg]:hidden bg-transparent hover:text-[#ff6b08] hover:bg-transparent">
+                  <NavigationMenuTrigger className=" text-[#ff6b08] text-[1rem] [&_svg]:hidden bg-transparent hover:text-[#ff6b08] hover:bg-transparent">
                   3D Assets
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
@@ -98,7 +98,7 @@ function Navbar() {
                 </NavigationMenuItem>
 
                 <NavigationMenuItem >
-                  <NavigationMenuTrigger className=" text-[#ff6b08] text-[1.2rem] [&_svg]:hidden bg-transparent hover:text-[#ff6b08] hover:bg-transparent">
+                  <NavigationMenuTrigger className=" text-[#ff6b08] text-[1rem] [&_svg]:hidden bg-transparent hover:text-[#ff6b08] hover:bg-transparent">
                     Materials
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
@@ -124,7 +124,7 @@ function Navbar() {
                 </NavigationMenuItem>
 
                 <NavigationMenuItem >
-                  <NavigationMenuTrigger className=" text-[#ff6b08] text-[1.2rem] [&_svg]:hidden bg-transparent hover:text-[#ff6b08] hover:bg-transparent">
+                  <NavigationMenuTrigger className=" text-[#ff6b08] text-[1rem] [&_svg]:hidden bg-transparent hover:text-[#ff6b08] hover:bg-transparent">
                     Flipbooks
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
@@ -150,7 +150,7 @@ function Navbar() {
                 </NavigationMenuItem>
 
                 <NavigationMenuItem >
-                  <NavigationMenuTrigger className=" text-[#ff6b08] text-[1.2rem] [&_svg]:hidden bg-transparent hover:text-[#ff6b08] hover:bg-transparent">
+                  <NavigationMenuTrigger className=" text-[#ff6b08] text-[1rem] [&_svg]:hidden bg-transparent hover:text-[#ff6b08] hover:bg-transparent">
                     VDBs
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
@@ -176,7 +176,7 @@ function Navbar() {
                 </NavigationMenuItem>
 
                 <NavigationMenuItem >
-                  <NavigationMenuTrigger className=" text-[#ff6b08] text-[1.2rem] [&_svg]:hidden bg-transparent hover:text-[#ff6b08] hover:bg-transparent">
+                  <NavigationMenuTrigger className=" text-[#ff6b08] text-[1rem] [&_svg]:hidden bg-transparent hover:text-[#ff6b08] hover:bg-transparent">
                     Tutorials
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
@@ -202,7 +202,7 @@ function Navbar() {
                 </NavigationMenuItem>
 
                 <NavigationMenuItem >
-                  <NavigationMenuTrigger className=" text-[#ff6b08] text-[1.2rem] [&_svg]:hidden bg-transparent hover:text-[#ff6b08] hover:bg-transparent">
+                  <NavigationMenuTrigger className=" text-[#ff6b08] text-[1rem] [&_svg]:hidden bg-transparent hover:text-[#ff6b08] hover:bg-transparent">
                     Gallery
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
@@ -239,20 +239,20 @@ function Navbar() {
              <div className="flex items-center space-x-4 font-Oswald  text-white">
               
 
-              <Button variant="ghost" className="hidden lg:flex text-[1.2rem]">
-                <Download className="mr-2 h-5 w-5 " />
+              <Button variant="ghost" className="hidden lg:flex text-[1rem]">
+                <Download className="mr-2 h-14 w-14 " />
                 Download App
               </Button>
 
-              <Button className="bg-teal-500 hover:bg-teal-600 text-[1.2rem]">Join Patreon</Button>
+              <Button className="bg-teal-500 hover:bg-teal-600 text-[1rem]">Join Patreon</Button>
 
-              <Button variant="ghost" className="text-[1.2rem]">Sign In</Button>
+              <Button variant="ghost" className="text-[1rem]">Sign In</Button>
             </div>
            
           </div>
           {/* searchbar */}
 
-          <div className=" py-2  ">
+          <div className=" pb-1  ">
             <div className="relative  mx-auto">
               <Input
                 type="search"

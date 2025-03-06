@@ -31,12 +31,12 @@ function ProductSidebar() {
 
                 {/* Sidebar */}
                 <div className="w-full  border-l border-white/10 ">
-                    <div className="border-b border-white/10 px-6">
+                    <div className="border-b border-white/10 px-06">
                         <div className="">
                             {/* download formats and author profile */}
 
 
-                            <div className="flex items-center justify-between font-Oswald bg-teal-600 text-white px-4 py-2 rounded-lg">
+                            <div className="flex items-center justify-between font-Oswald bg-teal-600 text-white px-4 pb-2 ">
                                 <div className="flex flex-col items-center  border-r-white">
                                     <span className="text-base font-extrabold">4K</span>
                                     <MdKeyboardArrowDown size={20} />
@@ -53,8 +53,8 @@ function ProductSidebar() {
                                 <div className="flex flex-col items-center  border-r-white">
 
 
-                                    <span className="text-base font-bold mr-2">Download</span>
-                                    <span className="text-base font-semibold">252.58 MB</span>
+                                    <span className="text-base font-normal mr-2">Download</span>
+                                    <span className="text-base font-normal">252.58 MB</span>
                                 </div>
 
                                 <div>
@@ -63,14 +63,27 @@ function ProductSidebar() {
                                 </div>
                             </div>
                             {/* profile */}
-                            <div className='flex flex-col justify-center items-center gap-4'>
+                            <div className='flex flex-col justify-center items-center gap-4 mb-2'>
 
                                 <div className='flex flex-row justify-center font-Oswald items-center w-full mt-3'>
                                     <h1 className='text-start text-white font-bold'>Author:</h1>
-                                    <div className='w-16 h-16 ml-8 rounded-full bg-slate-500'>
+                                    <div className='w-12 h-12 ml-2 rounded-full bg-slate-500'>
                                         <img src="/main.jpg" className='rounded-full' alt="" />
                                     </div>
-                                    <div className=' flex flex-col justify-center items-center text-white font-bold text-end ml-3'>
+                                    <div className=' flex flex-col justify-center items-center text-white font-normal text-end ml-1'>
+                                        <h1>Ammar Khan</h1>
+                                        <div className="flex flex-row justify-center items-center gap-2">
+
+                                            <IoLinkSharp /><IoMail />
+                                        </div>
+
+                                    </div>
+
+
+                                    <div className='w-12 h-12 ml-0 rounded-full bg-slate-500'>
+                                        <img src="/main.jpg" className='rounded-full' alt="" />
+                                    </div>
+                                    <div className=' flex flex-col justify-center items-center text-white font-normal text-end ml-1'>
                                         <h1>Ammar Khan</h1>
                                         <div className="flex flex-row justify-center items-center gap-2">
 
@@ -80,7 +93,7 @@ function ProductSidebar() {
                                     </div>
                                 </div>
                                 {/* 2nd author */}
-                                <div className='flex flex-row justify-center font-Oswald items-center w-full mt-3'>
+                                {/* <div className='flex flex-row justify-center font-Oswald items-center w-full mt-3'>
                                     <h1 className='text-start text-white font-bold'>Author:</h1>
                                     <div className='w-16 h-16 ml-8 rounded-full bg-slate-500'>
                                         <img src="/main.jpg" className='rounded-full' alt="" />
@@ -93,7 +106,7 @@ function ProductSidebar() {
                                         </div>
 
                                     </div>
-                                </div>
+                                </div> */}
 
                             </div>
 
@@ -140,22 +153,22 @@ function ProductSidebar() {
                                 </div>
                             </div>
                             {/* Support Us on Patreon */}
-                            <div className="max-w-sm rounded-xl font-Oswald bg-gradient-to-br from-gray-900 to-gray-800 p-4  shadow-lg ">
-                                <div className="flex items-center gap-2">
-                                    <div className="flex h-8 w-8 items-center justify-center rounded m-4 text-white">
+                            <div className="max-w-sm rounded-xl font-Oswald bg-gradient-to-br from-gray-900 to-gray-800 p-2  shadow-lg ">
+                                <div className="flex items-center gap-0">
+                                    <div className="flex h-8 w-8 items-center justify-center rounded mx-4 mb-2 text-white">
                                         <img src="rslogo1.png" className="h-10 w-10" alt="" />
                                     </div>
                                     <h2 className="text-lg font-medium text-white">Support Us on Patreon</h2>
                                 </div>
 
-                                <p className="mt-2 text-center text-md font-bold font-Alumni text-gray-300">
+                                <p className="mt-0 text-center text-md font-bold font-Alumni text-gray-300">
                                     Unlock exclusive assets, premium tutorials, and ad-free experience by supporting us on Patreon!
                                 </p>
 
                                 <Link
                                     href="https://patreon.com/cghaven"
                                     target="_blank"
-                                    className="mt-3 flex w-full items-center justify-center gap-1.5 rounded-md bg-purple-600 py-2 text-sm font-medium text-white transition-colors hover:bg-purple-700"
+                                    className="mt-1 flex w-full items-center justify-center gap-1.5 rounded-md bg-purple-600 py-2 text-sm font-medium text-white transition-colors hover:bg-purple-700"
                                 >
                                     Join Now on Patreon
                                     <ExternalLink size={14} />

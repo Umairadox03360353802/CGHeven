@@ -32,9 +32,9 @@ function ProductDetails() {
                                 <div className="flex flex-col  w-full h-full text-gray-900 text-xl ">
 
 
-                                    <div className="flex flex-row w-full  h-[14%] items-center justify-center mx-auto bg-[#0a1022] border-b border-gray-600">
+                                    <div className="flex flex-row w-full  h-[12%] items-center justify-center mx-auto bg-[#0a1022] border-b border-gray-600">
                                         {/* Square Ad */}
-                                        <div className="overflow-hidden rounded-lg h-full w-[160px] m-1 basis-0.5/3 bg-gradient-to-r from-blue-500/10 to-purple-500/10">
+                                        <div className="overflow-hidden  h-full w-[160px]  basis-0.5/3 bg-gradient-to-r from-blue-500/10 to-purple-500/10">
                                             <div className="flex h-full w-full items-center justify-center bg-black/60 backdrop-blur-sm">
                                                 <span className="text-sm text-center text-gray-700">Advertisement</span>
                                             </div>
@@ -44,43 +44,14 @@ function ProductDetails() {
                                         <div className="flex flex-row  items-center justify-center  mx-auto h-full w-full bg-[#0a1022]">
 
 
-                                            <div className=' p-0 aspect-auto bg-slate-800'>
-                                                <img className="h-full w-full  mx-auto rounded-lg" src="https://cdn.polyhaven.com/asset_img/primary/ahornsteig.png?height=760" alt="" />
+                                            <div className='  aspect-video bg-slate-800'>
+                                                <img className="h-full w-full  rounded-lg" src="https://cdn.polyhaven.com/asset_img/primary/ahornsteig.png?height=760" alt="" />
                                             </div>
 
                                         </div>
 
                                     </div>
-                                         {/* Product Details */}
-                            <div className="space-y-4 p-6 text-white font-Oswald">
-                                <h1 className="text-2xl font-bold">Sci-Fi Drone Model</h1>
-                                <h2 className="text-xl font-semibold text-gray-500">High-quality sci-fi drone model perfect for games and VFX</h2>
-                                <h3 className="text-xl font-semibold">Product Details</h3>
-                                <div className="rounded-lg text-white bg-white/5 p-4">
-                                    <div className="grid gap-3 text-base">
-                                        <div className="flex justify-between">
-                                            <span className="text-gray-400">File Size</span>
-                                            <span>24.5 MB</span>
-                                        </div>
-                                        <div className="flex justify-between">
-                                            <span className="text-gray-400">Downloads</span>
-                                            <span>1,234</span>
-                                        </div>
-                                        <div className="flex justify-between">
-                                            <span className="text-gray-400">Created With</span>
-                                            <span>Blender 3.6</span>
-                                        </div>
-                                        <div className="flex justify-between">
-                                            <span className="text-gray-400">Published</span>
-                                            <span>2 days ago</span>
-                                        </div>
-                                        <div className="flex justify-between">
-                                            <span className="text-gray-400">License</span>
-                                            <span>Premium</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+
                                     <div className="flex  w-full py-8  max-w-full h-60 items-center justify-center mx-auto bg-slate-950 border-b border-gray-600">
 
 
@@ -100,20 +71,50 @@ function ProductDetails() {
 
                                         </div>
                                     </div>
+                                    {/* Product Details */}
+                                    <div className="space-y-4 p-8 text-white font-Oswald">
+                                        <h1 className="text-2xl font-bold">Sci-Fi Drone Model</h1>
+                                        <h2 className="text-xl font-semibold text-gray-500">High-quality sci-fi drone model perfect for games and VFX</h2>
+                                        <h3 className="text-xl font-semibold">Product Details</h3>
+                                        <div className="rounded-lg text-white bg-white/5 p-4">
+                                            <div className="grid gap-3 text-base">
+                                                <div className="flex justify-between">
+                                                    <span className="text-gray-400">File Size</span>
+                                                    <span>24.5 MB</span>
+                                                </div>
+                                                <div className="flex justify-between">
+                                                    <span className="text-gray-400">Downloads</span>
+                                                    <span>1,234</span>
+                                                </div>
+                                                <div className="flex justify-between">
+                                                    <span className="text-gray-400">Created With</span>
+                                                    <span>Blender 3.6</span>
+                                                </div>
+                                                <div className="flex justify-between">
+                                                    <span className="text-gray-400">Published</span>
+                                                    <span>2 days ago</span>
+                                                </div>
+                                                <div className="flex justify-between">
+                                                    <span className="text-gray-400">License</span>
+                                                    <span>Premium</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                     {/* similar assets */}
                                     <MoreAssets />
                                     <div className="flex flex-col w-full max-w-full h-auto items-center justify-center mx-auto bg-[#0a1022] border-b border-gray-600">
-                                       
 
 
 
-                                       
+
+
                                         {/*Exclusive partreon Assets and tutorials  */}
                                         <ExclusiveAssets />
                                         <ProductTutorials />
-                                        
 
-                                       
+
+
                                         {/* gallery */}
 
                                         <div className='mb-8 pr-2 mt-5 text-white flex flex-row justify-center items-center gap-4'>
@@ -176,110 +177,10 @@ function ProductDetails() {
                             </div>
                         </main>
                         {/* right side */}
-                        <nav className="flex w-[60vh] h-full bg-slate-950">
+                        <nav className="flex w-[50vh] h-full bg-slate-950">
                             <div className="w-full h-full flex flex-col justify-start mx-auto">
 
-                                {/* <div className="flex items-center justify-between bg-[#88e5e9] text-white px-4 py-2 rounded-lg">
-                                    <div className="flex flex-col items-center  border-r-white">
-                                        <span className="text-xl font-extrabold">4K</span>
-                                        <MdKeyboardArrowDown size={25} />
-
-                                    </div>
-                                    <div className="flex flex-col items-center  border-r-white">
-                                        <span ><SiBlender size={30} /></span>
-                                        <MdKeyboardArrowDown size={25} />
-
-                                    </div>
-                                    
-
-                                    <div className="flex items-center  border-r-white">
-                                       
-                                        <MdDownload size={28}/>
-
-                                        <span className="text-xl font-bold mr-2">Download</span>
-                                        <span className="text-lg font-semibold">252.58 MB</span>
-                                    </div>
-
-                                    <div>
-                                    <GiHamburgerMenu size={30} />
-
-                                    </div>
-                                </div>
-                                <div className='flex flex-col justify-center items-center gap-4'>
-
-                                    <div className='flex flex-row justify-start items-center w-full mt-3'>
-                                        <h1 className='text-start text-white font-bold'>Author:</h1>
-                                        <div className='w-16 h-16 ml-28 rounded-full bg-slate-500'>
-                                            <img src="/main.jpg" className='rounded-full' alt="" />
-                                        </div>
-                                        <div className=' text-white font-bold text-end ml-2'><h1>Ammar Khan</h1></div>
-                                    </div>
-                                    <div className='flex flex-row justify-center items-center gap-4'>
-                                        <div className='flex flex-col justify-center items-center'>
-
-                                            <h1 className='text-white font-bold'>CC0</h1>
-                                            <h2 className='text-white'>License</h2>
-                                        </div>
-                                        <div className='flex flex-col justify-center items-center'>
-
-                                            <h1 className='text-white font-bold'>0.5m</h1>
-                                            <h2 className='text-white'>tall</h2>
-                                        </div>
-                                        <div className='flex flex-col justify-center items-center'>
-
-                                            <h1 className='text-white font-bold'>105.6</h1>
-                                            <h2 className='text-white'>px/cm</h2>
-                                        </div>
-                                        <div className='flex flex-col justify-center items-center'>
-
-                                            <h1 className='text-white font-bold'>17K</h1>
-                                            <h2 className='text-white'>Tris</h2>
-                                        </div>
-
-                                    </div>
-                                    <div className='flex flex-row justify-start items-start text-white w-[100%] gap-2'>
-                                        <h1 className=' font-bold'>Downloads:</h1>
-                                        <p>70509</p>
-                                    </div>
-
-                                </div>
-                                <div className='h-[20vh]'></div>
-                                <div className='flex flex-col justify-center items-center'>
-                                    <p className='text-white'>Sponsord by:</p>
-                                    <h1 className='font-bold text-[#88e5e9] text-2xl underline'>Ammar Khan</h1>
-                                </div>
-                                <div className='h-[17vh]'></div>
-                                <div className='flex flex-col justify-center'>
-                                    <div className='flex flex-row justify-start items-start gap-2'>
-                                        <h1 className='text-white font-bold'>Categories:</h1>
-                                        <button className="bg-transparent hover:bg-[#88e5e9] text-slate-400  hover:text-white text-sm py-1 px-2 border border-[#88e5e9] hover:border-transparent rounded">
-                                            Button
-                                        </button>
-                                        <button className="bg-transparent hover:bg-[#88e5e9] text-slate-400  hover:text-white text-sm py-1 px-2 border border-[#88e5e9] hover:border-transparent rounded">
-                                            Button
-                                        </button>
-                                        <button className="bg-transparent hover:bg-[#88e5e9] text-slate-400  hover:text-white text-sm py-1 px-2 border border-[#88e5e9] hover:border-transparent rounded">
-                                            Button
-                                        </button>
-                                    </div>
-                                    <div className='flex flex-row justify-start items-start gap-2'>
-                                        <h1 className='text-white font-bold'>Tags:</h1>
-                                        <button className="bg-transparent hover:bg-[#88e5e9] text-slate-400  hover:text-white text-sm py-1 px-2 border border-[#88e5e9] hover:border-transparent rounded">
-                                            Button
-                                        </button>
-                                        <button className="bg-transparent hover:bg-[#88e5e9] text-slate-400  hover:text-white text-sm py-1 px-2 border border-[#88e5e9] hover:border-transparent rounded">
-                                            Button
-                                        </button>
-                                        <button className="bg-transparent hover:bg-[#88e5e9] text-slate-400  hover:text-white text-sm py-1 px-2 border border-[#88e5e9] hover:border-transparent rounded">
-                                            Button
-                                        </button>
-                                    </div>
-                                    <div className='flex flex-row justify-start items-start gap-2'>
-                                        <h1 className='text-white font-bold'>Relased:</h1>
-                                        <p className='text-slate-400'> 3 years</p>
-
-                                    </div>
-                                </div> */}
+                               
 
                                 <ProductSidebar />
                             </div>

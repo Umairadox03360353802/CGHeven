@@ -37,7 +37,7 @@ function ExclusiveAssets() {
         <div>
             <div className=" mx-auto px-10 py-3  ">
                 <div className='  text-white'>
-                    <h1 className='font-extrabold font-Oswald text-5xl text-center mb-4 mt-2'>Exclusive Partreon Assets</h1>
+                    <h1 className='font-extrabold font-Oswald text-4xl text-center mb-4 mt-2'>Exclusive Partreon Assets</h1>
 
                 </div>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">

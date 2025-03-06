@@ -16,7 +16,7 @@ function ProductTutorials() {
     <>
     <div className=" mx-auto px-5 py-3  ">
     <div className='  text-white'>
-                    <h1 className='font-extrabold font-Oswald text-5xl text-center mb-4 mt-2'>Tutorials</h1>
+                    <h1 className='font-extrabold font-Oswald text-4xl text-center mb-4 mt-2'>Tutorials</h1>
 
                 </div>
 
