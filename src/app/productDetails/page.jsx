@@ -26,15 +26,15 @@ function ProductDetails() {
 
                     <div className="flex h-full">
 
-                        <main className="flex flex-col w-full bg-slate-950 overflow-x-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:bg-neutral-700 [&::-webkit-scrollbar-thumb]:bg-neutral-500 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:rounded-full mb-1">
+                        <main className="flex flex-col w-full bg-slate-950 overflow-x-hidden overflow-y-auto [&::-webkit-scrollbar]:hidden mb-1">
                             <div className="flex w-full mx-auto  px-0  py-0">
 
                                 <div className="flex flex-col  w-full h-full text-gray-900 text-xl ">
 
 
-                                    <div className="flex flex-row w-full max-w-full  h-screen items-center justify-center mx-auto bg-[#0a1022] border-b border-gray-600">
+                                    <div className="flex flex-row w-full  h-[14%] items-center justify-center mx-auto bg-[#0a1022] border-b border-gray-600">
                                         {/* Square Ad */}
-                                        <div className="overflow-hidden rounded-lg h-full w-[160px] m-4 basis-0.5/3 bg-gradient-to-r from-blue-500/10 to-purple-500/10">
+                                        <div className="overflow-hidden rounded-lg h-full w-[160px] m-1 basis-0.5/3 bg-gradient-to-r from-blue-500/10 to-purple-500/10">
                                             <div className="flex h-full w-full items-center justify-center bg-black/60 backdrop-blur-sm">
                                                 <span className="text-sm text-center text-gray-700">Advertisement</span>
                                             </div>
@@ -44,14 +44,45 @@ function ProductDetails() {
                                         <div className="flex flex-row  items-center justify-center  mx-auto h-full w-full bg-[#0a1022]">
 
 
-                                            <div className=' p-8 w-full h-full bg-slate-800'>
-                                                <img className="h-full max-w-full  mx-auto rounded-lg" src="https://cdn.polyhaven.com/asset_img/primary/qwantani_noon.png?height=760" alt="" />
+                                            <div className=' p-0 aspect-auto bg-slate-800'>
+                                                <img className="h-full w-full  mx-auto rounded-lg" src="https://cdn.polyhaven.com/asset_img/primary/ahornsteig.png?height=760" alt="" />
                                             </div>
 
                                         </div>
 
                                     </div>
+                                         {/* Product Details */}
+                            <div className="space-y-4 p-6 text-white font-Oswald">
+                                <h1 className="text-2xl font-bold">Sci-Fi Drone Model</h1>
+                                <h2 className="text-xl font-semibold text-gray-500">High-quality sci-fi drone model perfect for games and VFX</h2>
+                                <h3 className="text-xl font-semibold">Product Details</h3>
+                                <div className="rounded-lg text-white bg-white/5 p-4">
+                                    <div className="grid gap-3 text-base">
+                                        <div className="flex justify-between">
+                                            <span className="text-gray-400">File Size</span>
+                                            <span>24.5 MB</span>
+                                        </div>
+                                        <div className="flex justify-between">
+                                            <span className="text-gray-400">Downloads</span>
+                                            <span>1,234</span>
+                                        </div>
+                                        <div className="flex justify-between">
+                                            <span className="text-gray-400">Created With</span>
+                                            <span>Blender 3.6</span>
+                                        </div>
+                                        <div className="flex justify-between">
+                                            <span className="text-gray-400">Published</span>
+                                            <span>2 days ago</span>
+                                        </div>
+                                        <div className="flex justify-between">
+                                            <span className="text-gray-400">License</span>
+                                            <span>Premium</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                                     <div className="flex  w-full py-8  max-w-full h-60 items-center justify-center mx-auto bg-slate-950 border-b border-gray-600">
+
 
                                         <div className="grid grid-cols-4  gap-4 px-6 ">
                                             <div>

@@ -31,40 +31,55 @@ function ProductSidebar() {
 
                 {/* Sidebar */}
                 <div className="w-full  border-l border-white/10 ">
-                    <div className="border-b border-white/10 p-6">
-                        <div className="space-y-4">
+                    <div className="border-b border-white/10 px-6">
+                        <div className="">
                             {/* download formats and author profile */}
 
 
                             <div className="flex items-center justify-between font-Oswald bg-teal-600 text-white px-4 py-2 rounded-lg">
                                 <div className="flex flex-col items-center  border-r-white">
-                                    <span className="text-lg font-extrabold">4K</span>
-                                    <MdKeyboardArrowDown size={25} />
+                                    <span className="text-base font-extrabold">4K</span>
+                                    <MdKeyboardArrowDown size={20} />
 
                                 </div>
                                 <div className="flex flex-col items-center mt-1  border-r-white">
-                                    <span ><SiBlender size={25} /></span>
-                                    <MdKeyboardArrowDown size={25} />
+                                    <span ><SiBlender size={20} /></span>
+                                    <MdKeyboardArrowDown size={20} />
 
                                 </div>
 
 
-                                <MdDownload size={28} />
+                                <MdDownload size={25} />
                                 <div className="flex flex-col items-center  border-r-white">
 
 
-                                    <span className="text-xl font-bold mr-2">Download</span>
-                                    <span className="text-lg font-semibold">252.58 MB</span>
+                                    <span className="text-base font-bold mr-2">Download</span>
+                                    <span className="text-base font-semibold">252.58 MB</span>
                                 </div>
 
                                 <div>
-                                    <GiHamburgerMenu size={30} />
+                                    <GiHamburgerMenu size={25} />
 
                                 </div>
                             </div>
                             {/* profile */}
                             <div className='flex flex-col justify-center items-center gap-4'>
 
+                                <div className='flex flex-row justify-center font-Oswald items-center w-full mt-3'>
+                                    <h1 className='text-start text-white font-bold'>Author:</h1>
+                                    <div className='w-16 h-16 ml-8 rounded-full bg-slate-500'>
+                                        <img src="/main.jpg" className='rounded-full' alt="" />
+                                    </div>
+                                    <div className=' flex flex-col justify-center items-center text-white font-bold text-end ml-3'>
+                                        <h1>Ammar Khan</h1>
+                                        <div className="flex flex-row justify-center items-center gap-2">
+
+                                            <IoLinkSharp /><IoMail />
+                                        </div>
+
+                                    </div>
+                                </div>
+                                {/* 2nd author */}
                                 <div className='flex flex-row justify-center font-Oswald items-center w-full mt-3'>
                                     <h1 className='text-start text-white font-bold'>Author:</h1>
                                     <div className='w-16 h-16 ml-8 rounded-full bg-slate-500'>
@@ -86,9 +101,9 @@ function ProductSidebar() {
                     </div>
                     <ScrollArea className="h-[calc(100vh-90px)] ">
 
-                        <div className="space-y-6 p-6 ">
+                        <div className="space-y-2 p-6 ">
                             {/* Product Details */}
-                            <div className="space-y-4 text-white font-Oswald">
+                            {/* <div className="space-y-4 text-white font-Oswald">
                                 <h3 className="text-lg font-semibold">Product Details</h3>
                                 <div className="rounded-lg text-white bg-white/5 p-4">
                                     <div className="grid gap-3 text-sm">
@@ -114,7 +129,7 @@ function ProductSidebar() {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
 
 
 
