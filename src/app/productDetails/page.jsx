@@ -26,13 +26,13 @@ function ProductDetails() {
 
                     <div className="flex h-full">
 
-                        <main className="flex flex-col w-full bg-slate-950 overflow-x-hidden overflow-y-auto [&::-webkit-scrollbar]:hidden mb-1">
+                        <main className="flex flex-col w-full bg-gray-900 overflow-x-hidden overflow-y-auto [&::-webkit-scrollbar]:hidden mb-1">
                             <div className="flex w-full mx-auto  px-0  py-0">
 
                                 <div className="flex flex-col  w-full h-full text-gray-900 text-xl ">
 
 
-                                    <div className="flex flex-row w-full  h-[12%] items-center justify-center mx-auto bg-[#0a1022] border-b border-gray-600">
+                                    <div className="flex flex-row w-full  h-auto items-center justify-center mx-auto bg-gray-900 border-b border-gray-600">
                                         {/* Square Ad */}
                                         <div className="overflow-hidden  h-full w-[160px]  basis-0.5/3 bg-gradient-to-r from-blue-500/10 to-purple-500/10">
                                             <div className="flex h-full w-full items-center justify-center bg-black/60 backdrop-blur-sm">
@@ -41,11 +41,11 @@ function ProductDetails() {
                                         </div>
 
 
-                                        <div className="flex flex-row  items-center justify-center  mx-auto h-full w-full bg-[#0a1022]">
+                                        <div className="flex flex-row  items-center justify-center  mx-auto h-full w-full bg-gray-900">
 
 
-                                            <div className='  aspect-video bg-slate-800'>
-                                                <img className="h-full w-full  rounded-lg" src="https://cdn.polyhaven.com/asset_img/primary/ahornsteig.png?height=760" alt="" />
+                                            <div className='  aspect-auto bg-transparent'>
+                                                <img className="h-full w-full  " src="./rusty_metal_04.webp" alt="" />
                                             </div>
 
                                         </div>
@@ -119,7 +119,7 @@ function ProductDetails() {
 
                                         <div className='mb-8 pr-2 mt-5 text-white flex flex-row justify-center items-center gap-4'>
                                             <h1 className='font-extrabold font-Oswald text-4xl text-center mb-6'>User Renders:</h1>
-                                            <button className="flex items-center font-Oswald mb-5 px-6 py-3 bg-slate-950 text-white font-semibold rounded-xl hover:bg-[#88e5e9] focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                            <button className="flex items-center font-Oswald mb-5 px-6 py-3 bg-gray-900 text-white font-semibold rounded-xl hover:bg-[#88e5e9] focus:outline-none focus:ring-2 focus:ring-blue-500">
                                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                                                     <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v16m8-8H4" />
                                                 </svg>
@@ -169,7 +169,7 @@ function ProductDetails() {
 
 
                                     </div>
-                                    <div className="flex w-full max-w-full h-60 items-center justify-center mx-auto bg-slate-950 border-b border-gray-600">
+                                    <div className="flex w-full max-w-full h-60 items-center justify-center mx-auto bg-gray-900 border-b border-gray-600">
                                         <PatreonName />
                                     </div>
                                     {/* <div className="flex w-full max-w-xl h-60 items-center justify-center mx-auto bg-green-400 border-b border-gray-600">Post</div> */}
@@ -177,7 +177,7 @@ function ProductDetails() {
                             </div>
                         </main>
                         {/* right side */}
-                        <nav className="flex w-[50vh] h-full bg-slate-950">
+                        <nav className="flex w-[50vh] h-full bg-gray-800">
                             <div className="w-full h-full flex flex-col justify-start mx-auto">
 
                                
