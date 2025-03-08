@@ -10,6 +10,7 @@ import TrendingSection from '../components/trendingSection/page';
 import MoreAssets from './more-assets/page';
 import ExclusiveAssets from './exclusive-assets/page';
 import ProductTutorials from './product-tutorials/page';
+import { Package, FileText, ImageIcon, Layers, CuboidIcon as Cube } from "lucide-react"
 // import { Sidebar, SidebarContent, SidebarHeader, SidebarProvider } from "@/components/ui/sidebar"
 
 
@@ -52,7 +53,7 @@ function ProductDetails() {
 
                                     </div>
 
-                                    <div className="flex  w-full py-8  max-w-full h-60 items-center justify-center mx-auto bg-slate-950 border-b border-gray-600">
+                                    <div className="flex  w-full py-8  max-w-full h-60 items-center justify-center mx-auto bg-gray-900 border-b border-gray-600">
 
 
                                         <div className="grid grid-cols-4  gap-4 px-6 ">
@@ -73,37 +74,16 @@ function ProductDetails() {
                                     </div>
                                     {/* Product Details */}
                                     <div className="space-y-4 p-8 text-white font-Oswald">
-                                        <h1 className="text-2xl font-bold">Sci-Fi Drone Model</h1>
+                                        <h1 className="text-4xl font-bold">Sci-Fi Drone Model</h1>
                                         <h2 className="text-xl font-semibold text-gray-500">High-quality sci-fi drone model perfect for games and VFX</h2>
-                                        <h3 className="text-xl font-semibold">Product Details</h3>
-                                        <div className="rounded-lg text-white bg-white/5 p-4">
-                                            <div className="grid gap-3 text-base">
-                                                <div className="flex justify-between">
-                                                    <span className="text-gray-400">File Size</span>
-                                                    <span>24.5 MB</span>
-                                                </div>
-                                                <div className="flex justify-between">
-                                                    <span className="text-gray-400">Downloads</span>
-                                                    <span>1,234</span>
-                                                </div>
-                                                <div className="flex justify-between">
-                                                    <span className="text-gray-400">Created With</span>
-                                                    <span>Blender 3.6</span>
-                                                </div>
-                                                <div className="flex justify-between">
-                                                    <span className="text-gray-400">Published</span>
-                                                    <span>2 days ago</span>
-                                                </div>
-                                                <div className="flex justify-between">
-                                                    <span className="text-gray-400">License</span>
-                                                    <span>Premium</span>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        {/* <h3 className="text-xl font-semibold">Product Details</h3> */}
+                                        
                                     </div>
+
+                                    
                                     {/* similar assets */}
                                     <MoreAssets />
-                                    <div className="flex flex-col w-full max-w-full h-auto items-center justify-center mx-auto bg-[#0a1022] border-b border-gray-600">
+                                    <div className="flex flex-col w-full max-w-full h-auto items-center justify-center mx-auto bg-gray-900 border-b border-gray-600">
 
 
 
@@ -180,7 +160,7 @@ function ProductDetails() {
                         <nav className="flex w-[50vh] h-full bg-gray-800">
                             <div className="w-full h-full flex flex-col justify-start mx-auto">
 
-                               
+
 
                                 <ProductSidebar />
                             </div>

@@ -23,18 +23,13 @@ function ProductTutorials() {
     <div className=" grid grid-cols-2 md:grid-cols-4 gap-4">
 						
 								{cards.map((card, index) => (
-									<div key={index} className='py-14'>
-										<div  className="aspect-square  bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all">
-											<div className="relative">
-												<img
-													src="https://placehold.co/400x300"
-													alt="Product"
-													className="w-full h-full object-cover"
-												/>
-
+									<div key={index} className='py-14 '>
+										<div  className=" aspect-auto bg-white rounded-xl  shadow-lg overflow-hidden hover:shadow-xl transition-all">
+											<div className="aspect-auto ">
+											<iframe  src="https://www.youtube.com/embed/stNnNjM-Rhk" className='h-[300px] w-[373px]' frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;  " allowfullscreen></iframe>
 											</div>
 
-											<div className="p-5  ">
+											<div className="p-5   ">
 
 
 												<div className="flex justify-between gap-5 items-center mx-4">

@@ -12,6 +12,8 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMail } from "react-icons/io5";
 import { IoLinkSharp } from "react-icons/io5";
 import { ExternalLink } from "lucide-react"
+import { MapPin } from "lucide-react"
+
 
 
 
@@ -92,8 +94,31 @@ function ProductSidebar() {
 
                                     </div>
                                 </div>
-                                
 
+
+                            </div>
+
+                            {/* product details */}
+                            <div className="flex items-center justify-center  text-white p-2 w-full">
+                                <div className="flex flex-col items-center justify-center px-3">
+                                    <span className="text-lg font-semibold">CC0</span>
+                                    <span className="text-xs text-gray-400">License</span>
+                                </div>
+
+                                <div className="flex flex-col items-center justify-center px-3">
+                                    <span className="text-lg font-semibold">22</span>
+                                    <span className="text-xs text-gray-400">EVs</span>
+                                </div>
+
+                                <div className="flex flex-col items-center justify-center px-3">
+                                    <span className="text-lg font-semibold">5539K</span>
+                                    <span className="text-xs text-gray-400">WB</span>
+                                </div>
+
+                                <div className="flex flex-col items-center justify-center px-3">
+                                    <MapPin className="h-5 w-5 mb-1" />
+                                    <span className="text-xs text-gray-400">GPS</span>
+                                </div>
                             </div>
 
                         </div>
@@ -161,9 +186,9 @@ function ProductSidebar() {
                                     <ExternalLink size={14} />
                                 </Link>
                             </div>
-                            
-                           
-                          
+
+
+
 
                         </div>
 

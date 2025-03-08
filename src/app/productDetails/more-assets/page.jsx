@@ -10,20 +10,38 @@ import React from 'react'
 
 const Card = ({ title, description }) => {
   return (
-    <div className=" relative flex  flex-col justify-center overflow-hidden aspect-auto rounded-xl ">
+    <div className=" relative flex flex-col justify-center items-center overflow-hidden  aspect-auto rounded-xl ">
+      <div className="w-full h-full  hover:bg-gray-700 flex items-center justify-center  hover:text-teal-500">
       <div className="absolute inset-0  "></div>
-      <div className="group relative m-0 flex h-full w-full rounded-xl mx-0  ring-gray-800/5 sm:mx-auto sm:max-w-xl">
-        <div className="z-10 h-full w-full overflow-hidden rounded-xl   transition duration-300 ease-in-out group-hover:opacity-100  opacity-70">
-          <img src="https://cdn.polyhaven.com/asset_img/thumbs/box_profile_metal_sheet.png?height=760" alt="" />
+      <div className="group relative m-0 flex  h-full w-full rounded-xl   ring-gray-800/5 sm:mx-auto sm:max-w-xl">
+        <div className="z-10 h-full w-full overflow-hidden rounded-xl  hover:shadow-teal-500/20 transition-all duration-300 transform hover:-translate-y-1">
+          <img src="https://cdn.polyhaven.com/asset_img/thumbs/coast_sand_rocks_02.png?width=284&height=284" className='mx-auto' alt="" />
         </div>
         <div className="absolute bottom-0 z-20 m-0 pb-4 ps-4 transition duration-300 ease-in-out group-hover:-translate-y-1 group-hover:translate-x-3 group-hover:scale-110">
           <h1 className="font-Oswald text-2xl font-bold text-white shadow-xl">{title}</h1>
           <h1 className="text-sm font-light text-gray-200 shadow-xl">{description}</h1>
         </div>
       </div>
+      </div>
+
     </div>
   );
 };
+
+// function AssetPreview({ asset }) {
+//   switch (asset.type) {
+//     case "VFX":
+//       return <video src="" autoPlay loop muted className="w-full h-full object-cover" />
+//     case "3D Model":
+//       return <div className="w-full h-full bg-gray-700 flex items-center justify-center text-teal-500">3D Viewer</div>
+//     case "Flipbook":
+//       return (
+//         <div className="w-full h-full bg-gray-700 flex items-center justify-center text-teal-500">Animated Sprite</div>
+//       )
+//     default:
+//       return <img src={asset.preview || "/placeholder.svg"} alt={asset.name} className="w-full h-full object-cover" />
+//   }
+// }
 
 
 function MoreAssets() {
@@ -39,6 +57,7 @@ function MoreAssets() {
 
 
   ];
+
   return (
     <div>
       <div className=" mx-auto px-10 py-3  ">
@@ -49,6 +68,8 @@ function MoreAssets() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
 
           {cards.map((card, index) => (
+
+            
             <div key={index} className='py-8'>
               <Card key={index} title={card.title} description={card.description} />
 
