@@ -2,7 +2,7 @@
 import React from "react"
 import { useState } from "react"
 import { Lock } from "lucide-react"
-import SupportUs from "../../components/support-us/page"
+// import SupportUs from "../../components/support-us/page"
 
 const assets = [
   { id: 1, name: "Fire VFX", type: "VFX", isPremium: false, preview: "https://img.lovepik.com/bg/20240224/Revolutionary-Ecommerce-3D-Render-of-Computer-Shopping-Bags-and-Delivery_3696975_wh1200.jpg" },
@@ -104,7 +104,7 @@ export default function AssetsGrid() {
   )
 }
 
-function AssetPreview({ asset }) {
+export function AssetPreview({ asset }) {
   switch (asset.type) {
     case "VFX":
       return <video src="" autoPlay loop muted className="w-full h-full object-cover" />

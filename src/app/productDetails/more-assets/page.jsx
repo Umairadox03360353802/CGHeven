@@ -126,7 +126,7 @@ function MoreAssets() {
   )
 }
 
-function AssetPreview({ asset }) {
+export function AssetPreview({ asset }) {
   switch (asset.type) {
     case "VFX":
       return <video src="" autoPlay loop muted className="w-full h-full object-cover" />
