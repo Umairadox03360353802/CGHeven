@@ -123,49 +123,21 @@ function ProductSidebar() {
 
                         </div>
                     </div>
-                    <ScrollArea className="h-[calc(100vh-90px)] ">
+                    <ScrollArea className="h-[calc(90vh-90px)] ">
 
-                        <div className="space-y-2 p-0 ">
-                            {/* Product Details */}
-                            {/* <div className="space-y-4 text-white font-Oswald">
-                                <h3 className="text-lg font-semibold">Product Details</h3>
-                                <div className="rounded-lg text-white bg-white/5 p-4">
-                                    <div className="grid gap-3 text-sm">
-                                        <div className="flex justify-between">
-                                            <span className="text-gray-400">File Size</span>
-                                            <span>24.5 MB</span>
-                                        </div>
-                                        <div className="flex justify-between">
-                                            <span className="text-gray-400">Downloads</span>
-                                            <span>1,234</span>
-                                        </div>
-                                        <div className="flex justify-between">
-                                            <span className="text-gray-400">Created With</span>
-                                            <span>Blender 3.6</span>
-                                        </div>
-                                        <div className="flex justify-between">
-                                            <span className="text-gray-400">Published</span>
-                                            <span>2 days ago</span>
-                                        </div>
-                                        <div className="flex justify-between">
-                                            <span className="text-gray-400">License</span>
-                                            <span>Premium</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> */}
-
+                        <div className="space-y-0 h-screen relative  ">
 
 
                             {/* Square Ad */}
-                            <div className="overflow-hidden p-6">
+                            <div className="overflow-hidden  p-6">
                                 <div className="flex h-[300px] w-full rounded-lg items-center justify-center bg-black/40 backdrop-blur-sm">
                                     <span className="text-sm text-gray-400">Advertisement</span>
                                 </div>
                             </div>
-                            <div className="h-[10rem]"></div>
+                            {/* Tags */}
+                           
                             {/* Support Us on Patreon */}
-                            <div className="w-full   font-Oswald bg-gradient-to-br from-gray-900 to-gray-800 p-3  shadow-lg ">
+                            <div className="w-full absolute bottom-0 mb-3  font-Oswald bg-gradient-to-br from-gray-900 to-gray-800 p-3  shadow-lg ">
                                 <div className="flex items-center ">
                                     <div className="flex h-8 w-8 items-center justify-center rounded mx-4 mb-2 text-white">
                                         <img src="rslogo1.png" className="h-10 w-10" alt="" />

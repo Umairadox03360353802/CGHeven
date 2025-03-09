@@ -10,7 +10,20 @@ import TrendingSection from '../components/trendingSection/page';
 import MoreAssets from './more-assets/page';
 import ExclusiveAssets from './exclusive-assets/page';
 import ProductTutorials from './product-tutorials/page';
-import { Package, FileText, ImageIcon, Layers, CuboidIcon as Cube } from "lucide-react"
+// import { Facebook,  Instagram, Linkedin, Share2, Twitter,  } from "lucide-react"
+import { FaXTwitter } from "react-icons/fa6";
+import { FiFacebook } from "react-icons/fi";
+import { FaInstagram } from "react-icons/fa6";
+import { FiLinkedin } from "react-icons/fi";
+import { IoShareSocialOutline } from "react-icons/io5";
+
+
+
+
+
+import { Button } from "@/components/ui/button"
+
+// import { Package, FileText, ImageIcon, Layers, CuboidIcon as Cube } from "lucide-react"
 // import { Sidebar, SidebarContent, SidebarHeader, SidebarProvider } from "@/components/ui/sidebar"
 
 
@@ -77,10 +90,44 @@ function ProductDetails() {
                                         <h1 className="text-4xl font-bold">Sci-Fi Drone Model</h1>
                                         <h2 className="text-xl font-semibold text-gray-500">High-quality sci-fi drone model perfect for games and VFX</h2>
                                         {/* <h3 className="text-xl font-semibold">Product Details</h3> */}
+
+                                    </div>
+
+                                    {/* Social Share */}
+                                    <div className="flex items-center gap-6 px-8 py-4 mb-6">
+                                        <span className="text-lg font-bold text-muted-foreground">Share:</span>
+                                        <div  >
+                                    
+                                            <FaXTwitter  color='white'  size={30}/>
+
+                                        </div>
+                                        <div  >
+                                        
+                                            <FiFacebook  color='white'  size={30}/>
+
+                                        </div>
+                                        <div  >
+                                            
+                                            <FaInstagram color='white'  size={30} />
+
+                                        </div>
+                                        <div  >
+                                        
+                                            <FiLinkedin color='white'  size={30}/>
+
+                                        </div>
+                                        
+                                       <div >
+
+                                       <IoShareSocialOutline color='white'  size={30} />
+
+                                       </div>
+
+
                                         
                                     </div>
 
-                                    
+                                    <div className='w-full border-b border-gray-600'></div>
                                     {/* similar assets */}
                                     <MoreAssets />
                                     <div className="flex flex-col w-full max-w-full h-auto items-center justify-center mx-auto bg-gray-900 border-b border-gray-600">
@@ -97,7 +144,7 @@ function ProductDetails() {
 
                                         {/* gallery */}
 
-                                        <div className='mb-8 pr-2 mt-5 text-white flex flex-row justify-center items-center gap-4'>
+                                        {/* <div className='mb-8 pr-2 mt-5 text-white flex flex-row justify-center items-center gap-4'>
                                             <h1 className='font-extrabold font-Oswald text-4xl text-center mb-6'>User Renders:</h1>
                                             <button className="flex items-center font-Oswald mb-5 px-6 py-3 bg-gray-900 text-white font-semibold rounded-xl hover:bg-[#88e5e9] focus:outline-none focus:ring-2 focus:ring-blue-500">
                                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
@@ -143,15 +190,15 @@ function ProductDetails() {
                                                 </div>
                                             </div>
 
-                                        </div>
+                                        </div> */}
 
 
 
 
                                     </div>
-                                    <div className="flex w-full max-w-full h-60 items-center justify-center mx-auto bg-gray-900 border-b border-gray-600">
+                                    {/* <div className="flex w-full max-w-full h-60 items-center justify-center mx-auto bg-gray-900 border-b border-gray-600">
                                         <PatreonName />
-                                    </div>
+                                    </div> */}
                                     {/* <div className="flex w-full max-w-xl h-60 items-center justify-center mx-auto bg-green-400 border-b border-gray-600">Post</div> */}
                                 </div>
                             </div>
