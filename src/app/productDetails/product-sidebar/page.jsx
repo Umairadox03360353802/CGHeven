@@ -1,6 +1,7 @@
 "use client"
 import React from "react"
 import Link from "next/link"
+import Tags from "./product-tags/page"
 // import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
 // import { Sidebar, SidebarContent, SidebarHeader, SidebarProvider } from "@/components/ui/sidebar"
 // import { Sidebar, SidebarContent, SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
@@ -134,10 +135,16 @@ function ProductSidebar() {
                                     <span className="text-sm text-gray-400">Advertisement</span>
                                 </div>
                             </div>
-                            {/* Tags */}
+                            
+
+            
                            
                             {/* Support Us on Patreon */}
-                            <div className="w-full absolute bottom-0 mb-3  font-Oswald bg-gradient-to-br from-gray-900 to-gray-800 p-3  shadow-lg ">
+                            <div className="absolute bottom-0 w-full py-10">
+                                 {/* Tags */}
+                            <Tags />
+
+                            <div className="w-full  mb-3  font-Oswald bg-gradient-to-br from-gray-900 to-gray-800 p-3  shadow-lg ">
                                 <div className="flex items-center ">
                                     <div className="flex h-8 w-8 items-center justify-center rounded mx-4 mb-2 text-white">
                                         <img src="rslogo1.png" className="h-10 w-10" alt="" />
@@ -157,6 +164,7 @@ function ProductSidebar() {
                                     Join Now on Patreon
                                     <ExternalLink size={14} />
                                 </Link>
+                            </div>
                             </div>
 
 
