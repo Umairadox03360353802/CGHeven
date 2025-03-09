@@ -142,3 +142,18 @@ export function AssetPreview({ asset }) {
 }
 
 export default MoreAssets
+
+function AssetPreview({ asset }) {
+  switch (asset.type) {
+    case "VFX":
+      return <video src="" autoPlay loop muted className="w-full h-full object-cover" />
+    case "3D Model":
+      return <div className="w-full h-full bg-gray-700 flex items-center justify-center text-teal-500">3D Viewer</div>
+    case "Flipbook":
+      return (
+        <div className="w-full h-full bg-gray-700 flex items-center justify-center text-teal-500">Animated Sprite</div>
+      )
+    default:
+      return <img src={asset.preview || "/placeholder.svg"} alt={asset.name} className="w-full h-full object-cover" />
+  }
+}
