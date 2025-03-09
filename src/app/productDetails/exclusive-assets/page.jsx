@@ -1,5 +1,4 @@
 "use client"
-
 import React from 'react'
 import { useState } from "react"
 import { Lock } from "lucide-react"
@@ -99,7 +98,7 @@ function ExclusiveAssets() {
     )
 }
 
-export function AssetPreview({ asset }) {
+function AssetPreview({ asset }) {
   switch (asset.type) {
     case "VFX":
       return <video src="" autoPlay loop muted className="w-full h-full object-cover" />
