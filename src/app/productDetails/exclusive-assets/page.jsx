@@ -20,7 +20,7 @@ import { Lock } from "lucide-react"
 //     );
 // };
 
-const assets = [
+const exclusiveAssets = [
     { id: 1, name: "Fire VFX", type: "VFX", isPremium: false, preview: "https://img.lovepik.com/bg/20240224/Revolutionary-Ecommerce-3D-Render-of-Computer-Shopping-Bags-and-Delivery_3696975_wh1200.jpg" },
     { id: 2, name: "Sci-Fi Weapon", type: "3D Model", isPremium: true, preview: "https://img.lovepik.com/bg/20240224/Revolutionary-Ecommerce-3D-Render-of-Computer-Shopping-Bags-and-Delivery_3696975_wh1200.jpg" },
     { id: 3, name: "Smoke Simulation", type: "VDB", isPremium: false, preview: "https://img.lovepik.com/bg/20240224/Revolutionary-Ecommerce-3D-Render-of-Computer-Shopping-Bags-and-Delivery_3696975_wh1200.jpg" },
@@ -65,7 +65,7 @@ function ExclusiveAssets() {
 
 
                     ))} */}
-                    {assets.map((asset) => (
+                    {exclusiveAssets.map((asset) => (
                         <div
                             key={asset.id}
                             className="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-teal-500/20 transition-all duration-300 transform hover:-translate-y-1"
@@ -99,9 +99,6 @@ function ExclusiveAssets() {
 }
 
 
-
-export default ExclusiveAssets
-
 function AssetPreview({ asset }) {
     switch (asset.type) {
       case "VFX":
@@ -116,3 +113,5 @@ function AssetPreview({ asset }) {
         return <img src={asset.preview || "/placeholder.svg"} alt={asset.name} className="w-full h-full object-cover" />
     }
   }
+
+export default ExclusiveAssets

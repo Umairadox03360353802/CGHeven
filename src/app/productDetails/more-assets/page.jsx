@@ -141,8 +141,6 @@ export function AssetPreview({ asset }) {
   }
 }
 
-export default MoreAssets
-
 function AssetPreview({ asset }) {
   switch (asset.type) {
     case "VFX":
@@ -157,3 +155,4 @@ function AssetPreview({ asset }) {
       return <img src={asset.preview || "/placeholder.svg"} alt={asset.name} className="w-full h-full object-cover" />
   }
 }
+export default MoreAssets
