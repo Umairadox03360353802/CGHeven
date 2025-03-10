@@ -33,9 +33,9 @@ function ProductSidebar() {
 
 
                 {/* Sidebar */}
-                <div className="w-full  border-l border-white/10 ">
+                <div className="w-full   ">
                     <div className="border-b border-white/10 px-0">
-                        <div className="">
+                       
                             {/* download formats and author profile */}
 
 
@@ -122,11 +122,11 @@ function ProductSidebar() {
                                 </div>
                             </div>
 
-                        </div>
+                        
                     </div>
-                    <ScrollArea className="h-[calc(90vh-90px)] ">
+                    {/* <ScrollArea className="h-[calc(80vh-90px)] "> */}
 
-                        <div className="space-y-0 h-screen relative  ">
+                        <div className="space-y-0 h-[80vh] relative  ">
 
 
                             {/* Square Ad */}
@@ -140,7 +140,7 @@ function ProductSidebar() {
             
                            
                             {/* Support Us on Patreon */}
-                            <div className="absolute bottom-0 w-full py-10">
+                            <div className="absolute bottom-0 w-full py-0">
                                  {/* Tags */}
                             <ProductTags />
 
@@ -172,7 +172,7 @@ function ProductSidebar() {
 
                         </div>
 
-                    </ScrollArea>
+                    {/* </ScrollArea> */}
                 </div>
             </div>
 
