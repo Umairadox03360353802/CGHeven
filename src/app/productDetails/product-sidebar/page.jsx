@@ -1,7 +1,7 @@
 "use client"
 import React from "react"
 import Link from "next/link"
-import Tags from "./product-tags/page"
+import ProductTags from "./product-tags/page"
 // import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
 // import { Sidebar, SidebarContent, SidebarHeader, SidebarProvider } from "@/components/ui/sidebar"
 // import { Sidebar, SidebarContent, SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
@@ -142,7 +142,7 @@ function ProductSidebar() {
                             {/* Support Us on Patreon */}
                             <div className="absolute bottom-0 w-full py-10">
                                  {/* Tags */}
-                            <Tags />
+                            <ProductTags />
 
                             <div className="w-full  mb-3  font-Oswald bg-gradient-to-br from-gray-900 to-gray-800 p-3  shadow-lg ">
                                 <div className="flex items-center ">

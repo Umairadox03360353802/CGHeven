@@ -5,7 +5,7 @@ import { Badge } from "@/components/ui/badge"
 
 
 
-export default function Tags({ tags = ["sun", "mountain", "view", "hilltop", "dam"] }) {
+export default function ProductTags({ tags = ["sun", "mountain", "view", "hilltop", "dam"] }) {
 
  
 
