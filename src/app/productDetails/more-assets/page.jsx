@@ -44,7 +44,7 @@ import { Lock } from "lucide-react"
 //       return <img src={asset.preview || "/placeholder.svg"} alt={asset.name} className="w-full h-full object-cover" />
 //   }
 // }
-export const assets = [
+const assets = [
   { id: 1, name: "Fire VFX", type: "VFX", isPremium: false, preview: "https://img.lovepik.com/bg/20240224/Revolutionary-Ecommerce-3D-Render-of-Computer-Shopping-Bags-and-Delivery_3696975_wh1200.jpg" },
   { id: 2, name: "Sci-Fi Weapon", type: "3D Model", isPremium: true, preview: "https://img.lovepik.com/bg/20240224/Revolutionary-Ecommerce-3D-Render-of-Computer-Shopping-Bags-and-Delivery_3696975_wh1200.jpg" },
   { id: 3, name: "Smoke Simulation", type: "VDB", isPremium: false, preview: "https://img.lovepik.com/bg/20240224/Revolutionary-Ecommerce-3D-Render-of-Computer-Shopping-Bags-and-Delivery_3696975_wh1200.jpg" },
