@@ -3,7 +3,11 @@
 
 import { Badge } from "@/components/ui/badge"
 
-
+/**
+ * Tags component for displaying tags
+ * @param {Object} props
+ * @param {string[]} [props.tags] - Tags to display
+ */
 
 export default function ProductTags({ tags = ["sun", "mountain", "view", "hilltop", "dam"] }) {
 
