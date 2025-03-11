@@ -52,8 +52,8 @@ function ProductTutorials() {
 										</div> */}
 							
 
-								<div key={index} className="bg-gray-800 rounded-lg  p-4 text-white">
-									<div className="aspect-square w-full bg-gray-700 rounded-lg mb-4   relative">
+								<div key={index} className="bg-gray-800 rounded-lg  p-4 text-white shadow-lg hover:shadow-teal-500/20 transition-all duration-300 transform hover:-translate-y-1">
+									<div className="aspect-auto w-full bg-gray-700 rounded-lg mb-4   relative">
 										{index % 2 === 0 && <Lock className="absolute top-2 right-2" />}
 										<iframe   src="https://www.youtube.com/embed/eRsGyueVLvQ" className='h-[300px] w-[365px] ' frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;  " allowfullscreen></iframe>
 
