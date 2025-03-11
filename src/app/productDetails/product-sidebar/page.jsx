@@ -35,116 +35,116 @@ function ProductSidebar() {
                 {/* Sidebar */}
                 <div className="w-full   ">
                     <div className="border-b border-white/10 px-0">
-                       
-                            {/* download formats and author profile */}
+
+                        {/* download formats and author profile */}
 
 
-                            <div className="flex items-center justify-between font-Oswald bg-teal-600 text-white px-4 pb-2 ">
-                                <div className="flex flex-col items-center  border-r-white">
-                                    <span className="text-sm pt-1 font-bold">4K</span>
-                                    <MdKeyboardArrowDown size={20} />
+                        <div className="flex items-center justify-between font-Oswald bg-teal-600 text-white px-4 pb-2 ">
+                            <div className="flex flex-col items-center  border-r-white">
+                                <span className="text-sm pt-1 font-bold">4K</span>
+                                <MdKeyboardArrowDown size={20} />
 
-                                </div>
-                                <div className="flex flex-col items-center mt-1  border-r-white">
-                                    <span ><SiBlender size={20} /></span>
-                                    <MdKeyboardArrowDown size={20} />
-
-                                </div>
-
-
-                                <MdDownload size={20} />
-                                <div className="flex flex-col items-center p-1 border-r-white">
-
-
-                                    <span className="text-base font-normal mr-0">Download</span>
-                                    <span className="text-sm font-light">252.58 MB</span>
-                                </div>
-
-                                <div>
-                                    <GiHamburgerMenu size={25} />
-
-                                </div>
                             </div>
-                            {/* profile */}
-                            <div className='flex flex-col justify-center items-center gap-4 mb-2'>
-
-                                <div className='flex flex-row justify-center font-Oswald items-center w-full mt-3'>
-                                    <h1 className='text-start text-white font-bold'>Author:</h1>
-                                    <div className='w-12 h-12 ml-2 rounded-full bg-slate-500'>
-                                        <img src="/main.jpg" className='rounded-full' alt="" />
-                                    </div>
-                                    <div className=' flex flex-col justify-center items-center text-white font-normal text-end ml-1'>
-                                        <h1>Ammar Khan</h1>
-                                        <div className="flex flex-row justify-center items-center gap-2">
-
-                                            <IoLinkSharp /><IoMail />
-                                        </div>
-
-                                    </div>
-
-
-                                    <div className='w-12 h-12 ml-0 rounded-full bg-slate-500'>
-                                        <img src="/main.jpg" className='rounded-full' alt="" />
-                                    </div>
-                                    <div className=' flex flex-col justify-center items-center text-white font-normal text-end ml-1'>
-                                        <h1>Ammar Khan</h1>
-                                        <div className="flex flex-row justify-center items-center gap-2">
-
-                                            <IoLinkSharp /><IoMail />
-                                        </div>
-
-                                    </div>
-                                </div>
-
+                            <div className="flex flex-col items-center mt-1  border-r-white">
+                                <span ><SiBlender size={20} /></span>
+                                <MdKeyboardArrowDown size={20} />
 
                             </div>
 
-                            {/* product details */}
-                            <div className="flex items-center justify-center  text-white p-2 w-full">
-                                <div className="flex flex-col items-center justify-center px-3">
-                                    <span className="text-lg font-semibold">CC0</span>
-                                    <span className="text-xs text-gray-400">License</span>
+
+                            <MdDownload size={20} />
+                            <div className="flex flex-col items-center p-1 border-r-white">
+
+
+                                <span className="text-base font-normal mr-0">Download</span>
+                                <span className="text-sm font-light">252.58 MB</span>
+                            </div>
+
+                            <div>
+                                <GiHamburgerMenu size={25} />
+
+                            </div>
+                        </div>
+                        {/* profile */}
+                        <div className='flex flex-col justify-center items-center gap-4 mb-2'>
+
+                            <div className='flex flex-row justify-center font-Oswald items-center w-full mt-3'>
+                                <h1 className='text-start text-white font-bold'>Author:</h1>
+                                <div className='w-12 h-12 ml-2 rounded-full bg-slate-500'>
+                                    <img src="/main.jpg" className='rounded-full' alt="" />
+                                </div>
+                                <div className=' flex flex-col justify-center items-center text-white font-normal text-end ml-1'>
+                                    <h1>Ammar Khan</h1>
+                                    <div className="flex flex-row justify-center items-center gap-2">
+
+                                        <IoLinkSharp /><IoMail />
+                                    </div>
+
                                 </div>
 
-                                <div className="flex flex-col items-center justify-center px-3">
-                                    <span className="text-lg font-semibold">22</span>
-                                    <span className="text-xs text-gray-400">EVs</span>
-                                </div>
 
-                                <div className="flex flex-col items-center justify-center px-3">
-                                    <span className="text-lg font-semibold">5539K</span>
-                                    <span className="text-xs text-gray-400">WB</span>
+                                <div className='w-12 h-12 ml-0 rounded-full bg-slate-500'>
+                                    <img src="/main.jpg" className='rounded-full' alt="" />
                                 </div>
+                                <div className=' flex flex-col justify-center items-center text-white font-normal text-end ml-1'>
+                                    <h1>Ammar Khan</h1>
+                                    <div className="flex flex-row justify-center items-center gap-2">
 
-                                <div className="flex flex-col items-center justify-center px-3">
-                                    <MapPin className="h-5 w-5 mb-1" />
-                                    <span className="text-xs text-gray-400">GPS</span>
+                                        <IoLinkSharp /><IoMail />
+                                    </div>
+
                                 </div>
                             </div>
 
-                        
+
+                        </div>
+
+                        {/* product details */}
+                        <div className="flex items-center justify-center  text-white p-2 w-full">
+                            <div className="flex flex-col items-center justify-center px-3">
+                                <span className="text-lg font-semibold">CC0</span>
+                                <span className="text-xs text-gray-400">License</span>
+                            </div>
+
+                            <div className="flex flex-col items-center justify-center px-3">
+                                <span className="text-lg font-semibold">22</span>
+                                <span className="text-xs text-gray-400">EVs</span>
+                            </div>
+
+                            <div className="flex flex-col items-center justify-center px-3">
+                                <span className="text-lg font-semibold">5539K</span>
+                                <span className="text-xs text-gray-400">WB</span>
+                            </div>
+
+                            <div className="flex flex-col items-center justify-center px-3">
+                                <MapPin className="h-5 w-5 mb-1" />
+                                <span className="text-xs text-gray-400">GPS</span>
+                            </div>
+                        </div>
+
+
                     </div>
                     {/* <ScrollArea className="h-[calc(80vh-90px)] "> */}
 
-                        <div className="space-y-0 h-[80vh] relative  ">
+                    <div className="space-y-0 h-[calc(90vh-90px)] relative  ">
 
-
-                            {/* Square Ad */}
-                            <div className="overflow-hidden  p-6">
-                                <div className="flex h-[300px] w-full rounded-lg items-center justify-center bg-black/40 backdrop-blur-sm">
-                                    <span className="text-sm text-gray-400">Advertisement</span>
-                                </div>
+                        
+                        {/* Square Ad */}
+                        <div className="overflow-hidden  p-6">
+                            <div className="flex h-[300px] w-full rounded-lg items-center justify-center bg-black/40 backdrop-blur-sm">
+                                <span className="text-sm text-gray-400">Advertisement</span>
                             </div>
-                            
+                        </div>
 
-            
-                           
-                            {/* Support Us on Patreon */}
-                            <div className="absolute bottom-0 w-full py-0">
-                                 {/* Tags */}
+
+
+
+                        {/* Support Us on Patreon */}
+                        <div className="absolute   bottom-0 w-full py-0">
+                            {/* Tags */}
                             <ProductTags />
 
-                            <div className="w-full  mb-3  font-Oswald bg-gradient-to-br from-gray-900 to-gray-800 p-3  shadow-lg ">
+                            <div className="w-full font-Oswald bg-gradient-to-br from-gray-900 to-gray-800 p-3  shadow-lg ">
                                 <div className="flex items-center ">
                                     <div className="flex h-8 w-8 items-center justify-center rounded mx-4 mb-2 text-white">
                                         <img src="rslogo1.png" className="h-10 w-10" alt="" />
@@ -165,12 +165,14 @@ function ProductSidebar() {
                                     <ExternalLink size={14} />
                                 </Link>
                             </div>
-                            </div>
-
-
-
-
+                            
+                            <div className="h-10  pb-0 bg-gray-900"></div>
                         </div>
+
+
+                        
+
+                    </div>
 
                     {/* </ScrollArea> */}
                 </div>

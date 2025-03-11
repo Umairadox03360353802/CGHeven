@@ -130,15 +130,17 @@ function ProductDetails() {
                                     <div className='w-full border-b border-gray-600'></div>
                                     {/* similar assets */}
                                     <MoreAssets />
-                                    <div className="flex flex-col w-full max-w-full h-auto items-center justify-center mx-auto bg-gray-900 border-b border-gray-600">
+                                    <ExclusiveAssets />
+                                    <ProductTutorials />
+                                    {/* <div className="flex flex-col w-full min-w-full  items-center justify-center  bg-gray-900 border-b border-gray-600"> */}
 
 
 
 
 
                                         {/*Exclusive partreon Assets and tutorials  */}
-                                        <ExclusiveAssets />
-                                        <ProductTutorials />
+                                        {/* <ExclusiveAssets /> */}
+                                        {/* <ProductTutorials /> */}
 
 
 
@@ -195,7 +197,7 @@ function ProductDetails() {
 
 
 
-                                    </div>
+                                    {/* </div> */}
                                     {/* <div className="flex w-full max-w-full h-60 items-center justify-center mx-auto bg-gray-900 border-b border-gray-600">
                                         <PatreonName />
                                     </div> */}

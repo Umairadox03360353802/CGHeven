@@ -20,7 +20,7 @@ import { Lock } from "lucide-react"
 //     );
 // };
 
-const exclusiveAssets = [
+const assets = [
     { id: 1, name: "Fire VFX", type: "VFX", isPremium: false, preview: "https://cdn.polyhaven.com/asset_img/thumbs/brass_goblets.png?width=450&height=300" },
   { id: 2, name: "Sci-Fi Weapon", type: "3D Model", isPremium: true, preview: "https://cdn.polyhaven.com/asset_img/thumbs/spray_paint_bottles.png?width=450&height=300" },
   { id: 3, name: "Smoke Simulation", type: "VDB", isPremium: false, preview: "https://cdn.polyhaven.com/asset_img/thumbs/rusty_metal_04.png?width=600&height=284" },
@@ -46,11 +46,11 @@ function ExclusiveAssets() {
 
     // ];
    
-       const [hoveredAsset, setHoveredAsset] = useState(null)
+ const [hoveredAsset, setHoveredAsset] = useState(null)
    
     return (
         <div>
-            <div className=" mx-auto px-10 py-3  ">
+            <div className=" mx-auto px-10 py-3 mt-6  ">
                 <div className='  text-white'>
                     <h1 className='font-extrabold font-Oswald text-4xl text-center mb-4 mt-2'>Exclusive Partreon Assets</h1>
 
@@ -65,31 +65,32 @@ function ExclusiveAssets() {
 
 
                     ))} */}
-                    {exclusiveAssets.map((asset) => (
-                        <div
-                            key={asset.id}
-                            className="bg-gray-800 rounded-lg overflow-hidden p-4 shadow-lg hover:shadow-teal-500/20 transition-all duration-300 transform hover:-translate-y-1"
-                            onMouseEnter={() => setHoveredAsset(asset.id)}
-                            onMouseLeave={() => setHoveredAsset(null)}
-                        >
-                            <div className="relative aspect-video  w-full">
-                                {hoveredAsset === asset.id ? (
-                                    <AssetPreview asset={asset} />
-                                ) : (
-                                    <img src={asset.preview || "/placeholder.svg"} alt={asset.name} className="w-full h-full object-contain  rounded-lg" />
-                                )}
-                                {asset.isPremium && (
-                                    <div className="absolute top-2 right-2 bg-orange-500 text-white p-1 rounded-full">
-                                        <Lock className="w-4 h-4" />
-                                    </div>
-                                )}
-                            </div>
-                            <div className="px-4 py-1">
-                                <h3 className="font-semibold mb-0 text-white">{asset.name}</h3>
-                                {/* <p className="text-sm text-gray-400">{asset.type}</p> */}
-                            </div>
-                        </div>
-                    ))}
+
+                    {assets.map((asset) => (
+                             <div
+                               key={asset.id}
+                               className="bg-gray-800 rounded-lg overflow-hidden p-4 shadow-lg hover:shadow-teal-500/20 transition-all duration-300 transform hover:-translate-y-1"
+                               onMouseEnter={() => setHoveredAsset(asset.id)}
+                               onMouseLeave={() => setHoveredAsset(null)}
+                             >
+                               <div className="relative aspect-video">
+                                 {hoveredAsset === asset.id ? (
+                                   <AssetPreview asset={asset} />
+                                 ) : (
+                                   <img src={asset.preview || "/placeholder.svg"} alt={asset.name} className="w-full h-full object-contain" />
+                                 )}
+                                 {asset.isPremium && (
+                                   <div className="absolute top-2 right-2 bg-orange-500 text-white p-1 rounded-full">
+                                     <Lock className="w-4 h-4" />
+                                   </div>
+                                 )}
+                               </div>
+                               <div className="px-4 py-1">
+                                 <h3 className="font-semibold   text-white">{asset.name}</h3>
+                                 {/* <p className="text-sm text-gray-400">{asset.type}</p> */}
+                               </div>
+                             </div>
+                           ))}
 
 
                 </div>
@@ -100,18 +101,18 @@ function ExclusiveAssets() {
 
 
 function AssetPreview({ asset }) {
-    switch (asset.type) {
-      case "VFX":
-        return <video src="" autoPlay loop muted className="w-full h-full object-contain" />
-      case "3D Model":
-        return <div className="w-full h-full bg-gray-700 flex items-center justify-center text-teal-500">3D Viewer</div>
-      case "Flipbook":
-        return (
-          <div className="w-full h-full bg-gray-700 flex items-center justify-center text-teal-500">Animated Sprite</div>
-        )
-      default:
-        return <img src={asset.preview || "/placeholder.svg"} alt={asset.name} className="w-full h-full object-contain" />
-    }
+  switch (asset.type) {
+    case "VFX":
+      return <video src="" autoPlay loop muted className="w-full h-full object-contain" />
+    case "3D Model":
+      return <div className="w-full h-full bg-gray-700 flex items-center justify-center text-teal-500">3D Viewer</div>
+    case "Flipbook":
+      return (
+        <div className="w-full h-full bg-gray-700 flex items-center justify-center text-teal-500">Animated Sprite</div>
+      )
+    default:
+      return <img src={asset.preview || "/placeholder.svg"} alt={asset.name} className="w-full h-full object-contain" />
   }
+}
 
 export default ExclusiveAssets
