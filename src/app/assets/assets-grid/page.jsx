@@ -13,6 +13,10 @@ const assets = [
   { id: 6, name: "Explosion Pack", type: "VFX", isPremium: false, preview: "https://cdn.polyhaven.com/asset_img/primary/qwantani_noon.png?height=118" },
   { id: 12, name: "Fire VFX", type: "VFX", isPremium: false, preview: "https://cdn.polyhaven.com/asset_img/thumbs/horse_head.png?width=450&height=300" },
   { id: 22, name: "Sci-Fi Weapon", type: "3D Model", isPremium: true, preview: "https://cdn.polyhaven.com/asset_img/thumbs/coast_sand_rocks_02.png?width=284&height=284" },
+  { id: 25, name: "Rusty Metal", type: "Texture", isPremium: true, preview: "https://cdn.polyhaven.com/asset_img/thumbs/aerial_rocks_01.png?width=284&height=284" },
+  { id: 26, name: "Explosion Pack", type: "VFX", isPremium: false, preview: "https://cdn.polyhaven.com/asset_img/primary/qwantani_noon.png?height=118" },
+  { id: 212, name: "Fire VFX", type: "VFX", isPremium: false, preview: "https://cdn.polyhaven.com/asset_img/thumbs/horse_head.png?width=450&height=300" },
+  { id: 222, name: "Sci-Fi Weapon", type: "3D Model", isPremium: true, preview: "https://cdn.polyhaven.com/asset_img/thumbs/coast_sand_rocks_02.png?width=284&height=284" },
 
 ]
 
@@ -22,7 +26,7 @@ export default function AssetsGrid() {
 
   return (
     <>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 overflow-x-hidden overflow-y-auto">
         {assets.map((asset) => (
           <div
             key={asset.id}
@@ -52,9 +56,9 @@ export default function AssetsGrid() {
       </div>
       {/*supprot on patreon  */}
       <div >
-        <div className="my-12 bg-gray-800 p-8 rounded-lg text-center">
+        <div className="my-12 bg-gray-800 p-8 font-Oswald rounded-lg text-center">
           <h2 className="text-3xl font-bold mb-4 text-teal-400">Support CGHeven on Patreon</h2>
-          <p className="text-lg text-white mb-6">Unlock exclusive assets, remove ads, and vote for future content!</p>
+          <p className="text-xl font-Alumni font-semibold text-white mb-6">Unlock exclusive assets, remove ads, and vote for future content!</p>
           <a
             href="#"
             className="inline-block px-8 py-4 bg-orange-500 text-white font-bold rounded-full text-lg hover:bg-orange-400 transition-colors animate-pulse"
@@ -65,7 +69,7 @@ export default function AssetsGrid() {
 
       {/* trending assets */}
       <div className="mt-10 pb-4">
-        <h1 className="text-white text-xl">Trending Assets</h1>
+        <h1 className="text-white font-Oswald font-bold text-2xl">Trending Assets</h1>
 
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">

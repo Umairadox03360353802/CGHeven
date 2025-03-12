@@ -8,7 +8,7 @@ function Assets() {
         <>
 
           
-            <div className='bg-gray-900 flex flex-row justify-center  items-start'>
+            <div className='bg-gray-900 flex flex-row justify-center overflow-y-auto h-screen  items-start'>
 
                 {/* left side */}
                 {/* <aside id="separator-sidebar" className="sticky left-0 top-0 bottom-0  w-[60vh] h-screen transition-transhtmlhtmlhtmlForm -translate-x-full sm:translate-x-0" aria-label="Sidebar">
