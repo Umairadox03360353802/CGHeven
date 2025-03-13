@@ -22,35 +22,49 @@ const assets = [
 
 
 export default function AssetsGrid() {
+   // Function to determine if a card should be an ad
+   const isAd = (index) => {
+    return index === 0 || (index + 1) % 12 === 0
+  }
   const [hoveredAsset, setHoveredAsset] = useState(null)
 
   return (
     <>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 overflow-x-hidden overflow-y-auto">
-        {assets.map((asset) => (
-          <div
-            key={asset.id}
-            className="bg-gray-800 rounded-lg overflow-hidden p-4 shadow-lg hover:shadow-teal-500/20 transition-all duration-300 transform hover:-translate-y-1"
-            onMouseEnter={() => setHoveredAsset(asset.id)}
-            onMouseLeave={() => setHoveredAsset(null)}
-          >
-            <div className="relative aspect-video">
-              {hoveredAsset === asset.id ? (
-                <AssetPreview asset={asset} />
-              ) : (
-                <img src={asset.preview || "/placeholder.svg"} alt={asset.name} className="w-full h-full object-contain" />
-              )}
-              {asset.isPremium && (
-                <div className="absolute top-2 right-2 bg-orange-500 text-white p-1 rounded-full">
-                  <Lock className="w-4 h-4" />
-                </div>
-              )}
-            </div>
-            <div className="px-4 py-1">
-              <h3 className="font-semibold   text-white">{asset.name}</h3>
-              {/* <p className="text-sm text-gray-400">{asset.type}</p> */}
-            </div>
+        {assets.map((asset,index) => (
+           isAd(index) ? 
+            //  ads card
+          <div className="overflow-hidden  py-2">
+          <div className="flex h-[300px] w-full rounded-lg items-center justify-center bg-black/40 backdrop-blur-sm">
+            <span className="text-sm text-gray-400">Advertisement</span>
           </div>
+        </div> :
+         
+        //  regular card
+           <div
+           key={asset.id}
+           className="bg-gray-800 rounded-lg overflow-hidden p-4 shadow-lg hover:shadow-teal-500/20 transition-all duration-300 transform hover:-translate-y-1"
+           onMouseEnter={() => setHoveredAsset(asset.id)}
+           onMouseLeave={() => setHoveredAsset(null)}
+         >
+           <div className="relative aspect-video">
+             {hoveredAsset === asset.id ? (
+               <AssetPreview asset={asset} />
+             ) : (
+               <img src={asset.preview || "/placeholder.svg"} alt={asset.name} className="w-full h-full object-contain" />
+             )}
+             {asset.isPremium && (
+               <div className="absolute top-2 right-2 bg-orange-500 text-white p-1 rounded-full">
+                 <Lock className="w-4 h-4" />
+               </div>
+             )}
+           </div>
+           <div className="px-4 py-1">
+             <h3 className="font-semibold   text-white">{asset.name}</h3>
+           </div>
+         </div>
+           
+          
         ))}
 
       </div>
@@ -73,30 +87,40 @@ export default function AssetsGrid() {
 
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-      {assets.map((asset) => (
-          <div
-            key={asset.id}
-            className="bg-gray-800 rounded-lg overflow-hidden p-4 shadow-lg hover:shadow-teal-500/20 transition-all duration-300 transform hover:-translate-y-1"
-            onMouseEnter={() => setHoveredAsset(asset.id)}
-            onMouseLeave={() => setHoveredAsset(null)}
-          >
-            <div className="relative aspect-video">
-              {hoveredAsset === asset.id ? (
-                <AssetPreview asset={asset} />
-              ) : (
-                <img src={asset.preview || "/placeholder.svg"} alt={asset.name} className="w-full h-full object-contain" />
-              )}
-              {asset.isPremium && (
-                <div className="absolute top-2 right-2 bg-orange-500 text-white p-1 rounded-full">
-                  <Lock className="w-4 h-4" />
-                </div>
-              )}
-            </div>
-            <div className="px-4 py-1">
-              <h3 className="font-semibold   text-white">{asset.name}</h3>
-              {/* <p className="text-sm text-gray-400">{asset.type}</p> */}
-            </div>
+      {assets.map((asset,index) => (
+           isAd(index) ? 
+            //  ads card
+          <div className="overflow-hidden  py-2">
+          <div className="flex h-[300px] w-full rounded-lg items-center justify-center bg-black/40 backdrop-blur-sm">
+            <span className="text-sm text-gray-400">Advertisement</span>
           </div>
+        </div> :
+         
+        //  regular card
+           <div
+           key={asset.id}
+           className="bg-gray-800 rounded-lg overflow-hidden p-4 shadow-lg hover:shadow-teal-500/20 transition-all duration-300 transform hover:-translate-y-1"
+           onMouseEnter={() => setHoveredAsset(asset.id)}
+           onMouseLeave={() => setHoveredAsset(null)}
+         >
+           <div className="relative aspect-video">
+             {hoveredAsset === asset.id ? (
+               <AssetPreview asset={asset} />
+             ) : (
+               <img src={asset.preview || "/placeholder.svg"} alt={asset.name} className="w-full h-full object-contain" />
+             )}
+             {asset.isPremium && (
+               <div className="absolute top-2 right-2 bg-orange-500 text-white p-1 rounded-full">
+                 <Lock className="w-4 h-4" />
+               </div>
+             )}
+           </div>
+           <div className="px-4 py-1">
+             <h3 className="font-semibold   text-white">{asset.name}</h3>
+           </div>
+         </div>
+           
+          
         ))}
 
       </div>

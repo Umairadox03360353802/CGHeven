@@ -31,9 +31,18 @@ export default function Sidebar() {
         ) : (
           <ChevronLeft className="w-6 h-6 text-teal-500" />
         )}
+
+
       </button>
       {!isCollapsed && (
         <div className="ml-4">
+          {/* Square Ad */}
+          <div className="overflow-hidden  py-2">
+            <div className="flex h-[300px] w-full rounded-lg items-center justify-center bg-black/40 backdrop-blur-sm">
+              <span className="text-sm text-gray-400">Advertisement</span>
+            </div>
+          </div>
+
           <h2 className="text-2xl font-bold mb-4 flex text-white items-center">
             <Filter className="mr-2 text-teal-500" /> Filters
           </h2>
@@ -43,7 +52,7 @@ export default function Sidebar() {
               <div className="space-y-2">
                 {category.options.map((option) => (
                   <label key={option} className="flex items-center">
-                    <input type="checkbox"  className="form-checkbox accent-teal-500 h-5 w-5 rounded" />
+                    <input type="checkbox" className="form-checkbox accent-teal-500 h-5 w-5 rounded" />
                     <span className="ml-2 font-Alumni font-semibold text-xl">{option}</span>
                   </label>
                 ))}
