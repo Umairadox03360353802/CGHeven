@@ -19,12 +19,38 @@ const assets = [
   { id: 222, name: "Sci-Fi Weapon", type: "3D Model", isPremium: true, preview: "https://cdn.polyhaven.com/asset_img/thumbs/coast_sand_rocks_02.png?width=284&height=284" },
 
 ]
+const trendingAssets = [
+  { id: 1, name: "Fire VFX", type: "VFX", isPremium: false, preview: "https://cdn.polyhaven.com/asset_img/thumbs/brass_goblets.png?width=450&height=300" },
+  { id: 2, name: "Sci-Fi Weapon", type: "3D Model", isPremium: true, preview: "https://cdn.polyhaven.com/asset_img/thumbs/spray_paint_bottles.png?width=450&height=300" },
+  { id: 3, name: "Smoke Simulation", type: "VDB", isPremium: false, preview: "https://cdn.polyhaven.com/asset_img/thumbs/rusty_metal_04.png?width=600&height=284" },
+  { id: 4, name: "Magic Particles", type: "Flipbook", isPremium: false, preview: "https://cdn.polyhaven.com/asset_img/primary/qwantani_noon.png?height=118" },
+  { id: 5, name: "Rusty Metal", type: "Texture", isPremium: true, preview: "https://cdn.polyhaven.com/asset_img/thumbs/aerial_rocks_01.png?width=284&height=284" },
+  { id: 6, name: "Explosion Pack", type: "VFX", isPremium: false, preview: "https://cdn.polyhaven.com/asset_img/primary/qwantani_noon.png?height=118" },
+  { id: 12, name: "Fire VFX", type: "VFX", isPremium: false, preview: "https://cdn.polyhaven.com/asset_img/thumbs/horse_head.png?width=450&height=300" },
+  { id: 22, name: "Sci-Fi Weapon", type: "3D Model", isPremium: true, preview: "https://cdn.polyhaven.com/asset_img/thumbs/coast_sand_rocks_02.png?width=284&height=284" },
+  { id: 25, name: "Rusty Metal", type: "Texture", isPremium: true, preview: "https://cdn.polyhaven.com/asset_img/thumbs/aerial_rocks_01.png?width=284&height=284" },
+  { id: 26, name: "Explosion Pack", type: "VFX", isPremium: false, preview: "https://cdn.polyhaven.com/asset_img/primary/qwantani_noon.png?height=118" },
+  { id: 212, name: "Fire VFX", type: "VFX", isPremium: false, preview: "https://cdn.polyhaven.com/asset_img/thumbs/horse_head.png?width=450&height=300" },
+  { id: 222, name: "Sci-Fi Weapon", type: "3D Model", isPremium: true, preview: "https://cdn.polyhaven.com/asset_img/thumbs/coast_sand_rocks_02.png?width=284&height=284" },
+  { id: 31, name: "Fire VFX", type: "VFX", isPremium: false, preview: "https://cdn.polyhaven.com/asset_img/thumbs/brass_goblets.png?width=450&height=300" },
+  { id: 32, name: "Sci-Fi Weapon", type: "3D Model", isPremium: true, preview: "https://cdn.polyhaven.com/asset_img/thumbs/spray_paint_bottles.png?width=450&height=300" },
+  { id: 33, name: "Smoke Simulation", type: "VDB", isPremium: false, preview: "https://cdn.polyhaven.com/asset_img/thumbs/rusty_metal_04.png?width=600&height=284" },
+  { id: 34, name: "Magic Particles", type: "Flipbook", isPremium: false, preview: "https://cdn.polyhaven.com/asset_img/primary/qwantani_noon.png?height=118" },
+  { id: 35, name: "Rusty Metal", type: "Texture", isPremium: true, preview: "https://cdn.polyhaven.com/asset_img/thumbs/aerial_rocks_01.png?width=284&height=284" },
+  { id: 36, name: "Explosion Pack", type: "VFX", isPremium: false, preview: "https://cdn.polyhaven.com/asset_img/primary/qwantani_noon.png?height=118" },
+  { id: 312, name: "Fire VFX", type: "VFX", isPremium: false, preview: "https://cdn.polyhaven.com/asset_img/thumbs/horse_head.png?width=450&height=300" },
+  { id: 322, name: "Sci-Fi Weapon", type: "3D Model", isPremium: true, preview: "https://cdn.polyhaven.com/asset_img/thumbs/coast_sand_rocks_02.png?width=284&height=284" },
+
+]
 
 
 export default function AssetsGrid() {
    // Function to determine if a card should be an ad
    const isAd = (index) => {
-    return index === 0 || (index + 1) % 12 === 0
+    return  index === 0  || (index + 1) % 12 === 0
+  }
+   const isVideoAd = (index) => {
+    return index === 0 
   }
   const [hoveredAsset, setHoveredAsset] = useState(null)
 
@@ -32,13 +58,23 @@ export default function AssetsGrid() {
     <>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 overflow-x-hidden overflow-y-auto">
         {assets.map((asset,index) => (
-           isAd(index) ? 
-            //  ads card
-          <div className="overflow-hidden  py-2">
-          <div className="flex h-[300px] w-full rounded-lg items-center justify-center bg-black/40 backdrop-blur-sm">
-            <span className="text-sm text-gray-400">Advertisement</span>
-          </div>
-        </div> :
+         isAd(index) ? 
+           isVideoAd(index) ? 
+             // video model ad
+             <div className="overflow-hidden py-2">
+               <div className="flex h-full w-full rounded-lg items-center justify-center bg-black/40 backdrop-blur-sm">
+                 <span className="text-sm text-gray-400">Model video</span>
+               </div>
+             </div>
+            : 
+             // ads card
+             <div className="overflow-hidden py-2">
+               <div className="flex h-full w-full rounded-lg items-center justify-center bg-black/40 backdrop-blur-sm">
+                 <span className="text-sm text-gray-400">Advertisement</span>
+               </div>
+             </div>
+           
+          :
          
         //  regular card
            <div
@@ -75,7 +111,7 @@ export default function AssetsGrid() {
           <p className="text-xl font-Alumni font-semibold text-white mb-6">Unlock exclusive assets, remove ads, and vote for future content!</p>
           <a
             href="#"
-            className="inline-block px-8 py-4 bg-orange-500 text-white font-bold rounded-full text-lg hover:bg-orange-400 transition-colors animate-pulse"
+            className="inline-block px-8 py-4 bg-orange-500 text-white font-bold rounded-lg text-lg hover:bg-orange-400 transition-colors animate-pulse"
           >
             Become a Patron
           </a>
@@ -87,11 +123,11 @@ export default function AssetsGrid() {
 
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-      {assets.map((asset,index) => (
-           isAd(index) ? 
+      {trendingAssets.map((asset,index) => (
+          (index + 1) % 20 === 0  ? 
             //  ads card
           <div className="overflow-hidden  py-2">
-          <div className="flex h-[300px] w-full rounded-lg items-center justify-center bg-black/40 backdrop-blur-sm">
+          <div className="flex h-full w-full rounded-lg items-center justify-center bg-black/40 backdrop-blur-sm">
             <span className="text-sm text-gray-400">Advertisement</span>
           </div>
         </div> :

@@ -38,7 +38,7 @@ export default function Sidebar() {
         <div className="ml-4">
           {/* Square Ad */}
           <div className="overflow-hidden  py-2">
-            <div className="flex h-[300px] w-full rounded-lg items-center justify-center bg-black/40 backdrop-blur-sm">
+            <div className="flex h-[250px] w-[250px] rounded-lg items-center justify-center bg-black/40 backdrop-blur-sm">
               <span className="text-sm text-gray-400">Advertisement</span>
             </div>
           </div>
