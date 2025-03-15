@@ -52,8 +52,7 @@ const trendingAssets = [
   {  name: "Magic Particles", type: "Flipbook", isPremium: false, preview: "https://cdn.polyhaven.com/asset_img/primary/qwantani_noon.png?height=118" },
   {  name: "Rusty Metal", type: "Texture", isPremium: true, preview: "https://cdn.polyhaven.com/asset_img/thumbs/aerial_rocks_01.png?width=284&height=284" },
   {  name: "Explosion Pack", type: "VFX", isPremium: false, preview: "https://cdn.polyhaven.com/asset_img/primary/qwantani_noon.png?height=118" },
-  {  name: "Fire VFX", type: "VFX", isPremium: false, preview: "https://cdn.polyhaven.com/asset_img/thumbs/horse_head.png?width=450&height=300" },
-  {  name: "Sci-Fi Weapon", type: "3D Model", isPremium: true, preview: "https://cdn.polyhaven.com/asset_img/thumbs/coast_sand_rocks_02.png?width=284&height=284" },
+
 
 ]
 
@@ -65,7 +64,7 @@ export default function AssetsGrid() {
  
   // Function to determine if a card should be an ad
   const isAd = (index) => {
-    return index === 0 || (index + 1) % 9 === 0
+    return index === 0 || (index + 1) % 12 === 0
   }
   const isVideoAd = (index) => {
     return index === 0
@@ -90,13 +89,13 @@ export default function AssetsGrid() {
         let isAd = false
 
         // Right side ad: 4th position (index 3) in the 4th row (index 3)
-        if (row === 3 && col === 3) {
+        if (row === 3 && col === 0) {
           isAd = true
         }
 
         // Left side ad: 1st position (index 0) in the 8th row (index 7)
         // This creates a 4-row gap between the right ad (row 3) and left ad (row 7)
-        if (row === 7 && col === 0) {
+        if (row === 7 && col === 3) {
           isAd = true
         }
 
@@ -115,7 +114,7 @@ export default function AssetsGrid() {
 
   return (
     <>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 overflow-x-hidden overflow-y-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 overflow-x-hidden overflow-y-auto [&::-webkit-scrollbar]:hidden">
         {assets.map((asset, index) => (
           isAd(index) ?
             isVideoAd(index) ?
