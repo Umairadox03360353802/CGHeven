@@ -88,12 +88,12 @@ export default function AssetsGrid() {
 
         let isAd = false
 
-        // Right side ad: 4th position (index 3) in the 4th row (index 3)
+        // Right side ad: 1th position (index 0) in the 4th row (index 3)
         if (row === 3 && col === 0) {
           isAd = true
         }
 
-        // Left side ad: 1st position (index 0) in the 8th row (index 7)
+        // Left side ad: 4st position (index 3) in the 8th row (index 7)
         // This creates a 4-row gap between the right ad (row 3) and left ad (row 7)
         if (row === 7 && col === 3) {
           isAd = true

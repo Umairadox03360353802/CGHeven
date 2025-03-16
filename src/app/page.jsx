@@ -100,14 +100,12 @@ export default function Home() {
         <div className="mb-[10vh] bg-black"></div>
         <AboutUs />
         <div className="mb-[10vh] bg-black"></div>
-        <CommunityRender />
-        <div className="mb-[10vh] bg-black"></div>
+        
         <JoinCommunity />
         <div className="mb-[10vh] bg-black"></div>
         <Blogs />
         <div className="mb-[10vh] bg-black"></div>
-        <PatreonName />
-        <div className="border border-gray-700"></div>
+       
       </div>
 
       {/* <ContactUs/> */}

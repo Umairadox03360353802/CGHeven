@@ -8,7 +8,7 @@ function SupportUs() {
     <>
       
       <section className="space-y-6 bg-gray-800 font-Oswald p-8 rounded-lg text-white">
-      <h1 className='font-extrabold font-Oswald text-6xl text-center mb-8 mt-2'>Support CGHeven</h1>
+      <h1 className='font-extrabold font-Oswald text-6xl text-center mb-8 mt-2'>Support CGHEVEN</h1>
       <p className="text-center text-lg text-gray-300">
           Your support helps us create more free assets and tutorials for the community
         </p>
@@ -21,7 +21,7 @@ function SupportUs() {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-gray-300  text-xl ">Access Patreon-only assets and tutorials</p>
+              <p className="text-gray-300 font-Alumni font-bold text-xl ">Access Patreon-only assets and tutorials</p>
             </CardContent>
           </Card>
           <Card className="bg-gray-700 border-gray-600 text-white">
@@ -32,7 +32,7 @@ function SupportUs() {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-gray-300 text-xl">Enjoy CGHeven without any advertisements</p>
+              <p className="text-gray-300 font-Alumni font-bold text-xl">Enjoy CGHeven without any advertisements</p>
             </CardContent>
           </Card>
           <Card className="bg-gray-700 border-gray-600 text-white">
@@ -43,7 +43,7 @@ function SupportUs() {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-gray-300 text-xl">Help shape the future of CGHeven</p>
+              <p className="text-gray-300 font-Alumni font-bold text-xl">Help shape the future of CGHeven</p>
             </CardContent>
           </Card>
         </div>

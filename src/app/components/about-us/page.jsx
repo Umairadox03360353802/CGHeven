@@ -27,7 +27,7 @@ function AboutUs() {
             <img src="/main1.png" alt="Ammar Khan" width={400} height={400} className="rounded-full mx-auto" />
           </div>
           <div className="md:w-1/2 text-center font-Alumni text-white md:text-left">
-            <h2 className="text-6xl  font-extrabold font-Oswald mb-6">The Vision Behind CGHeven</h2>
+            <h2 className="text-6xl  font-extrabold font-Oswald mb-6">The Vision Behind CGHEVEN</h2>
             <p className="text-xl font-bold mb-8">
               CGHeven was born from a passion to democratize high-quality VFX and 3D assets. Our mission is to empower
               creators worldwide by providing free, professional-grade resources that fuel imagination and bring ideas

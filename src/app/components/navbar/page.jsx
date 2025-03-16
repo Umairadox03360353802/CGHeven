@@ -34,7 +34,7 @@ function Navbar() {
                   className="w-full h-full"
                 />
               </div>
-              <span className="text-white text-xl font-Oswald font-semibold">CGHeven</span>
+              <span className="text-white text-xl font-Oswald font-semibold">CGHEVEN</span>
             </Link>
             {/* dropdown */}
             <NavigationMenu className="py-0 mt-2 flex flex-row items-center left-20 mr-auto ">

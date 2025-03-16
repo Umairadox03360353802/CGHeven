@@ -22,7 +22,7 @@ function JoinCommunity() {
         <div className='bg-[#0a1022]  flex flex-col justify-between items-center  rounded-2xl mx-20 px-10 py-6  border border-gray-800'>
           <div className='px-10 py-5   flex flex-col justify-center items-center  rounded-3xl'>
             <h1 className='text-white text-6xl font-extrabold p-5 mb-4 font-Oswald'>Join the Community</h1>
-            <p className='text-slate-400 text-lg px-20 max-w-xl text-center pt-3 font-VarelaRound'>Thanks to your donations, we can work sustainably on growing our library of assets and improving our standard of quality.</p>
+            <p className='text-slate-400  px-20 max-w-xl text-center pt-3 font-Alumni font-extrabold text-xl'>Thanks to your donations, we can work sustainably on growing our library of assets and improving our standard of quality.</p>
           </div>
           <div className="relative w-100 py-6 flex flex-row justify-start items-center gap-5  text-start text-white">
 

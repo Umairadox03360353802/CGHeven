@@ -21,18 +21,19 @@ function HeroSection() {
             <img className="object-cover w-full h-full  " src="/p1.png" alt="" />
             {/* <div className="absolute inset-0 bg-transparent bg-opacity-90 backdrop-blur-sm"></div> */}
           </div>
-          <div className="relative z-10 text-center space-y-8 max-w-5xl mx-auto rounded-2xl shadow-2xl py-7 px-36 backdrop-blur-md bg-white/5
+          <div className="relative z-10 text-center space-y-2 max-w-5xl mx-auto rounded-2xl shadow-2xl py-4 px-7 backdrop-blur-md bg-white/5
                           bg-clip-padding">
-            <h1 className="text-5xl font-Oswald font-bold text-teal-400">CGHeven</h1>
-            <p className="text-2xl  text-gray-300">Your Gateway to Free 3D & VFX Assets</p>
+            <h1 className="text-5xl font-Oswald font-bold text-teal-400">CGHEVEN</h1>
+            <p className="text-2xl font-bold font-Alumni text-gray-300">Your Gateway to Free 3D & VFX Assets</p>
             <div className="flex items-center max-w-2xl mx-auto">
-              <Input
+              <input
                 type="search"
+                border-none
                 placeholder="Find Free 3D & VFX Assets"
-                className="flex-grow py-6 bg-gray-800 border-teal-500 text-white placeholder-gray-400"
+                className="flex-grow py-4 mb-2 px-2  focus:outline-none h-12  bg-gray-800 rounded-r-none rounded-l-lg border border-teal-500 text-white placeholder-gray-400"
               />
-              <Button className="ml-2 bg-teal-500 hover:bg-teal-600 text-white">
-                <Search className="w-5 h-5" />
+              <Button className="mr-0 w-20 h-11 rounded-l-none bg-teal-500 hover:bg-teal-600 text-white">
+                <Search  className="w-7 h-7" />
               </Button>
             </div>
            
