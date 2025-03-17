@@ -2,7 +2,7 @@
 import React from "react"
 import { useState, useEffect } from "react"
 import { Lock } from "lucide-react"
-import Link from "next/link";
+// import Link from "next/link";
 // import SupportUs from "../../components/support-us/page"
 
 const assets = [
@@ -58,7 +58,7 @@ const trendingAssets = [
 ]
 
 
-export default function AssetsGrid() {
+export default function SubAssetsGrid() {
 
 
 
@@ -89,14 +89,14 @@ export default function AssetsGrid() {
 
         let isAd = false
 
-        // Right side ad: 1th position (index 0) in the 4th row (index 3)
-        if (row === 3 && col === 0) {
+        // Right side ad: 4th position (index 3) in the 4th row (index 3)
+        if (row === 3 && col === 3) {
           isAd = true
         }
 
-        // Left side ad: 4st position (index 3) in the 8th row (index 7)
+        // Left side ad: 1st position (index 0) in the 8th row (index 7)
         // This creates a 4-row gap between the right ad (row 3) and left ad (row 7)
-        if (row === 7 && col === 3) {
+        if (row === 7 && col === 0) {
           isAd = true
         }
 
@@ -116,8 +116,7 @@ export default function AssetsGrid() {
   return (
     <>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 overflow-x-hidden overflow-y-auto [&::-webkit-scrollbar]:hidden">
-        {assets.map((asset, index) => (
-          
+        {/* {assets.map((asset, index) => (
           isAd(index) ?
             isVideoAd(index) ?
               // video model ad
@@ -137,8 +136,6 @@ export default function AssetsGrid() {
             :
 
             //  regular card
-            <Link href="/assets/sub-assets" key={index} >
-
             <div
               key={asset.id}
               className="bg-gray-800 rounded-lg overflow-hidden p-4 shadow-lg hover:shadow-teal-500/20 transition-all duration-300 transform hover:-translate-y-1"
@@ -161,14 +158,13 @@ export default function AssetsGrid() {
                 <h3 className="font-semibold   text-white">{asset.name}</h3>
               </div>
             </div>
-            </Link>
 
 
-        ))}
+        ))} */}
 
       </div>
       {/*supprot on patreon  */}
-      <div >
+      {/* <div >
         <div className="my-12 bg-gray-800 p-8 font-Oswald rounded-lg text-center">
           <h2 className="text-3xl font-bold mb-4 text-teal-400">Support CGHeven on Patreon</h2>
           <p className="text-xl font-Alumni font-semibold text-white mb-6">Unlock exclusive assets, remove ads, and vote for future content!</p>
@@ -179,16 +175,32 @@ export default function AssetsGrid() {
             Become a Patron
           </a>
         </div>   
-         </div>
+         </div> */}
 
-      {/* trending assets */}
+      {/* sub-category assets */}
       <div className="mt-10 pb-4">
-        <h1 className="text-white font-Oswald font-bold text-2xl">Trending Assets</h1>
+        <h1 className="text-white font-Oswald font-bold text-2xl">Sub Assets</h1>
 
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
         {items.map((asset, index) => 
-         asset.category === "card" ?  //  regular card
+         asset.category === "ad"  ?
+    
+         // ads card
+         <div key={asset.id} className="overflow-hidden py-2">
+           <div className="flex h-full w-full rounded-lg items-center justify-center bg-black/40 backdrop-blur-sm">
+             <span className="text-sm text-gray-400">Advertisement</span>
+           </div>
+         </div>:
+              isVideoAd(index) ?
+              // video model ad
+              <div key={asset.id} className="overflow-hidden py-2">
+                <div className="flex h-full w-full rounded-lg items-center justify-center bg-black/40 backdrop-blur-sm">
+                  <span className="text-sm text-gray-400">Model video</span>
+                </div>
+              </div>
+              :
+          //  regular card
          <div
            key={asset.id}
            className="bg-gray-800 rounded-lg overflow-hidden p-4 shadow-lg hover:shadow-teal-500/20 transition-all duration-300 transform hover:-translate-y-1"
@@ -210,13 +222,7 @@ export default function AssetsGrid() {
            <div className="px-4 py-1">
              <h3 className="font-semibold   text-white">{asset.name}</h3>
            </div>
-         </div> : 
-          // ads card 
-         <div key={asset.id} className="overflow-hidden  py-2">
-                <div className="flex h-full w-full rounded-lg items-center justify-center bg-black/40 backdrop-blur-sm">
-                  <span className="text-sm text-gray-400">Advertisement</span>
-                </div>
-              </div>,
+         </div>  
         
         
        )}
