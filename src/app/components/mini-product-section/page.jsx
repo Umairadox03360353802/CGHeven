@@ -1,6 +1,8 @@
 "use client"
 import React from 'react'
+import { useEffect, useState } from 'react';
 import {  Lock } from "lucide-react"
+import ReactPlayer from 'react-player'
 
 import { Card, CardContent, CardHeader, CardTitle, CardFooter } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -73,7 +75,15 @@ const cards = [
 ];
 
 
+
+
 function MiniProductsSection() {
+
+	const [isClient, setIsClient] = useState(false);
+
+	useEffect(() => {
+	  setIsClient(true);
+	}, []);
 	return (
 		<>
 
@@ -115,10 +125,12 @@ function MiniProductsSection() {
 									<SwiperSlide key={index} className='py-14 px-4'>
 										<Link href="/youTube/video-home" key={index}>
 											<div key={index} className="bg-gray-800 rounded-lg  p-4 text-white shadow-lg hover:shadow-teal-500/20 transition-all duration-300 transform hover:-translate-y-1">
-												<div className="aspect-video w-[375px] bg-gray-700 rounded-lg mb-4 mx-auto  relative">
+												<div className="aspect-video   bg-gray-700 rounded-lg mb-4 mx-auto  relative">
 													{index % 2 === 0 && <Lock className="absolute top-2 right-2" />}
-													<iframe src="https://www.youtube.com/embed/eRsGyueVLvQ" className='h-[300px] w-full ' frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;  " allowfullscreen></iframe>
-
+													{/* <iframe src="https://www.youtube.com/embed/eRsGyueVLvQ" className='h-[300px] w-full ' frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;  " allowfullscreen></iframe> */}
+													{isClient  && 
+													<ReactPlayer url='https://www.youtube.com/watch?v=LXb3EKWsInQ' width='100%' height='100%' controls />
+												}
 												</div>
 												<h3 className="font-bold mb-2">Tutorial Title</h3>
 												<p className="text-sm text-gray-400 mb-2">Short description...</p>
