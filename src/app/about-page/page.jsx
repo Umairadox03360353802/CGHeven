@@ -1,250 +1,406 @@
-import Link from 'next/link'
-import React from 'react'
+import Link from "next/link"
+import Image from "next/image"
+import { Button } from "@/components/ui/button"
+import {
+  CuboidIcon as Cube,
+  Film,
+  Paintbrush,
+  CheckCircle,
+  Zap,
+  Users,
+  RefreshCw,
+  Layers,
+  Youtube,
+  Instagram,
+  Twitter,
+  Linkedin,
+  Mail,
+} from "lucide-react"
 
 function AboutUs() {
     return (
         <>
-            <div className='max-w-full mx-auto py-5 bg-[#0a1022] '>
-                <div className='text-white text-center flex flex-row justify-center items-center mb-5 mt-6 '>
-                     <div className='text-white text-center flex flex-col justify-center items-center '>
+               <div className="min-h-screen bg-gradient-to-b from-black to-slate-900 text-white">
+      {/* Header */}
+      {/* <header className="container mx-auto py-6 px-4 flex justify-between items-center">
+        <div className="flex items-center gap-2">
+          <Cube className="h-8 w-8 text-purple-500" />
+          <span className="text-2xl font-bold">CGHeven</span>
+        </div>
+        <nav className="hidden md:flex gap-8">
+          <Link href="#about" className="hover:text-purple-400 transition-colors">
+            About
+          </Link>
+          <Link href="#mission" className="hover:text-purple-400 transition-colors">
+            Mission
+          </Link>
+          <Link href="#features" className="hover:text-purple-400 transition-colors">
+            Features
+          </Link>
+          <Link href="#contact" className="hover:text-purple-400 transition-colors">
+            Contact
+          </Link>
+        </nav>
+        <Button className="bg-purple-600 hover:bg-purple-700">Sign Up</Button>
+      </header> */}
 
-                    <h1 className='text-5xl m-4 font-extrabold font-Montserrat'>About Us</h1>
-                    <p className='text-md mb-5 font-medium max-w-xl font-VarelaRound'>CGHeven is a one-person mission to provide free, high-quality CG assets and tutorials to empower creators worldwide. Built with passion and dedication, it’s driven by a love for the CG community and a desire to make professional resources accessible to everyone. By supporting CGHeven, you’re helping to grow a platform that values creativity, learning, and collaboration.</p>
-                     </div>
-
-                    <div className='w-64 h-64'>
-                        <img src="/main1.png" alt="" />
-
-                    </div>
-
-                </div>
-                {/* FAQ */}
-
-                <div className="max-w-4xl px-4 py-10 sm:px-6 lg:px-0 lg:py-14 mx-auto">
-                    {/* <!-- Title --> */}
-                    <div className="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
-                        <h2 className="text-2xl font-Montserrat font-bold md:text-4xl md:leading-tight text-white">Your questions, answered</h2>
-                        <p className="mt-1 text-neutral-400">Answers to the most frequently asked questions.</p>
-                    </div>
-                    {/* <!-- End Title --> */}
-
-                    <div className="max-w-5xl mx-auto">
-                        {/* <!-- Accordion --> */}
-                        <div className="hs-accordion-group">
-                            <div className="hs-accordion hs-accordion-active:bg-gray-100 rounded-xl p-6 dark:hs-accordion-active:bg-white/10 active" id="hs-basic-with-title-and-arrow-stretched-heading-one">
-                                <button className="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-xl font-bold font-Montserrat text-start  rounded-lg transition text-neutral-200 hover:text-neutral-400 focus:text-neutral-400" aria-expanded="true" aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-one">
-                                    Can I cancel at anytime?
-                                    <svg className="hs-accordion-active:hidden block shrink-0 size-5 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" stroke-inejoin="round"><path d="m6 9 6 6 6-6" /></svg>
-                                    <svg className="hs-accordion-active:block hidden shrink-0 size-5 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" stroke-inejoin="round"><path d="m18 15-6-6-6 6" /></svg>
-                                </button>
-                                <div id="hs-basic-with-title-and-arrow-stretched-collapse-one" className="hs-accordion-content w-full overflow-hidden transition-[height] duration-300" role="region" aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-one">
-                                    <p className="text-neutral-200 font-VarelaRound">
-                                        Yes, you can cancel anytime no questions are asked while you cancel but we would highly appreciate if you will give us some feedback.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div className="hs-accordion hs-accordion-active:bg-gray-100 rounded-xl p-6 dark:hs-accordion-active:bg-white/10" id="hs-basic-with-title-and-arrow-stretched-heading-two">
-                                <button className="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-xl font-bold text-start  rounded-lg transition  text-neutral-200 hover:text-neutral-400 focus:text-neutral-400" aria-expanded="true" aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-two">
-                                    My team has credits. How do we use them?
-                                    <svg className="hs-accordion-active:hidden block shrink-0 size-5  group-hover:text-gray-500 text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m6 9 6 6 6-6" /></svg>
-                                    <svg className="hs-accordion-active:block hidden shrink-0 size-5  group-hover:text-gray-500 text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m18 15-6-6-6 6" /></svg>
-                                </button>
-                                <div id="hs-basic-with-title-and-arrow-stretched-collapse-two" className="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" role="region" aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-two">
-                                    <p className="text-neutral-200 font-VarelaRound">
-                                        Once your team signs up for a subscription plan. This is where we sit down, grab a cup of coffee and dial in the details.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div className="hs-accordion hs-accordion-active:bg-gray-100 rounded-xl p-6 dark:hs-accordion-active:bg-white/10" id="hs-basic-with-title-and-arrow-stretched-heading-three">
-                                <button className="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-xl font-bold font-Montserrat text-start text-gray-800 rounded-lg transition hover:text-gray-500 focus:outline-none focus:text-gray-500 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400" aria-expanded="false" aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-three">
-                                    How does Preline's pricing work?
-                                    <svg className="hs-accordion-active:hidden block shrink-0 size-5  group-hover:text-gray-500 text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m6 9 6 6 6-6" /></svg>
-                                    <svg className="hs-accordion-active:block hidden shrink-0 size-5  group-hover:text-gray-500 text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m18 15-6-6-6 6" /></svg>
-                                </button>
-                                <div id="hs-basic-with-title-and-arrow-stretched-collapse-three" className="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" role="region" aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-three">
-                                    <p className=" text-neutral-200 font-VarelaRound">
-                                        Our subscriptions are tiered. Understanding the task at hand and ironing out the wrinkles is key.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div className="hs-accordion hs-accordion-active:bg-gray-100 rounded-xl p-6 dark:hs-accordion-active:bg-white/10" id="hs-basic-with-title-and-arrow-stretched-heading-four">
-                                <button className="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-xl font-bold font-Montserrat text-start text-gray-800 rounded-lg transition hover:text-gray-500 focus:outline-none focus:text-gray-500 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400" aria-expanded="false" aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-four">
-                                    How secure is Preline?
-                                    <svg className="hs-accordion-active:hidden block shrink-0 size-5  group-hover:text-gray-500 text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m6 9 6 6 6-6" /></svg>
-                                    <svg className="hs-accordion-active:block hidden shrink-0 size-5  group-hover:text-gray-500 text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m18 15-6-6-6 6" /></svg>
-                                </button>
-                                <div id="hs-basic-with-title-and-arrow-stretched-collapse-four" className="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" role="region" aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-four">
-                                    <p className="text-neutral-200 font-VarelaRound">
-                                        Protecting the data you trust to Preline is our first priority. This part is really crucial in keeping the project in line to completion.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div className="hs-accordion hs-accordion-active:bg-gray-100 rounded-xl p-6 dark:hs-accordion-active:bg-white/10" id="hs-basic-with-title-and-arrow-stretched-heading-five">
-                                <button className="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-xl font-bold font-Montserrat text-start text-gray-800 rounded-lg transition hover:text-gray-500 focus:outline-none focus:text-gray-500 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400" aria-expanded="false" aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-five">
-                                    How do I get access to a theme I purchased?
-                                    <svg className="hs-accordion-active:hidden block shrink-0 size-5  group-hover:text-gray-500 text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m6 9 6 6 6-6" /></svg>
-                                    <svg className="hs-accordion-active:block hidden shrink-0 size-5  group-hover:text-gray-500 text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m18 15-6-6-6 6" /></svg>
-                                </button>
-                                <div id="hs-basic-with-title-and-arrow-stretched-collapse-five" className="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" role="region" aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-five">
-                                    <p className="text-neutral-200 font-VarelaRound">
-                                        If you lose the link for a theme you purchased, don't panic! We've got you covered. You can login to your account, tap your avatar in the upper right corner, and tap Purchases. If you didn't create a login or can't remember the information, you can use our handy Redownload page, just remember to use the same email you originally made your purchases with.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div className="hs-accordion hs-accordion-active:bg-gray-100 rounded-xl p-6 dark:hs-accordion-active:bg-white/10" id="hs-basic-with-title-and-arrow-stretched-heading-six">
-                                <button className="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-xl font-bold font-Montserrat text-start text-gray-800 rounded-lg transition hover:text-gray-500 focus:outline-none focus:text-gray-500 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400" aria-expanded="false" aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-six">
-                                    Upgrade License Type
-                                    <svg className="hs-accordion-active:hidden block shrink-0 size-5  group-hover:text-gray-500 text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m6 9 6 6 6-6" /></svg>
-                                    <svg className="hs-accordion-active:block hidden shrink-0 size-5  group-hover:text-gray-500 text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m18 15-6-6-6 6" /></svg>
-                                </button>
-                                <div id="hs-basic-with-title-and-arrow-stretched-collapse-six" className="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" role="region" aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-six">
-                                    <p className="text-neutral-200 font-VarelaRound">
-                                        There may be times when you need to upgrade your license from the original type you purchased and we have a solution that ensures you can apply your original purchase cost to the new license purchase.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        {/* <!-- End Accordion --> */}
-                    </div>
-                </div>
-                {/* <!-- End FAQ --W*/}
-
-                <div className='w-full flex flex-col justify-center items-start px-44'>
-                    <h1 className='text-white font-bold font-Montserrat text-4xl mb-6 mt-10'>Asset License</h1>
-
-                    <p className="mb-3 text-gray-300 font-VarelaRound ">All assets <a href="#" className="font-medium  underline text-blue-500 hover:text-blue-600  hover:no-underline"> HDRIs, textures </a>and<a href="#" className="font-medium  underline text-blue-500 hover:text-blue-600  hover:no-underline"> 3D Models</a> on this site are the original work of Poly Haven staff, or artists who willingly and directly donate/sell their work to Poly Haven.</p>
-                    <p className="mb-3 text-gray-300 font-VarelaRound ">Our assets are all licensed as <a href="#" className="font-medium  underline text-blue-500 hover:text-blue-600  hover:no-underline"> CC0</a>, which is effectively  <a href="#" className="font-medium  underline text-blue-500 hover:text-blue-600  hover:no-underline">Public Domain</a> even in jurisdictions that do not support the Public Domain.</p>
-                    <p className="mb-3 text-gray-300 font-VarelaRound ">Here's an excerpt from the <a href="#" className="font-medium  underline text-blue-500 hover:text-blue-600  hover:no-underline">CC0 FAQ page</a> to clarify:</p>
-                    <p className="mb-3 text-gray-500 font-VarelaRound dark:text-gray-400">"Once the creator or a subsequent owner of a work applies CC0 to a work, the work is no longer his or hers in any meaningful sense under copyright law. Anyone can then use the work in any way and for any purpose, including commercial purposes [...] Think of CC0 as the "no rights reserved" option. CC0 is a useful tool for clarifying that you do not claim copyright in a work anywhere in the world".</p>
-                    <p className="mb-3  font-VarelaRound text-gray-300">In other words:</p>
-
-                    <ul className="max-w-5xl space-y-1 list-disc font-VarelaRound  list-inside text-gray-300 ml-6">
-                        <li>
-                            <span className="font-bold    text-white">You can use our assets for any purpose</span> , including commercial work.
-                        </li>
-                        <li>
-                            <span className="font-bold   text-white">You do not need to give credit</span> or attribution when using them (although it is appreciated).
-                        </li>
-                        <li>
-                            <span className="font-bold   text-white">You can redistribute them</span> , share them around, include them when sharing your own work, or even in a product you sell.
-                        </li>
-                    </ul>
-                    <p className="mb-3 mt-5 text-gray-300 font-VarelaRound ">More info: <a href="#" className="font-medium  underline text-blue-500 hover:text-blue-600  hover:no-underline">CC0 summary, CC0 wiki, CC0 FAQ.</a> </p>
-
-                    <h1 className='text-white font-bold font-Montserrat text-4xl mb-6 mt-10'>Why CC0?</h1>
-                    <p className="mb-3  font-VarelaRound text-gray-300">We believe the benefits of using this license outweigh the obvious drawbacks for us as a business. <br />
-
-                        Yes it's possible that unethical users can (and do) resell our work for their own profit, at the cost of unwitting customers who didn't know they were purchasing content they could get here for free. <br />
-                        But what the 3D industry as a whole gains from our work being so freely available is immeasurable <br />
-
-                        3D art is also only the tip of the iceberg, we've heard from numerous data scientists, software developers, automotive engineers and AI researchers all using our assets in their work, which simply wouldn't be possible with more restrictive (even open source) licenses. <br />
-
-                        We don't have anything against Copyright in general, we simply believe we can do more good in the world by providing as much freedom as possible. <br />
-
-                        If you benefit from our work financially, e.g. by including our assets in a product you sell, or simply make frequent use of them in your own work, please consider <a href="" className='font-medium  underline text-blue-500 hover:text-blue-600  hover:no-underline'>supporting us on Patreon</a>  with a small monthly donation in order to help us continue to produce more assets and maintain this platform.</p>
-
-                    <h1 className='text-white font-bold font-Montserrat text-4xl mb-6 mt-10'>Terms of Service</h1>
-                    <p className='mb-3  font-VarelaRound text-gray-300'>
-                        Although our assets are shared under the CC0 license, and our code is open source, we maintain a standard Terms of Service agreement to prevent any misuse of this website (polyhaven.com).
-                    </p>
-                    <h1 className='text-white font-bold font-Montserrat text-4xl mb-6 mt-10'>1. Acceptance of Terms</h1>
-                    <p className='mb-3  font-VarelaRound text-gray-300'>
-                        By using this website, you agree to be bound by these Terms of Service (ToS). If you do not agree with any of these terms, please refrain from using this website.
-                    </p>
-                    <h1 className='text-white font-bold font-Montserrat text-4xl mb-6 mt-10'>2. Changes to Terms</h1>
-                    <p className='mb-3  font-VarelaRound text-gray-300'>
-                        We reserve the right to modify these ToS at any time. It is your responsibility to review these terms periodically for any changes. Your continued use of the website after any changes to the ToS constitutes your acceptance of those changes.
-                    </p>
-                    <h1 className='text-white font-bold font-Montserrat text-4xl mb-6 mt-10'>3. Use of the Website</h1>
-                    <p className='mb-3  font-VarelaRound text-gray-300'>
-                        3.1. You agree to use this website for lawful purposes only.
-
-                    </p>
-                    <p className='mb-3  font-VarelaRound text-gray-300'>
-                        3.2. You must not engage in any activity that may disrupt or interfere with the proper functioning of the website, including but not limited to:
-
-                    </p>
-                    <ul className="max-w-4xl font-VarelaRound space-y-1 text-gray-300 list-disc list-inside ml-6">
-                        <li>
-                        Web scraping or data mining without express permission.                        </li>
-                        <li>
-                        Distributed denial-of-service (DDoS) attacks.
-                        </li>
-                        <li>
-                        Unauthorized access to website resources or user accounts.
-                        </li>
-                        <li>
-                        Posting malicious code, malware, or any harmful content.
-                        </li>
-                        <li>
-                        Engaging in any form of harassment or abuse towards other users.
-                        </li>
-                    </ul>
-                    <h1 className='text-white font-bold font-Montserrat text-4xl mb-6 mt-10'>4. Intellectual Property</h1>
-                    <p className='mb-3  font-VarelaRound text-gray-300'>
-                    4.1. All content on this website, excluding the CC0 assets themselves, is protected by intellectual property laws. You may not reproduce,<br /> distribute, or otherwise use this content without prior written permission from the website or intellectual property owner.
-
-
-                    </p>
-                    <p className='mb-3  font-VarelaRound text-gray-300'>
-                    4.2. Examples of such content includes but is not limited to:
-
-
-                    </p>
-                    <ul className="max-w-4xl font-VarelaRound space-y-1 text-gray-300 list-disc list-inside ml-6 ">
-                        <li>
-                        <a href="" className='font-medium  underline text-blue-500 hover:text-blue-600  hover:no-underline'>Logos</a>                     
-                         </li>
-                        <li>
-                        User avatar images
-                        </li>
-                        <li>
-                        Asset thumbnails and example renders
-                        </li>
-                        <li>
-                        User renders
-                        </li>
-                        <li>
-                        Asset metadata such as tags and categories
-                        </li>
-                    </ul>
-
-                    <h1 className='text-white font-bold font-Montserrat text-4xl mb-6 mt-10'>5. Public API</h1>
-                    <p className='mb-3  font-VarelaRound text-gray-300'>
-                    The use of the public API hosted at api.polyhaven.com is governed by separate API Terms. By using the public API, you agree to abide by the <a href="" className='font-medium  underline text-blue-500 hover:text-blue-600  hover:no-underline'>API Terms</a> in addition to these Terms of Service.    
-                    </p>
-                    <h1 className='text-white font-bold font-Montserrat text-4xl mb-6 mt-10'>6. Privacy</h1>
-                    <p className='mb-3  font-VarelaRound text-gray-300'>
-                    Your use of this website is also governed by our <Link className='font-medium  underline text-blue-500 hover:text-blue-600  hover:no-underline' href="/about-page/privacy">Privacy Policy</Link> . By using this website, you consent to the collection, use, and disclosure of your information as described in the Privacy Policy.    
-                    </p>
-                    <h1 className='text-white font-bold font-Montserrat text-4xl mb-6 mt-10'>7. Termination</h1>
-                    <p className='mb-3  font-VarelaRound text-gray-300'>
-                    We reserve the right to terminate or suspend your access to the website at our discretion, without notice, for any breach of these ToS or for any other reason.                    </p>
-                    <h1 className='text-white font-bold font-Montserrat text-4xl mb-6 mt-10'>8. Disclaimer</h1>
-                    <p className='mb-3  font-VarelaRound text-gray-300'>
-                    The website is provided "as is" without any warranties, express or implied. We do not guarantee that the website will be error-free or uninterrupted. You use the website at your own risk.                    </p>
-                    <h1 className='text-white font-bold font-Montserrat text-4xl mb-6 mt-10'>9. Limitation of Liability</h1>
-                    <p className='mb-3  font-VarelaRound text-gray-300'>
-                    To the extent permitted by law, we shall not be liable for any direct, indirect, incidental, consequential, or special damages arising from or related to your use of the website.                    </p>
-                    <h1 className='text-white font-bold font-Montserrat text-4xl mb-6 mt-10'>10. Governing Law</h1>
-                    <p className='mb-3  font-VarelaRound text-gray-300'>
-                    These ToS are governed by and construed in accordance with the laws of South Africa. Any disputes arising from these ToS or your use of the website shall be subject to the exclusive jurisdiction of the courts in South Africa                    </p>
-                    <h1 className='text-white font-bold font-Montserrat text-4xl mb-6 mt-10'>11. Contact Information</h1>
-                    <p className='mb-3  font-VarelaRound text-gray-300'>
-                    If you have any questions or concerns about these ToS, please<a href="" className='font-medium  underline text-blue-500 hover:text-blue-600  hover:no-underline'>contact us.</a>
-                    </p>
-
-
-
-                </div>
-
-
+      {/* Hero Section */}
+      <section className="container mx-auto px-4 py-20 flex flex-col md:flex-row items-center gap-12">
+        <div className="flex-1 space-y-6">
+          <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+            The Ultimate Hub for{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400">
+              3D Creators
+            </span>
+          </h1>
+          <p className="text-lg text-gray-300 max-w-2xl">
+            Empowering game developers, filmmakers, and digital artists with high-quality 3D assets, VFX elements, and
+            tools that bring ideas to life.
+          </p>
+          <div className="flex flex-wrap gap-4">
+            <Button className="bg-purple-600 hover:bg-purple-700 text-lg px-8 py-6">Explore Assets</Button>
+            <Button
+              variant="outline"
+              className="text-lg px-8 py-6 border-purple-500 text-purple-400 hover:bg-purple-950/50"
+            >
+              Join Community
+            </Button>
+          </div>
+        </div>
+        <div className="flex-1 relative h-[400px] w-full rounded-xl overflow-hidden shadow-2xl shadow-purple-500/20">
+          <img
+            src="/main1.png"
+            alt="3D Assets Showcase"
+            fill
+            className="object-contain w-full h-full  object-center"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+          <div className="absolute bottom-6 left-6 right-6 flex gap-4">
+            <div className="bg-black/60 backdrop-blur-sm p-2 rounded-lg">
+              <Cube className="h-6 w-6 text-purple-400" />
             </div>
+            <div className="bg-black/60 backdrop-blur-sm p-2 rounded-lg">
+              <Film className="h-6 w-6 text-cyan-400" />
+            </div>
+            <div className="bg-black/60 backdrop-blur-sm p-2 rounded-lg">
+              <Paintbrush className="h-6 w-6 text-pink-400" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Categories Section */}
+      <section className="container mx-auto px-4 py-16">
+        <h2 className="text-3xl font-bold text-center mb-12">Discover Premium Assets</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {[
+            { title: "3D Models", icon: <Cube className="h-10 w-10" />, color: "bg-purple-500" },
+            { title: "VFX Elements", icon: <Film className="h-10 w-10" />, color: "bg-cyan-500" },
+            { title: "Digital Tools", icon: <Paintbrush className="h-10 w-10" />, color: "bg-pink-500" },
+          ].map((category, index) => (
+            <div
+              key={index}
+              className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 hover:bg-slate-800 transition-all hover:shadow-lg hover:shadow-purple-500/10 group"
+            >
+              <div
+                className={`${category.color} p-4 rounded-lg inline-block mb-4 group-hover:scale-110 transition-transform`}
+              >
+                {category.icon}
+              </div>
+              <h3 className="text-xl font-bold mb-2">{category.title}</h3>
+              <p className="text-gray-400">High-quality assets optimized for both real-time and cinematic use.</p>
+              <Button
+                variant="link"
+                className="text-purple-400 p-0 mt-4 group-hover:translate-x-2 transition-transform"
+              >
+                Explore {category.title} →
+              </Button>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Founder Section */}
+      <section id="about" className="container mx-auto px-4 py-20 flex flex-col md:flex-row items-center gap-12">
+        <div className="flex-1 relative h-[400px] w-full rounded-xl overflow-hidden shadow-2xl shadow-purple-500/20 order-2 md:order-1">
+          <img
+            src="/main1.png"
+            alt="Ammar Khan - Founder of CGHeven"
+            fill
+            className="object-contain w-full h-full object-center"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+          <div className="absolute bottom-6 left-6 right-6 flex gap-4">
+            <Link
+              href="#"
+              className="bg-black/60 backdrop-blur-sm p-2 rounded-lg hover:bg-purple-600/80 transition-colors"
+            >
+              <Youtube className="h-5 w-5" />
+            </Link>
+            <Link
+              href="#"
+              className="bg-black/60 backdrop-blur-sm p-2 rounded-lg hover:bg-purple-600/80 transition-colors"
+            >
+              <Instagram className="h-5 w-5" />
+            </Link>
+            <Link
+              href="#"
+              className="bg-black/60 backdrop-blur-sm p-2 rounded-lg hover:bg-purple-600/80 transition-colors"
+            >
+              <Twitter className="h-5 w-5" />
+            </Link>
+            <Link
+              href="#"
+              className="bg-black/60 backdrop-blur-sm p-2 rounded-lg hover:bg-purple-600/80 transition-colors"
+            >
+              <Linkedin className="h-5 w-5" />
+            </Link>
+          </div>
+        </div>
+        <div className="flex-1 space-y-6 order-1 md:order-2">
+          <h2 className="text-3xl md:text-4xl font-bold">Meet the Founder</h2>
+          <h3 className="text-xl md:text-2xl font-semibold text-purple-400">Ammar Khan – Visionary Behind CGHeven</h3>
+          <p className="text-gray-300">
+            The driving force behind CGHeven, Ammar Khan is a 3D artist, VFX creator, and entrepreneur passionate about
+            revolutionizing digital asset accessibility. With years of experience in visual effects, 3D animation, and
+            digital content creation, he founded CGHeven to bridge the gap between high-quality assets and creators
+            worldwide.
+          </p>
+          <div className="pt-4">
+            <Button className="bg-purple-600 hover:bg-purple-700">Learn More About Ammar</Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Mission Section */}
+      <section id="mission" className="bg-slate-900/80 py-20">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">Our Mission</h2>
+          <div className="max-w-3xl mx-auto text-center mb-16">
+            <p className="text-xl text-gray-300">
+              At <span className="font-bold">CGHeven</span>, we believe in making{" "}
+              <span className="text-purple-400 font-semibold">high-quality 3D assets available to everyone.</span> Our
+              goal is to <span className="text-cyan-400 font-semibold">streamline the creative process</span> for
+              professionals and enthusiasts alike.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              {
+                title: "Top-Tier Assets",
+                description: "Optimized for both real-time and cinematic use.",
+                icon: <CheckCircle className="h-8 w-8 text-purple-500" />,
+              },
+              {
+                title: "Accessible Resources",
+                description: "Free & premium assets for all skill levels.",
+                icon: <Zap className="h-8 w-8 text-cyan-500" />,
+              },
+              {
+                title: "Innovation-Driven",
+                description: "Regularly updated models, textures, and effects.",
+                icon: <RefreshCw className="h-8 w-8 text-pink-500" />,
+              },
+              {
+                title: "Thriving Community",
+                description: "A space for creators to collaborate and push boundaries.",
+                icon: <Users className="h-8 w-8 text-green-500" />,
+              },
+            ].map((item, index) => (
+              <div
+                key={index}
+                className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 hover:translate-y-[-5px] transition-all"
+              >
+                <div className="mb-4">{item.icon}</div>
+                <h3 className="text-xl font-bold mb-2">{item.title}</h3>
+                <p className="text-gray-400">{item.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section id="features" className="container mx-auto px-4 py-20">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">Why Choose CGHeven?</h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          {[
+            {
+              title: "Premium Quality",
+              description: "Every asset is crafted with precision, ensuring maximum performance.",
+              icon: <CheckCircle className="h-12 w-12 text-purple-500" />,
+            },
+            {
+              title: "For Artists, By Artists",
+              description: "Created with firsthand industry knowledge and expertise.",
+              icon: <Paintbrush className="h-12 w-12 text-cyan-500" />,
+            },
+            {
+              title: "Constant Evolution",
+              description: "We keep up with trends, updating and expanding our library.",
+              icon: <RefreshCw className="h-12 w-12 text-pink-500" />,
+            },
+            {
+              title: "Seamless Integration",
+              description: "Assets tailored for use in Blender, Unreal Engine, Unity, Houdini, and more.",
+              icon: <Layers className="h-12 w-12 text-green-500" />,
+            },
+          ].map((feature, index) => (
+            <div key={index} className="flex gap-6">
+              <div className="shrink-0">{feature.icon}</div>
+              <div>
+                <h3 className="text-xl font-bold mb-2">{feature.title}</h3>
+                <p className="text-gray-300">{feature.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="mt-20 bg-gradient-to-r from-purple-900/50 to-cyan-900/50 rounded-2xl p-8 md:p-12">
+          <div className="text-center max-w-3xl mx-auto">
+            <h3 className="text-2xl md:text-3xl font-bold mb-6">Join the CGHeven Revolution</h3>
+            <p className="text-lg text-gray-300 mb-8">
+              CGHeven is more than just a website—it's a movement for digital creators who want
+              <span className="text-purple-400 font-semibold"> access to the best 3D content without limitations.</span>{" "}
+              Whether you need assets for
+              <span className="text-cyan-400 font-semibold"> games, movies, or advertisements</span>, we're here to
+              elevate your work.
+            </p>
+            <Button className="bg-purple-600 hover:bg-purple-700 text-lg px-8 py-6">Step into CGHeven</Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Software Compatibility */}
+      <section className="container mx-auto px-4 py-16">
+        <h2 className="text-2xl font-bold text-center mb-12">Compatible With Your Favorite Software</h2>
+        <div className="flex flex-wrap justify-center gap-8 md:gap-16">
+          {["Blender", "Unreal Engine", "Unity", "Houdini", "Maya", "Cinema 4D"].map((software, index) => (
+            <div key={index} className="text-center opacity-70 hover:opacity-100 transition-opacity">
+              <div className="bg-slate-800 rounded-full h-20 w-20 flex items-center justify-center mb-3 mx-auto">
+                <span className="text-xl font-bold">{software.charAt(0)}</span>
+              </div>
+              <p className="text-sm">{software}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="bg-gradient-to-r from-purple-900 to-cyan-900 py-20">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your Creative Process?</h2>
+          <p className="text-xl text-gray-200 max-w-2xl mx-auto mb-10">
+            Join thousands of creators who are already using CGHeven to bring their visions to life.
+          </p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <Button className="bg-white text-purple-900 hover:bg-gray-100 text-lg px-8 py-6">Get Started Now</Button>
+            <Button variant="outline" className="border-white text-white hover:bg-white/10 text-lg px-8 py-6">
+              View Asset Library
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      {/* <footer id="contact" className="bg-black py-12">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+            <div className="space-y-4">
+              <div className="flex items-center gap-2">
+                <Cube className="h-6 w-6 text-purple-500" />
+                <span className="text-xl font-bold">CGHeven</span>
+              </div>
+              <p className="text-gray-400">
+                The ultimate hub for 3D creators, providing high-quality assets for your creative projects.
+              </p>
+              <div className="flex gap-4">
+                <Link href="#" className="text-gray-400 hover:text-purple-400">
+                  <Youtube className="h-5 w-5" />
+                </Link>
+                <Link href="#" className="text-gray-400 hover:text-purple-400">
+                  <Instagram className="h-5 w-5" />
+                </Link>
+                <Link href="#" className="text-gray-400 hover:text-purple-400">
+                  <Twitter className="h-5 w-5" />
+                </Link>
+                <Link href="#" className="text-gray-400 hover:text-purple-400">
+                  <Linkedin className="h-5 w-5" />
+                </Link>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-lg font-bold mb-4">Quick Links</h3>
+              <ul className="space-y-2">
+                <li>
+                  <Link href="#" className="text-gray-400 hover:text-purple-400">
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#about" className="text-gray-400 hover:text-purple-400">
+                    About
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#mission" className="text-gray-400 hover:text-purple-400">
+                    Mission
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#features" className="text-gray-400 hover:text-purple-400">
+                    Features
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="text-lg font-bold mb-4">Resources</h3>
+              <ul className="space-y-2">
+                <li>
+                  <Link href="#" className="text-gray-400 hover:text-purple-400">
+                    3D Models
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="text-gray-400 hover:text-purple-400">
+                    VFX Elements
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="text-gray-400 hover:text-purple-400">
+                    Tutorials
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="text-gray-400 hover:text-purple-400">
+                    Blog
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="text-lg font-bold mb-4">Contact Us</h3>
+              <div className="flex items-center gap-3 text-gray-400 mb-3">
+                <Mail className="h-5 w-5 text-purple-500" />
+                <span>contact@cgheven.com</span>
+              </div>
+              <Button className="bg-purple-600 hover:bg-purple-700 w-full">Send Message</Button>
+            </div>
+          </div>
+
+          <div className="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
+            <p>© {new Date().getFullYear()} CGHeven. All rights reserved.</p>
+          </div>
+        </div>
+      </footer> */}
+    </div>
         </>
     )
 }

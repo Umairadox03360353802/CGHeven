@@ -3,13 +3,13 @@ import React from 'react'
 function Footer() {
   return (
     <>
-      <footer className="relative w-full mb-20">
+      <footer className="relative w-full mb-4">
         <div className="w-full px-8 mx-auto  ">
           <div className="flex flex-row justify-center px-0">
 
 
 
-            <div className="grid justify-between grid-cols-4 gap-x-0 pl-16  mt-20">
+            <div className="grid justify-between grid-cols-4 gap-x-0 pl-16  mt-10">
               <div className=' mt-0 font-Oswald  '>
 
                 <div className='flex flex-col justify-start items-start  pl-0'>
