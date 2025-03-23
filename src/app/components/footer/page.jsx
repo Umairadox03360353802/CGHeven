@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 function Footer() {
   return (
@@ -53,14 +54,14 @@ function Footer() {
                   Company
                 </p>
                 <li>
-                  <a href="#" className="block font-Alumni font-semibold text-white py-1 hover:text-slate-500 focus:text-slate-500 text-xl">
+                  <Link href="/about-page" className="block font-Alumni font-semibold text-white py-1 hover:text-slate-500 focus:text-slate-500 text-xl">
                     About us
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="block font-Alumni font-semibold text-white py-1 hover:text-slate-500 focus:text-slate-500 text-xl">
-                    Careers
-                  </a>
+                  <Link href="/contact-page" className="block font-Alumni font-semibold text-white py-1 hover:text-slate-500 focus:text-slate-500 text-xl">
+                    Contact us
+                  </Link>
                 </li>
                 <li>
                   <a href="#" className="block font-Alumni font-semibold text-white py-1 hover:text-slate-500 focus:text-slate-500 text-xl">
