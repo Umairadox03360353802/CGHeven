@@ -20,7 +20,7 @@ import {
 function AboutUs() {
     return (
         <>
-               <div className="min-h-screen bg-gradient-to-b from-black to-slate-900 text-white">
+               <div className="min-h-screen bg-gray-900 text-white">
       {/* Header */}
       {/* <header className="container mx-auto py-6 px-4 flex justify-between items-center">
         <div className="flex items-center gap-2">
@@ -101,7 +101,7 @@ function AboutUs() {
           ].map((category, index) => (
             <div
               key={index}
-              className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 hover:bg-slate-800 transition-all hover:shadow-lg hover:shadow-purple-500/10 group"
+              className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 hover:bg-gray-700 transition-all hover:shadow-lg hover:shadow-purple-500/10 group"
             >
               <div
                 className={`${category.color} p-4 rounded-lg inline-block mb-4 group-hover:scale-110 transition-transform`}
