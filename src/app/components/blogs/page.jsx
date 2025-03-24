@@ -160,7 +160,7 @@ function Blogs() {
                 </div>
             </section>
 
-            <div className="my-[15vh] bg-black"></div>
+            <div className="my-[2vh] bg-black"></div>
         </div>
     )
 }

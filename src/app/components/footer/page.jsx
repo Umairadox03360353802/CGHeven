@@ -102,10 +102,34 @@ function Footer() {
             </div>
           </div>
           <div className="flex flex-col items-center justify-center w-full py-4 mt-12 border-t border-slate-200 md:flex-row md:justify-between">
-            <p className="block mb-4 text-lg text-center text-slate-500 md:mb-0">
+            {/* <p className="block mb-4 text-lg text-center text-slate-500 md:mb-0">
               Copyright © 2024
               <a href="https://material-tailwind.com/">Material Tailwind</a>. All
-              Rights Reservwhite  </p>
+              Rights Reservwhite  </p> */}
+
+            <div className="flex flex-wrap justify-center items-center space-x-2">
+              <Link href="#" className="text-gray-500 hover:text-gray-300">
+                Copyright © CGHEVEN 2025
+              </Link>
+              <span className="text-gray-400">|</span>
+              <Link href="mailto:Support@productioncrate.com" className=" text-gray-500 hover:text-gray-300">
+                Support@productioncrate.com
+              </Link>
+              <span className="text-gray-400">|</span>
+              <Link href="#" className="text-gray-500 hover:text-gray-300">
+                Affiliate Program
+              </Link>
+              <span className="text-gray-400">|</span>
+              <Link href="#" className="text-gray-500 hover:text-gray-300">
+                Privacy Policy
+              </Link>
+              <span className="text-gray-400">|</span>
+              <Link href="#" className="text-gray-500 hover:text-gray-300">
+                Terms
+              </Link>
+            </div>
+
+
             <div className="flex gap-4 text-slate-600 sm:justify-center">
               <a href="#" className="block transition-opacity text-inherit hover:opacity-80">
                 <svg className="w-12 h-12" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">

@@ -104,7 +104,7 @@ export default function Home() {
         <JoinCommunity />
         <div className="mb-[10vh] bg-black"></div>
         <Blogs />
-        <div className="mb-[10vh] bg-black"></div>
+        {/* <div className="mb-[2vh] bg-black"></div> */}
        
       </div>
 
