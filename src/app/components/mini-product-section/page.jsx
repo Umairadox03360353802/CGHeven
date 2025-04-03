@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 import { useEffect, useState } from 'react';
-import {  Lock } from "lucide-react"
+import { Lock } from "lucide-react"
 import ReactPlayer from 'react-player'
 
 import { Card, CardContent, CardHeader, CardTitle, CardFooter } from "@/components/ui/card"
@@ -82,21 +82,46 @@ function MiniProductsSection() {
 	const [isClient, setIsClient] = useState(false);
 
 	useEffect(() => {
-	  setIsClient(true);
+		setIsClient(true);
 	}, []);
 	return (
 		<>
 
 
 			<section className="space-y-0 px-5 text-center  py-3">
-				<h2 className="text-6xl font-Oswald font-bold text-white">Latest Tutorials</h2>
-				<Tabs defaultValue="all" className='text-left  '>
-					<TabsList className='h-16  font-Oswald font-bold  mx-8'>
-						<TabsTrigger className='text-xl' value="all">All</TabsTrigger>
-						<TabsTrigger className='text-xl' value="blender">Blender</TabsTrigger>
-						<TabsTrigger className='text-xl' value="unreal">Unreal</TabsTrigger>
-						<TabsTrigger className='text-xl' value="houdini">Houdini</TabsTrigger>
-						<TabsTrigger className='text-xl' value="substance">Substance</TabsTrigger>
+				<h2 className="text-6xl mb-5 font-Oswald font-bold text-white">Latest Tutorials</h2>
+				<Tabs defaultValue="all" className='md:text-left text-center  '>
+					<TabsList className='h-12 sm:h-16 font-Oswald font-bold mx-2 sm:mx-4 md:mx-8  overflow-x-auto'>
+						<TabsTrigger
+							className='text-base sm:text-xl px-2 sm:px-4 py-1 sm:py-2 whitespace-nowrap'
+							value="all"
+						>
+							All
+						</TabsTrigger>
+						<TabsTrigger
+							className='text-base sm:text-xl px-2 sm:px-4 py-1 sm:py-2 whitespace-nowrap'
+							value="blender"
+						>
+							Blender
+						</TabsTrigger>
+						<TabsTrigger
+							className='text-base sm:text-xl px-2 sm:px-4 py-1 sm:py-2 whitespace-nowrap'
+							value="unreal"
+						>
+							Unreal
+						</TabsTrigger>
+						<TabsTrigger
+							className='text-base sm:text-xl px-2 sm:px-4 py-1 sm:py-2 whitespace-nowrap'
+							value="houdini"
+						>
+							Houdini
+						</TabsTrigger>
+						<TabsTrigger
+							className='text-base sm:text-xl px-2 sm:px-4 py-1 sm:py-2 whitespace-nowrap'
+							value="substance"
+						>
+							Substance
+						</TabsTrigger>
 					</TabsList>
 					<TabsContent value="all" className="mt-6">
 						<div className="pl-8">
@@ -128,9 +153,9 @@ function MiniProductsSection() {
 												<div className="aspect-video   bg-gray-700 rounded-lg mb-4 mx-auto  relative">
 													{index % 2 === 0 && <Lock className="absolute top-2 right-2" />}
 													{/* <iframe src="https://www.youtube.com/embed/eRsGyueVLvQ" className='h-[300px] w-full ' frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;  " allowfullscreen></iframe> */}
-													{isClient  && 
-													<ReactPlayer url='https://www.youtube.com/watch?v=LXb3EKWsInQ' width='100%' height='100%' controls />
-												}
+													{isClient &&
+														<ReactPlayer url='https://www.youtube.com/watch?v=LXb3EKWsInQ' width='100%' height='100%' controls />
+													}
 												</div>
 												<h3 className="font-bold mb-2">Tutorial Title</h3>
 												<p className="text-sm text-gray-400 mb-2">Short description...</p>

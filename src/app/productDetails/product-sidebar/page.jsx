@@ -2,6 +2,15 @@
 import React from "react"
 import Link from "next/link"
 import ProductTags from "./product-tags/page"
+import HamburgerDrawer from "./hamburger-drawer/page"
+import {
+    DropdownMenu,
+    DropdownMenuContent,
+    DropdownMenuItem,
+    DropdownMenuLabel,
+    DropdownMenuSeparator,
+    DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
 // import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
 // import { Sidebar, SidebarContent, SidebarHeader, SidebarProvider } from "@/components/ui/sidebar"
 // import { Sidebar, SidebarContent, SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
@@ -13,7 +22,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMail } from "react-icons/io5";
 import { IoLinkSharp } from "react-icons/io5";
 import { ExternalLink } from "lucide-react"
-import { MapPin } from "lucide-react"
+import { MapPin,FileArchive } from "lucide-react"
 
 
 
@@ -41,27 +50,65 @@ function ProductSidebar() {
 
                         <div className="flex items-center justify-between font-Oswald bg-teal-600 text-white px-4 pb-2 ">
                             <div className="flex flex-col items-center  border-r-white">
-                                <span className="text-sm pt-1 font-bold">4K</span>
-                                <MdKeyboardArrowDown size={20} />
+                                <DropdownMenu>
+                                    <DropdownMenuTrigger asChild>
+                                        <div>
+
+                                        <span className="text-sm pt-1 font-bold">4K</span>
+                                        <MdKeyboardArrowDown size={20} />
+                                        </div>
+
+                                    </DropdownMenuTrigger>
+                                    <DropdownMenuContent align="center"   className=" flex flex-col items-center bg-gray-800 text-white">
+                                        <DropdownMenuItem>
+                                            <h1>1K</h1>
+                                        </DropdownMenuItem>
+                                        <DropdownMenuItem>
+                                            <h1>2K</h1>
+                                        </DropdownMenuItem>
+                                    </DropdownMenuContent>
+
+                                </DropdownMenu>
 
                             </div>
+
                             <div className="flex flex-col items-center mt-1  border-r-white">
-                                <span ><SiBlender size={20} /></span>
+                                <DropdownMenu>
+                                    <DropdownMenuTrigger asChild>
+
+                                    <div>
+                                <span ><FileArchive size={20} /></span>
                                 <MdKeyboardArrowDown size={20} />
+                                    </div>
+                                    </DropdownMenuTrigger>
+                                    <DropdownMenuContent align="center" className=" flex flex-col items-center bg-gray-800 text-white">
+                                        <DropdownMenuItem>
+                                        <SiBlender className="mr-0 h-4 w-4" />
+                                        <span>Blend</span>
+                                        </DropdownMenuItem>
+                                        <DropdownMenuItem>
+                                        <FileArchive className="mr-0 h-4 w-4" />
+                                        <span>zip file</span>
+                                        </DropdownMenuItem>
+                                    </DropdownMenuContent>
+
+                                </DropdownMenu>
 
                             </div>
-
 
                             <MdDownload size={20} />
+                            <Link href="./logo.png" target="_blank" download rel="noopener noreferrer" >
                             <div className="flex flex-col items-center p-1 border-r-white">
 
 
                                 <span className="text-base font-normal mr-0">Download</span>
                                 <span className="text-sm font-light">252.58 MB</span>
                             </div>
+                            </Link>
 
-                            <div>
-                                <GiHamburgerMenu size={25} />
+                            <div className=" cursor-pointer">
+                                {/* <GiHamburgerMenu size={25} /> */}
+                                <HamburgerDrawer/>
 
                             </div>
                         </div>
@@ -128,7 +175,7 @@ function ProductSidebar() {
 
                     <div className="space-y-0 h-[calc(90vh-90px)] relative  ">
 
-                        
+
                         {/* Square Ad */}
                         <div className="overflow-hidden  p-6">
                             <div className="flex h-[300px] w-full rounded-lg items-center justify-center bg-black/40 backdrop-blur-sm">
@@ -165,12 +212,12 @@ function ProductSidebar() {
                                     <ExternalLink size={14} />
                                 </Link>
                             </div>
-                            
+
                             <div className="h-10  pb-0 bg-gray-900"></div>
                         </div>
 
 
-                        
+
 
                     </div>
 

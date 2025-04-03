@@ -47,47 +47,52 @@ function HeroSection() {
     <>
 
 
-      <div className="relative  pt-0 pb-3  xl:pt-0 sm:pb-16 lg:pb-3 xl:pb-3   ">
+      <div className="relative pt-0 pb-3 xl:pt-0 sm:pb-16 lg:pb-3 xl:pb-3">
 
-
-        {/* hero section */}
-        <section className="relative h-screen flex items-center font-Oswald  justify-center bg-transparent">
+        {/* Hero section */}
+        <section className="relative h-screen flex items-center font-Oswald justify-center bg-transparent">
           <div className="absolute inset-0 overflow-hidden">
-            <img className="object-cover w-full h-full  " src={currentImage.url} alt="" />
-            {/* <div className="absolute inset-0 bg-transparent bg-opacity-90 backdrop-blur-sm"></div> */}
+            <img
+              className="object-cover w-full h-full"
+              src={currentImage.url}
+              alt="Background"
+            />
           </div>
-          {/* global seach section */}
-          <div className="relative z-10 text-center space-y-2 max-w-5xl mx-auto rounded-2xl shadow-2xl py-4 px-7 backdrop-blur-md bg-white/5
-                          bg-clip-padding">
-            <h1 className="text-5xl font-Oswald font-bold text-teal-400">CGHEVEN</h1>
-            <p className="text-2xl font-bold font-Alumni text-gray-300">Your Gateway to Free 3D & VFX Assets</p>
-            <div className="flex items-center py-2 max-w-2xl mx-auto">
+
+          {/* Global search section */}
+          <div className="relative z-10 text-center space-y-2 max-w-5xl mx-auto rounded-2xl shadow-2xl py-4 px-4 sm:px-7 backdrop-blur-md bg-white/5 bg-clip-padding
+                    w-11/12 sm:w-auto">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-Oswald font-bold text-teal-400">CGHEVEN</h1>
+            <p className="text-xl sm:text-2xl font-bold font-Alumni text-gray-300">Your Gateway to Free 3D & VFX Assets</p>
+
+            <div className="flex items-center py-2 max-w-2xl mx-auto w-full">
               <input
                 type="search"
-                border-none
                 placeholder="Find Free 3D & VFX Assets"
-                className="flex-grow py-2  px-2  focus:outline-none   bg-gray-800 rounded-r-none rounded-l-lg border border-teal-500 text-white placeholder-gray-400"
+                className="flex-grow py-2 px-2 focus:outline-none bg-gray-800 rounded-r-none rounded-l-lg border border-teal-500 text-white placeholder-gray-400
+                     text-sm sm:text-base"
               />
-              <Button className="mr-0 w-20 h-11 rounded-l-none bg-teal-500 hover:bg-teal-600 text-white">
-                <Search className="w-7 h-7" />
+              <Button className="mr-0 w-14 sm:w-20 h-11 rounded-l-none bg-teal-500 hover:bg-teal-600 text-white">
+                <Search className="w-5 h-5 sm:w-7 sm:h-7" />
               </Button>
             </div>
 
-
-            <div
-              className="flex justify-center space-x-4"
-
-            >
-              <Button className="bg-teal-500 hover:bg-teal-600">Browse Free Assets</Button>
-              <Button className="bg-orange-500 hover:bg-orange-600">Watch Tutorials</Button>
-              <Button className="bg-purple-500 hover:bg-purple-600">Support Us on Patreon</Button>
+            <div className="flex flex-col sm:flex-row justify-center space-y-2 sm:space-y-0 sm:space-x-4 px-2">
+              <Button className="bg-teal-500 hover:bg-teal-600 text-sm sm:text-base">
+                Browse Free Assets
+              </Button>
+              <Button className="bg-orange-500 hover:bg-orange-600 text-sm sm:text-base">
+                Watch Tutorials
+              </Button>
+              <Button className="bg-purple-500 hover:bg-purple-600 text-sm sm:text-base">
+                Support Us on Patreon
+              </Button>
             </div>
           </div>
 
-
           {/* Attribution in bottom left */}
-          <div className="absolute bottom-4 left-4 z-10">
-            <p className="text-white text-sm md:text-base font-medium">
+          <div className="absolute bottom-4 left-2 sm:left-4 z-10">
+            <p className="text-white text-xs sm:text-sm md:text-base font-medium">
               Art by{" "}
               <Link
                 href={currentImage.artistUrl}
@@ -100,9 +105,6 @@ function HeroSection() {
             </p>
           </div>
         </section>
-
-        {/* <div className="absolute z-30 mt-40 bg-gradient-to-t from-slate-950 via-slate-950 to-transparent h-[15vh] lg:h-[12vh] w-full blur-md" ></div> */}
-
       </div>
 
 
