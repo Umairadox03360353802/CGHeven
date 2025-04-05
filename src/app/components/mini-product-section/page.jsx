@@ -149,26 +149,40 @@ function MiniProductsSection() {
 
 									<SwiperSlide key={index} className='py-14 px-4'>
 										<Link href="/youTube/video-home" key={index}>
-											<div key={index} className="bg-gray-800 rounded-lg  p-4 text-white shadow-lg hover:shadow-teal-500/20 transition-all duration-300 transform hover:-translate-y-1">
-												<div className="aspect-video   bg-gray-700 rounded-lg mb-4 mx-auto  relative">
-													{index % 2 === 0 && <Lock className="absolute top-2 right-2" />}
-													{/* <iframe src="https://www.youtube.com/embed/eRsGyueVLvQ" className='h-[300px] w-full ' frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;  " allowfullscreen></iframe> */}
-													{isClient &&
-														<ReactPlayer url='https://www.youtube.com/watch?v=LXb3EKWsInQ' width='100%' height='100%' controls />
-													}
-												</div>
-												<h3 className="font-bold mb-2">Tutorial Title</h3>
-												<p className="text-sm text-gray-400 mb-2">Short description...</p>
-												<div className="flex justify-between items-center">
-													<span className="text-xs bg-gray-700 px-2 py-1 rounded">10:30</span>
-													{/* <Play size={20} /> */}
-													<div className='h-5 w-5 flex flex-col justify-center items-center   mb-3 mr-5 gap-2'>
-														<img src="./youtube-logo.png" alt="" />
-														<p className='font-semibold font-Montserrat text-xs text-center'>FREE <br />TUTORIAL</p>
-
-													</div>
-												</div>
-											</div>
+										<div 
+  key={index} 
+  className="bg-gray-800 rounded-lg p-3 sm:p-4 text-white shadow-lg hover:shadow-teal-500/20 transition-all duration-300 transform hover:-translate-y-1"
+>
+  <div className="aspect-video bg-gray-700 rounded-lg mb-3 sm:mb-4 mx-auto relative">
+    {index % 2 === 0 && <Lock className="absolute top-1 right-1 h-4 w-4 sm:top-2 sm:right-2 sm:h-5 sm:w-5" />}
+    {isClient && (
+      <ReactPlayer 
+        url='https://www.youtube.com/watch?v=LXb3EKWsInQ' 
+        width='100%' 
+        height='100%' 
+        controls 
+        className="!h-full !w-full"
+      />
+    )}
+  </div>
+  <h3 className="font-bold text-base sm:text-lg mb-1 sm:mb-2">Tutorial Title</h3>
+  <p className="text-xs sm:text-sm text-gray-400 mb-2">Short description...</p>
+  <div className="flex justify-between items-center">
+    <span className="text-[10px] sm:text-xs bg-gray-700 px-1.5 py-0.5 sm:px-2 sm:py-1 rounded">
+      10:30
+    </span>
+    <div className="h-4 w-4 sm:h-5 sm:w-5 flex flex-col justify-center items-center mb-1 sm:mb-3 mr-2 sm:mr-5 gap-1 sm:gap-2">
+      <img 
+        src="./youtube-logo.png" 
+        alt="YouTube" 
+        className="w-3 h-3 sm:w-4 sm:h-4"
+      />
+      <p className="font-semibold font-Montserrat text-[8px] sm:text-xs text-center">
+        FREE <br className="hidden sm:block" /> TUTORIAL
+      </p>
+    </div>
+  </div>
+</div>
 
 
 

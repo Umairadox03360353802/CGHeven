@@ -82,7 +82,7 @@ function TrendingSection() {
                 <Link href="/productDetails">
                   <div
                     key={asset.id}
-                    className="bg-gray-800 rounded-lg overflow-hidden p-4 shadow-lg hover:shadow-teal-500/20 transition-all duration-300 transform hover:-translate-y-1"
+                    className="bg-gray-800 rounded-lg overflow-hiddenmd p-2 md:p-4 shadow-lg hover:shadow-teal-500/20 transition-all duration-300 transform hover:-translate-y-1 active:scale-95"
                     onMouseEnter={() => setHoveredAsset(asset.id)}
                     onMouseLeave={() => setHoveredAsset(null)}
                   >
@@ -98,8 +98,8 @@ function TrendingSection() {
                         </div>
                       )}
                     </div>
-                    <div className="px-4 py-1">
-                      <h3 className="font-semibold   text-white">{asset.name}</h3>
+                    <div className="px-2 md:px-4 py-1">
+                      <h3 className="font-semibold text-sm md:text-base  text-white">{asset.name}</h3>
                     </div>
                   </div>
                 </Link>
