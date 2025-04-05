@@ -46,11 +46,11 @@ function ProductDetails() {
                                 <div className="flex flex-col  w-full h-full text-gray-900 text-xl ">
 
 
-                                    <div className="flex flex-row w-full  h-auto items-center justify-center mx-auto bg-gray-900 border-b border-gray-600">
+                                    <div className="flex flex-col md:flex-row w-full md:w-full h-auto items-center justify-center mx-auto bg-gray-900 border-b border-gray-600">
                                         {/* Square Ad */}
-                                        <div className="overflow-hidden  h-full w-[160px]  basis-0.5/3 bg-gradient-to-r from-blue-500/10 to-purple-500/10">
+                                        <div className="overflow-hidden  md:h-full md:w-[160px] w-full h-[90px]  basis-0.5/3 bg-gradient-to-r from-blue-500/10 to-purple-500/10">
                                             <div className="flex h-full w-full items-center justify-center bg-black/60 backdrop-blur-sm">
-                                                <span className="text-sm text-center text-gray-700">Advertisement</span>
+                                                <span className="text-sm text-center text-gray-700 ">1 Advertisement</span>
                                             </div>
                                         </div>
 
@@ -66,25 +66,38 @@ function ProductDetails() {
 
                                     </div>
 
-                                    <div className="flex  w-full py-8  max-w-full h-60 items-center justify-center mx-auto bg-gray-900 border-b border-gray-600">
-
-
-                                        <div className="grid grid-cols-4  gap-4 px-6 ">
-                                            <div>
-                                                <img className="h-auto max-w-full rounded-lg" src="https://cdn.polyhaven.com/asset_img/renders/fancy_picture_frame_01/clay.png?height=110" alt="" />
-                                            </div>
-                                            <div>
-                                                <img className="h-auto max-w-full rounded-lg" src="https://cdn.polyhaven.com/asset_img/primary/fancy_picture_frame_01.png?height=110" alt="" />
-                                            </div>
-                                            <div>
-                                                <img className="h-auto max-w-full rounded-lg" src="https://cdn.polyhaven.com/asset_img/renders/fancy_picture_frame_01/orth_front.png?height=110" alt="" />
-                                            </div>
-                                            <div>
-                                                <img className="h-auto max-w-full rounded-lg" src="https://cdn.polyhaven.com/asset_img/renders/fancy_picture_frame_01/orth_front.png?height=110" alt="" />
-                                            </div>
-
-                                        </div>
-                                    </div>
+                                    <div className="flex w-full py-4 md:py-8 max-w-full items-center justify-center mx-auto bg-gray-900 border-b border-gray-600">
+  <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 px-4 md:px-6">
+    <div className="aspect-square">
+      <img 
+        className="w-full h-24 md:h-28 object-cover rounded-lg" 
+        src="https://cdn.polyhaven.com/asset_img/renders/fancy_picture_frame_01/clay.png?height=110" 
+        alt="" 
+      />
+    </div>
+    <div className="aspect-square">
+      <img 
+        className="w-full h-24 md:h-28 object-cover rounded-lg" 
+        src="https://cdn.polyhaven.com/asset_img/primary/fancy_picture_frame_01.png?height=110" 
+        alt="" 
+      />
+    </div>
+    <div className="aspect-square">
+      <img 
+        className="w-full h-24 md:h-28 object-cover rounded-lg" 
+        src="https://cdn.polyhaven.com/asset_img/renders/fancy_picture_frame_01/orth_front.png?height=110" 
+        alt="" 
+      />
+    </div>
+    <div className="aspect-square">
+      <img 
+        className="w-full h-24 md:h-28 object-cover rounded-lg" 
+        src="https://cdn.polyhaven.com/asset_img/renders/fancy_picture_frame_01/orth_front.png?height=110" 
+        alt="" 
+      />
+    </div>
+  </div>
+</div>
                                     {/* Product Details */}
                                     <div className="space-y-4 p-8 text-white font-Oswald">
                                         <h1 className="text-4xl font-bold">Sci-Fi Drone Model</h1>
@@ -206,7 +219,7 @@ function ProductDetails() {
                             </div>
                         </main>
                         {/* right side */}
-                        <nav className="flex w-[50vh] h-full bg-gray-800">
+                        <nav className="flex w-0 md:w-[50vh] h-full bg-gray-800">
                             <div className="w-full h-full flex flex-col justify-start mx-auto">
 
 
