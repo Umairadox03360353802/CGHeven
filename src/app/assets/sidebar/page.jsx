@@ -18,7 +18,7 @@ const filterCategories = [
 ]
 
 export default function Sidebar() {
-  const [isCollapsed, setIsCollapsed] = useState(false)
+  const [isCollapsed, setIsCollapsed] = useState(true)
 
   return (
     <div className="relative">
