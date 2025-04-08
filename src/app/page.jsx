@@ -88,7 +88,7 @@ export default function Home() {
         <HeroSection />
         <div className="my-[10vh] bg-black"></div>
         <MiniProductsSection />
-        <div className="my-[10vh] bg-black"></div>
+        <div className="my-[0vh] bg-black"></div>
         <TrendingSection />
 
         <div className="mb-[10vh] bg-black"></div>

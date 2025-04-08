@@ -205,7 +205,7 @@ function MiniProductsSection() {
   </Tabs>
 </section>
 
-			<section className="h-[10px]"></section>
+			<section className="h-[2px]"></section>
 
 		</>
 	)
