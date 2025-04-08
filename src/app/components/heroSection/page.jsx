@@ -65,14 +65,14 @@ function HeroSection() {
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-Oswald font-bold text-teal-400">CGHEVEN</h1>
             <p className="text-xl sm:text-2xl font-bold font-Alumni text-gray-300">Your Gateway to Free 3D & VFX Assets</p>
 
-            <div className="flex items-center py-2 max-w-2xl mx-auto w-full">
+            <div className="flex items-center py-2 max-w-2xl mx-auto w-full relative">
               <input
                 type="search"
                 placeholder="Find Free 3D & VFX Assets"
-                className="flex-grow py-4 px-2 focus:outline-none bg-gray-800 rounded-r-none rounded-l-lg border border-teal-500 text-white placeholder-gray-400
+                className="flex-grow py-3 relative  px-2 focus:outline-none bg-gray-800  rounded-lg border border-teal-500 text-white placeholder-gray-400
                      text-sm sm:text-base"
               />
-              <Button className="mr-0 w-14 sm:w-20 h-14 rounded-l-none bg-teal-500 hover:bg-teal-600 text-white">
+              <Button className="mr-0 w-14 absolute right-0 sm:w-20 h-11 sm:h-12 rounded-l-none bg-teal-500 hover:bg-teal-600 text-white">
                 <Search className="w-5 h-10 md:w-7 md:h-7" />
               </Button>
             </div>
