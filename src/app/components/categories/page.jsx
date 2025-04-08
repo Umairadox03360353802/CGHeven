@@ -55,19 +55,19 @@ function Categories() {
 
 
 
-<section className="py-12 md:py-20 bg-gray-800">
+<section className="py-12 md:py-16 bg-gray-800">
     <div className="mx-auto px-4 md:px-10">
         <h2 className="text-4xl md:text-6xl font-Oswald font-bold text-center pb-6 md:pb-8 text-white">
             Categories
         </h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8">
             {["VFX", "3D Models", "Textures & Materials", "Flipbooks & Particles", "VFX", "3D Models", "Textures & Materials", "Flipbooks & Particles"].map((category, index) => (
                 <Link href="/assets" key={index}>
                     <div
-                        className="bg-gray-700 w-full font-Oswald p-4 md:p-8 rounded-lg text-center hover:bg-gray-600 transition-colors duration-300"
+                        className="bg-gray-700 w-full  font-Oswald p-4 md:p-8 rounded-lg text-center hover:bg-gray-600 transition-colors duration-300"
                     >
                         <Folder className="h-12 w-12 md:h-16 md:w-16 mx-auto mb-2 md:mb-4 text-teal-500" />
-                        <h3 className="text-lg md:text-xl font-semibold text-white">
+                        <h3 className="text-base  lg:text-xl font-semibold text-white">
                             {category}
                         </h3>
                     </div>
