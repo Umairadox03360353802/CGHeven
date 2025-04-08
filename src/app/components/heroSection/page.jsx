@@ -69,15 +69,15 @@ function HeroSection() {
               <input
                 type="search"
                 placeholder="Find Free 3D & VFX Assets"
-                className="flex-grow py-2 px-2 focus:outline-none bg-gray-800 rounded-r-none rounded-l-lg border border-teal-500 text-white placeholder-gray-400
+                className="flex-grow py-4 px-2 focus:outline-none bg-gray-800 rounded-r-none rounded-l-lg border border-teal-500 text-white placeholder-gray-400
                      text-sm sm:text-base"
               />
-              <Button className="mr-0 w-14 sm:w-20 h-11 rounded-l-none bg-teal-500 hover:bg-teal-600 text-white">
-                <Search className="w-5 h-5 sm:w-7 sm:h-7" />
+              <Button className="mr-0 w-14 sm:w-20 h-14 rounded-l-none bg-teal-500 hover:bg-teal-600 text-white">
+                <Search className="w-5 h-10 md:w-7 md:h-7" />
               </Button>
             </div>
 
-            <div className="flex flex-col sm:flex-row justify-center space-y-2 sm:space-y-0 sm:space-x-4 px-2">
+            <div className="flex flex-col sm:flex-row justify-center space-y-2 sm:space-y-0 sm:space-x-4 px-0">
               <Button className="bg-teal-500 hover:bg-teal-600 text-sm sm:text-base">
                 Browse Free Assets
               </Button>
