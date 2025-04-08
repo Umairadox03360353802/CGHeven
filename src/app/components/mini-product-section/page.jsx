@@ -88,144 +88,122 @@ function MiniProductsSection() {
 		<>
 
 
-			<section className="space-y-0 px-5 text-center  py-3">
-				<h2 className="text-6xl mb-5 font-Oswald font-bold text-white">Latest Tutorials</h2>
-				<Tabs defaultValue="all" className='md:text-left text-center  '>
-					<TabsList className='h-12 sm:h-16 font-Oswald font-bold mx-2 sm:mx-4 md:mx-8  overflow-x-auto'>
-						<TabsTrigger
-							className='text-base sm:text-xl px-2 sm:px-4 py-1 sm:py-2 whitespace-nowrap'
-							value="all"
-						>
-							All
-						</TabsTrigger>
-						<TabsTrigger
-							className='text-base sm:text-xl px-2 sm:px-4 py-1 sm:py-2 whitespace-nowrap'
-							value="blender"
-						>
-							Blender
-						</TabsTrigger>
-						<TabsTrigger
-							className='text-base sm:text-xl px-2 sm:px-4 py-1 sm:py-2 whitespace-nowrap'
-							value="unreal"
-						>
-							Unreal
-						</TabsTrigger>
-						<TabsTrigger
-							className='text-base sm:text-xl px-2 sm:px-4 py-1 sm:py-2 whitespace-nowrap'
-							value="houdini"
-						>
-							Houdini
-						</TabsTrigger>
-						<TabsTrigger
-							className='text-base sm:text-xl px-2 sm:px-4 py-1 sm:py-2 whitespace-nowrap'
-							value="substance"
-						>
-							Substance
-						</TabsTrigger>
-					</TabsList>
-					<TabsContent value="all" className="mt-6">
-						<div className="pl-8">
-							<Swiper navigation={true} modules={[Navigation, Pagination]} className="mySwiper" spaceBetween={30}
-
-								breakpoints={{
-									640: {
-										slidesPerView: 1,
-										spaceBetween: 20,
-									},
-									768: {
-										slidesPerView: 2,
-										spaceBetween: 20,
-									},
-									1024: {
-										slidesPerView: 4,
-										spaceBetween: 0,
-									},
-								}}
-							>
-
-
-
-								{cards.map((card, index) => (
-
-									<SwiperSlide key={index} className='py-14 px-4'>
-										<Link href="/youTube/video-home" key={index}>
-										<div 
-  key={index} 
-  className="bg-gray-800 rounded-lg p-3 sm:p-4 text-white shadow-lg hover:shadow-teal-500/20 transition-all duration-300 transform hover:-translate-y-1"
->
-  <div className="aspect-video bg-gray-700 rounded-lg mb-3 sm:mb-4 mx-auto relative">
-    {index % 2 === 0 && <Lock className="absolute top-1 right-1 h-4 w-4 sm:top-2 sm:right-2 sm:h-5 sm:w-5" />}
-    {isClient && (
-      <ReactPlayer 
-        url='https://www.youtube.com/watch?v=LXb3EKWsInQ' 
-        width='100%' 
-        height='100%' 
-        controls 
-        className="!h-full !w-full"
-      />
-    )}
-  </div>
-  <h3 className="font-bold text-base sm:text-lg mb-1 sm:mb-2">Tutorial Title</h3>
-  <p className="text-xs sm:text-sm text-gray-400 mb-2">Short description...</p>
-  <div className="flex justify-between items-center">
-    <span className="text-[10px] sm:text-xs bg-gray-700 px-1.5 py-0.5 sm:px-2 sm:py-1 rounded">
-      10:30
-    </span>
-    <div className="h-4 w-4 sm:h-5 sm:w-5 flex flex-col justify-center items-center mb-1 sm:mb-3 mr-2 sm:mr-5 gap-1 sm:gap-2">
-      <img 
-        src="./youtube-logo.png" 
-        alt="YouTube" 
-        className="w-3 h-3 sm:w-4 sm:h-4"
-      />
-      <p className="font-semibold font-Montserrat text-[8px] sm:text-xs text-center">
-        FREE <br className="hidden sm:block" /> TUTORIAL
-      </p>
+<section className="px-4 sm:px-5 py-3 text-center">
+  <h2 className="text-4xl sm:text-5xl md:text-6xl mb-4 sm:mb-5 font-Oswald font-bold text-white">
+    Latest Tutorials
+  </h2>
+  
+  <Tabs defaultValue="all" className="w-full">
+    <div className="overflow-x-auto">
+      <TabsList className="h-12 sm:h-16 font-Oswald font-bold mx-auto max-w-full flex-nowrap">
+        <TabsTrigger
+          className="text-sm sm:text-base md:text-xl px-3 sm:px-4 py-1 sm:py-2 whitespace-nowrap"
+          value="all"
+        >
+          All
+        </TabsTrigger>
+        <TabsTrigger
+          className="text-sm sm:text-base md:text-xl px-3 sm:px-4 py-1 sm:py-2 whitespace-nowrap"
+          value="blender"
+        >
+          Blender
+        </TabsTrigger>
+        <TabsTrigger
+          className="text-sm sm:text-base md:text-xl px-3 sm:px-4 py-1 sm:py-2 whitespace-nowrap"
+          value="unreal"
+        >
+          Unreal
+        </TabsTrigger>
+        <TabsTrigger
+          className="text-sm sm:text-base md:text-xl px-3 sm:px-4 py-1 sm:py-2 whitespace-nowrap"
+          value="houdini"
+        >
+          Houdini
+        </TabsTrigger>
+        <TabsTrigger
+          className="text-sm sm:text-base md:text-xl px-3 sm:px-4 py-1 sm:py-2 whitespace-nowrap"
+          value="substance"
+        >
+          Substance
+        </TabsTrigger>
+      </TabsList>
     </div>
-  </div>
-</div>
-
-
-
-
-											{/* <div className="aspect-auto  bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all">
-												<div className="relative">
-													<img
-														src="https://placehold.co/400x300"
-														alt="Product"
-														className="w-full h-full object-cover"
-													/>
-
-												</div>
-
-												<div className="p-5  space-y-4">
-
-
-													<div className="flex justify-between items-center">
-														<div>
-															<h3 className="text-xl font-bold text-gray-900">{card.title}</h3>
-															<p className="text-gray-500 mt-1">Premium cotton blend</p>
-														</div>
-
-														<div className='h-6 w-6 flex flex-col justify-center items-center  mt-2 mr-5 gap-2'>
-															<img src="./youtube-logo.png" alt="" />
-															<p className='font-semibold font-Montserrat text-xs text-center'>FREE <br />TUTORIAL</p>
-
-														</div>
-													</div>
-
-
-												</div>
-											</div> */}
-
-										</Link>
-									</SwiperSlide>
-
-								))}
-							</Swiper>
-						</div>
-					</TabsContent>
-				</Tabs>
-			</section>
+    
+    <TabsContent value="all" className="mt-4 sm:mt-6">
+      <div className="px-2 sm:pl-8">
+        <Swiper 
+          navigation={true} 
+          modules={[Navigation, Pagination]} 
+          className="mySwiper" 
+          spaceBetween={16}
+          slidesPerView={1.1}
+          breakpoints={{
+            480: {
+              slidesPerView: 1.5,
+              spaceBetween: 20,
+            },
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 2.5,
+              spaceBetween: 20,
+            },
+            1024: {
+              slidesPerView: 4,
+              spaceBetween: 0,
+            },
+          }}
+        >
+          {cards.map((card, index) => (
+            <SwiperSlide key={index} className='py-8 sm:py-14 px-2 sm:px-4'>
+              <Link href="/youTube/video-home">
+                <div className="bg-gray-800 rounded-lg p-3 text-white shadow-lg hover:shadow-teal-500/20 transition-all duration-300 transform hover:-translate-y-1">
+                  <div className="aspect-video bg-gray-700 rounded-lg mb-3 relative">
+                    {index % 2 === 0 && (
+                      <Lock className="absolute top-2 right-2 w-4 h-4 md:w-5 md:h-5" />
+                    )}
+                    {isClient && (
+                      <ReactPlayer
+                        url='https://www.youtube.com/watch?v=LXb3EKWsInQ'
+                        width='100%'
+                        height='100%'
+                        controls
+                        className="react-player"
+                      />
+                    )}
+                  </div>
+                  <h3 className="font-bold text-base sm:text-lg md:text-xl mb-1 sm:mb-2 line-clamp-2">
+                    Tutorial Title
+                  </h3>
+                  <p className="text-xs sm:text-sm md:text-base text-gray-400 mb-2 line-clamp-2">
+                    Short description...
+                  </p>
+                  <div className="flex justify-between items-center">
+                    <span className="text-xs sm:text-sm bg-gray-700 px-2 py-1 rounded">
+                      10:30
+                    </span>
+                    <div className='h-5 w-5 sm:h-6 sm:w-6 flex flex-col justify-center items-center gap-1 m-3'>
+                      <img
+                        src="./youtube-logo.png"
+                        alt="YouTube"
+                        className="w-full h-auto"
+                      />
+                      <p className='font-semibold font-Montserrat text-[8px] sm:text-[10px] md:text-xs text-center '>
+                        FREE <br />TUTORIAL
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+    </TabsContent>
+  </Tabs>
+</section>
 
 			<section className="h-[10px]"></section>
 
