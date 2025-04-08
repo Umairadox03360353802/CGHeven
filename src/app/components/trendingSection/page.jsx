@@ -50,68 +50,75 @@ function TrendingSection() {
   ]
   return (
     <>
-      <div className=" mx-auto px-8 ml-4 py-3  ">
-        <div className='  text-white'>
-          <h1 className='font-extrabold font-Oswald text-6xl text-center mb-8 mt-2'>Trending Assets</h1>
-
-        </div>
-        <div className="">
-          <Swiper navigation={true} modules={[Navigation, Pagination]} className="mySwiper" spaceBetween={30}
-            //  pagination={{ clickable: true, bulletClass: 'swiper-pagination-bullet !w-3 !h-3 !bg-gray-400 !opacity-100', bulletActiveClass: 'swiper-pagination-bullet-active !bg-teal-400' }}
-
-            breakpoints={{
-              640: {
-                slidesPerView: 1,
-                spaceBetween: 20,
-              },
-              768: {
-                slidesPerView: 2,
-                spaceBetween: 20,
-              },
-              1024: {
-                slidesPerView: 4,
-                spaceBetween: 0,
-              },
-            }}
-          >
-
-
-
-            {assets.map((asset, index) => (
-              <SwiperSlide key={index} className='py-12 px-3'>
-                <Link href="/productDetails">
-                  <div
-                    key={asset.id}
-                    className="bg-gray-800 rounded-lg overflow-hiddenmd p-2 md:p-4 shadow-lg hover:shadow-teal-500/20 transition-all duration-300 transform hover:-translate-y-1 active:scale-95"
-                    onMouseEnter={() => setHoveredAsset(asset.id)}
-                    onMouseLeave={() => setHoveredAsset(null)}
-                  >
-                    <div className="relative aspect-video">
-                      {hoveredAsset === asset.id ? (
-                        <AssetPreview asset={asset} />
-                      ) : (
-                        <img src={asset.preview || "/placeholder.svg"} alt={asset.name} className="w-full h-full object-contain" />
-                      )}
-                      {asset.isPremium && (
-                        <div className="absolute top-2 right-2 bg-orange-500 text-white p-1 rounded-full">
-                          <Lock className="w-4 h-4" />
-                        </div>
-                      )}
-                    </div>
-                    <div className="px-2 md:px-4 py-1">
-                      <h3 className="font-semibold text-sm md:text-base  text-white">{asset.name}</h3>
-                    </div>
+ <div className="mx-auto px-4 sm:px-6 md:px-8 py-3">
+  <div className="text-white">
+    <h1 className="font-extrabold font-Oswald text-4xl sm:text-5xl md:text-6xl text-center mb-6 sm:mb-8 mt-0 sm:mt-2">
+      Trending Assets
+    </h1>
+  </div>
+  
+  <div className="relative">
+    <Swiper 
+      navigation={true} 
+      modules={[Navigation, Pagination]} 
+      className="mySwiper" 
+      spaceBetween={16}
+      slidesPerView={1.2}
+      breakpoints={{
+        480: {
+          slidesPerView: 1.5,
+          spaceBetween: 20,
+        },
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2.5,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 24,
+        },
+      }}
+    >
+      {assets.map((asset, index) => (
+        <SwiperSlide key={index} className='py-4 sm:py-8 md:py-12 px-2 sm:px-3'>
+          <Link href="/productDetails">
+            <div
+              className="bg-gray-800 rounded-lg overflow-hidden p-2 sm:p-3 md:p-4 shadow-lg hover:shadow-teal-500/20 transition-all duration-300 transform hover:-translate-y-1 active:scale-95"
+              onMouseEnter={() => setHoveredAsset(asset.id)}
+              onMouseLeave={() => setHoveredAsset(null)}
+            >
+              <div className="relative aspect-video">
+                {hoveredAsset === asset.id ? (
+                  <AssetPreview asset={asset} />
+                ) : (
+                  <img 
+                    src={asset.preview || "/placeholder.svg"} 
+                    alt={asset.name} 
+                    className="w-full h-full object-contain bg-gray-700"
+                  />
+                )}
+                {asset.isPremium && (
+                  <div className="absolute top-2 right-2 bg-orange-500 text-white p-1 rounded-full">
+                    <Lock className="w-3 h-3 sm:w-4 sm:h-4" />
                   </div>
-                </Link>
-
-              </SwiperSlide>
-
-
-            ))}
-          </Swiper>
-
-        </div>
-      </div>
+                )}
+              </div>
+              <div className="px-2 py-2 sm:py-3">
+                <h3 className="font-semibold text-xs sm:text-sm md:text-base text-white line-clamp-2">
+                  {asset.name}
+                </h3>
+              </div>
+            </div>
+          </Link>
+        </SwiperSlide>
+      ))}
+    </Swiper>
+  </div>
+</div>
 
     </>
   )
