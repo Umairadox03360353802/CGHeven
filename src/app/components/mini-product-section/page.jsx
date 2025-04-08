@@ -136,7 +136,7 @@ function MiniProductsSection() {
           modules={[Navigation, Pagination]} 
           className="mySwiper" 
           spaceBetween={16}
-          slidesPerView={1.1}
+          slidesPerView={1}
           breakpoints={{
             480: {
               slidesPerView: 1,
