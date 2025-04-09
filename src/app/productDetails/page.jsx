@@ -67,77 +67,67 @@ function ProductDetails() {
                                     </div>
 
                                     <div className="flex w-full py-4 md:py-8 max-w-full items-center justify-center mx-auto bg-gray-900 border-b border-gray-600">
-  <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 px-4 md:px-6">
-    <div className="aspect-square">
-      <img 
-        className="w-full h-24 md:h-28 object-cover rounded-lg" 
-        src="https://cdn.polyhaven.com/asset_img/renders/fancy_picture_frame_01/clay.png?height=110" 
-        alt="" 
-      />
-    </div>
-    <div className="aspect-square">
-      <img 
-        className="w-full h-24 md:h-28 object-cover rounded-lg" 
-        src="https://cdn.polyhaven.com/asset_img/primary/fancy_picture_frame_01.png?height=110" 
-        alt="" 
-      />
-    </div>
-    <div className="aspect-square">
-      <img 
-        className="w-full h-24 md:h-28 object-cover rounded-lg" 
-        src="https://cdn.polyhaven.com/asset_img/renders/fancy_picture_frame_01/orth_front.png?height=110" 
-        alt="" 
-      />
-    </div>
-    <div className="aspect-square">
-      <img 
-        className="w-full h-24 md:h-28 object-cover rounded-lg" 
-        src="https://cdn.polyhaven.com/asset_img/renders/fancy_picture_frame_01/orth_front.png?height=110" 
-        alt="" 
-      />
-    </div>
-  </div>
-</div>
-                                    {/* Product Details */}
-                                    <div className="space-y-4 p-8 text-white font-Oswald">
-                                        <h1 className="text-4xl font-bold">Sci-Fi Drone Model</h1>
-                                        <h2 className="text-xl font-semibold text-gray-500">High-quality sci-fi drone model perfect for games and VFX</h2>
-                                        {/* <h3 className="text-xl font-semibold">Product Details</h3> */}
-
+                                        <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 px-4 md:px-6">
+                                            <div className="aspect-square">
+                                                <img
+                                                    className="w-full h-24 md:h-28 object-cover rounded-lg"
+                                                    src="https://cdn.polyhaven.com/asset_img/renders/fancy_picture_frame_01/clay.png?height=110"
+                                                    alt=""
+                                                />
+                                            </div>
+                                            <div className="aspect-square">
+                                                <img
+                                                    className="w-full h-24 md:h-28 object-cover rounded-lg"
+                                                    src="https://cdn.polyhaven.com/asset_img/primary/fancy_picture_frame_01.png?height=110"
+                                                    alt=""
+                                                />
+                                            </div>
+                                            <div className="aspect-square">
+                                                <img
+                                                    className="w-full h-24 md:h-28 object-cover rounded-lg"
+                                                    src="https://cdn.polyhaven.com/asset_img/renders/fancy_picture_frame_01/orth_front.png?height=110"
+                                                    alt=""
+                                                />
+                                            </div>
+                                            <div className="aspect-square">
+                                                <img
+                                                    className="w-full h-24 md:h-28 object-cover rounded-lg"
+                                                    src="https://cdn.polyhaven.com/asset_img/renders/fancy_picture_frame_01/orth_front.png?height=110"
+                                                    alt=""
+                                                />
+                                            </div>
+                                        </div>
                                     </div>
-
-                                    {/* Social Share */}
-                                    <div className="flex items-center gap-6 px-8 py-4 mb-6">
-                                        <span className="text-lg font-bold text-muted-foreground">Share:</span>
-                                        <div  >
-                                    
-                                            <FaXTwitter  color='white'  size={30}/>
-
+                                    {/* Product Details */}
+                                    <div className="space-y-3 sm:space-y-4 p-4 sm:p-6 md:p-8 text-white font-Oswald">
+                                        <div>
+                                            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold">Sci-Fi Drone Model</h1>
+                                            <h2 className="text-base sm:text-lg md:text-xl font-semibold text-gray-500 mt-1 sm:mt-2">
+                                                High-quality sci-fi drone model perfect for games and VFX
+                                            </h2>
                                         </div>
-                                        <div  >
-                                        
-                                            <FiFacebook  color='white'  size={30}/>
 
+                                        {/* Social Share */}
+                                        <div className="flex flex-wrap items-center gap-4 sm:gap-6 px-4 sm:px-6 md:px-8 py-3 sm:py-4 mb-4 sm:mb-6">
+                                            <span className="text-base sm:text-lg font-bold text-muted-foreground">Share:</span>
+                                            <div className="flex gap-4 sm:gap-6">
+                                                <div className="hover:opacity-80 transition-opacity">
+                                                    <FaXTwitter color='white' size={24} className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7" />
+                                                </div>
+                                                <div className="hover:opacity-80 transition-opacity">
+                                                    <FiFacebook color='white' size={24} className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7" />
+                                                </div>
+                                                <div className="hover:opacity-80 transition-opacity">
+                                                    <FaInstagram color='white' size={24} className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7" />
+                                                </div>
+                                                <div className="hover:opacity-80 transition-opacity">
+                                                    <FiLinkedin color='white' size={24} className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7" />
+                                                </div>
+                                                <div className="hover:opacity-80 transition-opacity">
+                                                    <IoShareSocialOutline color='white' size={24} className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7" />
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div  >
-                                            
-                                            <FaInstagram color='white'  size={30} />
-
-                                        </div>
-                                        <div  >
-                                        
-                                            <FiLinkedin color='white'  size={30}/>
-
-                                        </div>
-                                        
-                                       <div >
-
-                                       <IoShareSocialOutline color='white'  size={30} />
-
-                                       </div>
-
-
-                                        
                                     </div>
 
                                     <div className='w-full border-b border-gray-600'></div>
@@ -151,15 +141,15 @@ function ProductDetails() {
 
 
 
-                                        {/*Exclusive partreon Assets and tutorials  */}
-                                        {/* <ExclusiveAssets /> */}
-                                        {/* <ProductTutorials /> */}
+                                    {/*Exclusive partreon Assets and tutorials  */}
+                                    {/* <ExclusiveAssets /> */}
+                                    {/* <ProductTutorials /> */}
 
 
 
-                                        {/* gallery */}
+                                    {/* gallery */}
 
-                                        {/* <div className='mb-8 pr-2 mt-5 text-white flex flex-row justify-center items-center gap-4'>
+                                    {/* <div className='mb-8 pr-2 mt-5 text-white flex flex-row justify-center items-center gap-4'>
                                             <h1 className='font-extrabold font-Oswald text-4xl text-center mb-6'>User Renders:</h1>
                                             <button className="flex items-center font-Oswald mb-5 px-6 py-3 bg-gray-900 text-white font-semibold rounded-xl hover:bg-[#88e5e9] focus:outline-none focus:ring-2 focus:ring-blue-500">
                                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">

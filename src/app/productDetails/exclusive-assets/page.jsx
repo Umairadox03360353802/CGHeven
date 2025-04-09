@@ -49,53 +49,46 @@ function ExclusiveAssets() {
  const [hoveredAsset, setHoveredAsset] = useState(null)
    
     return (
-        <div>
-            <div className=" mx-auto px-10 py-3 mt-6  ">
-                <div className='  text-white'>
-                    <h1 className='font-extrabold font-Oswald text-4xl text-center mb-4 mt-2'>Exclusive Partreon Assets</h1>
-
+      <div className="mx-auto px-4 sm:px-6 lg:px-10 py-3 mt-4 sm:mt-6">
+      <div className="text-white">
+        <h1 className="font-extrabold font-Oswald text-2xl sm:text-3xl md:text-4xl text-center mb-3 sm:mb-4 mt-1 sm:mt-2">
+          Exclusive Patreon Assets
+        </h1>
+      </div>
+      <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
+        {assets.map((asset) => (
+          <div
+            key={asset.id}
+            className="bg-gray-800 rounded-lg overflow-hidden p-3 sm:p-4 shadow-lg hover:shadow-teal-500/20 transition-all duration-300 transform hover:-translate-y-1"
+            onMouseEnter={() => setHoveredAsset(asset.id)}
+            onMouseLeave={() => setHoveredAsset(null)}
+          >
+            <div className="relative aspect-video">
+              {hoveredAsset === asset.id ? (
+                <AssetPreview asset={asset} />
+              ) : (
+                <img 
+                  src={asset.preview || "/placeholder.svg"} 
+                  alt={asset.name} 
+                  className="w-full h-full object-contain"
+                  loading="lazy"
+                />
+              )}
+              {asset.isPremium && (
+                <div className="absolute top-2 right-2 bg-orange-500 text-white p-1 rounded-full">
+                  <Lock className="w-3 h-3 sm:w-4 sm:h-4" />
                 </div>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-
-                    {/* {cards.map((card, index) => (
-                        <div key={index} className='py-8'>
-                            <Card key={index} title={card.title} description={card.description} />
-
-                        </div>
-
-
-                    ))} */}
-
-                    {assets.map((asset) => (
-                             <div
-                               key={asset.id}
-                               className="bg-gray-800 rounded-lg overflow-hidden p-4 shadow-lg hover:shadow-teal-500/20 transition-all duration-300 transform hover:-translate-y-1"
-                               onMouseEnter={() => setHoveredAsset(asset.id)}
-                               onMouseLeave={() => setHoveredAsset(null)}
-                             >
-                               <div className="relative aspect-video">
-                                 {hoveredAsset === asset.id ? (
-                                   <AssetPreview asset={asset} />
-                                 ) : (
-                                   <img src={asset.preview || "/placeholder.svg"} alt={asset.name} className="w-full h-full object-contain" />
-                                 )}
-                                 {asset.isPremium && (
-                                   <div className="absolute top-2 right-2 bg-orange-500 text-white p-1 rounded-full">
-                                     <Lock className="w-4 h-4" />
-                                   </div>
-                                 )}
-                               </div>
-                               <div className="px-4 py-1">
-                                 <h3 className="font-semibold   text-white">{asset.name}</h3>
-                                 {/* <p className="text-sm text-gray-400">{asset.type}</p> */}
-                               </div>
-                             </div>
-                           ))}
-
-
-                </div>
+              )}
             </div>
-        </div>
+            <div className="px-2 sm:px-4 py-1">
+              <h3 className="font-semibold text-sm sm:text-base text-white truncate">
+                {asset.name}
+              </h3>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
     )
 }
 

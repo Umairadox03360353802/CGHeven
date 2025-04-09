@@ -98,7 +98,7 @@ function TrendingSection() {
                   <img 
                     src={asset.preview || "/placeholder.svg"} 
                     alt={asset.name} 
-                    className="w-full h-full object-contain bg-gray-700"
+                    className="w-full h-full object-contain"
                   />
                 )}
                 {asset.isPremium && (

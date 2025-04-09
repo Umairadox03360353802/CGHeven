@@ -66,8 +66,8 @@ function Categories() {
                     <div
                         className="bg-gray-700 w-full  font-Oswald p-4 md:p-8 rounded-lg text-center hover:bg-gray-600 transition-colors duration-300"
                     >
-                        <Folder className="h-12 w-12 md:h-16 md:w-16 mx-auto mb-2 md:mb-4 text-teal-500" />
-                        <h3 className="text-base  lg:text-xl font-semibold text-white">
+                        <Folder className="h-10 w-10 md:h-16 md:w-16 mx-auto mb-2 md:mb-4 text-teal-500" />
+                        <h3 className="text-sm  lg:text-lg font-semibold text-white">
                             {category}
                         </h3>
                     </div>

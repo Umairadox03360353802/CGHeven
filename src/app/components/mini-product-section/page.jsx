@@ -3,6 +3,8 @@ import React from 'react'
 import { useEffect, useState } from 'react';
 import { Lock } from "lucide-react"
 import ReactPlayer from 'react-player'
+import { FaPlayCircle } from "react-icons/fa";
+
 
 import { Card, CardContent, CardHeader, CardTitle, CardFooter } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -159,43 +161,47 @@ function MiniProductsSection() {
           {cards.map((card, index) => (
             <SwiperSlide key={index} className='py-8 sm:py-14 px-2 sm:px-4'>
               <Link href="/youTube/video-home">
-                <div className="bg-gray-800 rounded-lg p-3 text-white shadow-lg hover:shadow-teal-500/20 transition-all duration-300 transform hover:-translate-y-1">
-                  <div className="aspect-video bg-gray-700 rounded-lg mb-3 relative">
-                    {index % 2 === 0 && (
-                      <Lock className="absolute top-2 right-2 w-4 h-4 md:w-5 md:h-5" />
-                    )}
-                    {isClient && (
-                      <ReactPlayer
-                        url='https://www.youtube.com/watch?v=LXb3EKWsInQ'
-                        width='100%'
-                        height='100%'
-                        controls
-                        className="react-player"
-                      />
-                    )}
-                  </div>
-                  <h3 className="font-bold text-base sm:text-lg md:text-xl mb-1 sm:mb-2 line-clamp-2">
-                    Tutorial Title
-                  </h3>
-                  <p className="text-xs sm:text-sm md:text-base text-gray-400 mb-2 line-clamp-2">
-                    Short description...
-                  </p>
-                  <div className="flex justify-between items-center">
-                    <span className="text-xs sm:text-sm bg-gray-700 px-2 py-1 rounded">
-                      10:30
-                    </span>
-                    <div className='h-5 w-5 sm:h-6 sm:w-6 flex flex-col justify-center items-center gap-1 m-3'>
-                      <img
-                        src="./youtube-logo.png"
-                        alt="YouTube"
-                        className="w-full h-auto"
-                      />
-                      <p className='font-semibold font-Montserrat text-[8px] sm:text-[10px] md:text-xs text-center '>
-                        FREE <br />TUTORIAL
-                      </p>
-                    </div>
-                  </div>
-                </div>
+                <div key={index} className='w-full'>
+                        <div className="bg-gray-800 rounded-lg w-full p-3 sm:p-4 text-white shadow-lg hover:shadow-teal-500/20 transition-all duration-300 transform hover:-translate-y-1">
+                          <div className="aspect-video bg-gray-700 rounded-lg mb-3 sm:mb-4 relative overflow-hidden">
+                            {index % 2 === 0 &&
+                              <Lock className="absolute top-2 right-2 w-4 h-4 sm:w-5 sm:h-5" />
+                            }
+                            {isClient &&
+                              <ReactPlayer
+                                url='https://www.youtube.com/watch?v=LXb3EKWsInQ'
+                                width='100%'
+                                height='100%'
+                                controls
+                                className="react-player"
+                                light={true} // Add light mode for better mobile performance
+                                playIcon={<FaPlayCircle className="w-12 h-12 text-white opacity-80" />}
+                              />
+                            }
+                          </div>
+                          <h3 className="font-bold text-base sm:text-lg md:text-xl mb-1 sm:mb-2 line-clamp-2">
+                            Tutorial Title
+                          </h3>
+                          <p className="text-xs sm:text-sm md:text-base text-gray-400 mb-2 sm:mb-3 line-clamp-2">
+                            Short description that might be longer on desktop but gets clipped on mobile...
+                          </p>
+                          <div className="flex justify-between items-center">
+                            <span className="text-xs sm:text-sm bg-gray-700 px-2 py-1 rounded">
+                              10:30
+                            </span>
+                            <div className='flex items-center gap-1 sm:gap-2'>
+                              <img
+                                src="./youtube-logo.png"
+                                alt="YouTube"
+                                className="h-4 sm:h-5 w-auto"
+                              />
+                              <p className='font-semibold font-Montserrat text-[9px] xs:text-[10px] sm:text-xs'>
+                                FREE TUTORIAL
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
               </Link>
             </SwiperSlide>
           ))}
@@ -205,7 +211,7 @@ function MiniProductsSection() {
   </Tabs>
 </section>
 
-			<section className="h-[2px]"></section>
+			
 
 		</>
 	)
