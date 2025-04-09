@@ -130,7 +130,7 @@ function ProductSidebar() {
 
                                 <div className=" cursor-pointer">
                                     {/* <GiHamburgerMenu size={25} /> */}
-                                    <HamburgerDrawer  />
+                                    <HamburgerDrawer />
 
                                 </div>
                             </div>
@@ -139,60 +139,62 @@ function ProductSidebar() {
                             <div className='flex flex-col justify-center items-center gap-4 mb-2'>
                                 {/* ... (your existing profile content) ... */}
                                 <div className='flex flex-row justify-center font-Oswald items-center w-full mt-3'>
-                                    <h1 className='text-start text-white font-bold'>Author:</h1>
-                                    <div className='w-12 h-12 ml-2 rounded-full bg-slate-500'>
-                                        <img src="/main.jpg" className='rounded-full' alt="" />
-                                    </div>
-                                    <div className=' flex flex-col justify-center items-center text-white font-normal text-end ml-1'>
-                                        <h1>Ammar Khan</h1>
-                                        <div className="flex flex-row justify-center items-center gap-2">
+                                    <h1 className="text-start text-white font-bold text-xs sm:text-sm md:text-xl mb-2">
+                                        Author:</h1>
 
-                                            <IoLinkSharp /><IoMail />
+                                    <div className="w-8 h-8 sm:w-14 sm:h-14 ml-2 rounded-full bg-slate-500 overflow-hidden">
+                                        <img src="/main.jpg" alt="Profile" className="w-full h-full object-cover" />
+                                    </div>
+                                    <div className="flex flex-col items-end justify-center text-white font-normal ml-1 text-sm sm:text-base">
+                                        <h1 className="text-xs sm:text-lg font-semibold">Ammar Khan</h1>
+                                        <div className="flex flex-row items-center gap-2 mt-1">
+                                            <IoLinkSharp className="text-sm sm:text-xl" />
+                                            <IoMail className="text-sm sm:text-xl" />
                                         </div>
-
                                     </div>
 
 
-                                    <div className='w-12 h-12 ml-0 rounded-full bg-slate-500'>
-                                        <img src="/main.jpg" className='rounded-full' alt="" />
+                                    <div className="w-8 h-8 sm:w-14 sm:h-14 ml-2 rounded-full bg-slate-500 overflow-hidden">
+                                        <img src="/main.jpg" alt="Profile" className="w-full h-full object-cover" />
                                     </div>
-                                    <div className=' flex flex-col justify-center items-center text-white font-normal text-end ml-1'>
-                                        <h1>Ammar Khan</h1>
-                                        <div className="flex flex-row justify-center items-center gap-2">
-
-                                            <IoLinkSharp /><IoMail />
+                                    <div className="flex flex-col items-end justify-center text-white font-normal ml-1 text-sm sm:text-base">
+                                        <h1 className="text-xs sm:text-lg font-semibold">Ammar Khan</h1>
+                                        <div className="flex flex-row items-center gap-2 mt-1">
+                                            <IoLinkSharp className="text-sm sm:text-xl" />
+                                            <IoMail className="text-sm sm:text-xl" />
                                         </div>
-
                                     </div>
                                 </div>
 
                             </div>
 
                             {/* product details */}
-                            <div className="flex items-center justify-center text-white p-2 w-full">
+                            <div className="flex items-center justify-between sm:justify-center text-white p-2 w-full flex-wrap gap-2 sm:gap-0">
                                 {/* ... (your existing product details) ... */}
-                                <div className="flex flex-col items-center justify-center px-3">
-                                    <span className="text-lg font-semibold">CC0</span>
-                                    <span className="text-xs text-gray-400">License</span>
+
+                                {/* License */}
+                                <div className="flex flex-col items-center justify-center px-2 sm:px-3 min-w-[60px]">
+                                    <span className="text-base sm:text-lg font-semibold">CC0</span>
+                                    <span className="text-[10px] sm:text-xs text-gray-400">License</span>
                                 </div>
 
-                                <div className="flex flex-col items-center justify-center px-3">
-                                    <span className="text-lg font-semibold">22</span>
-                                    <span className="text-xs text-gray-400">EVs</span>
+                                {/* EVs */}
+                                <div className="flex flex-col items-center justify-center px-2 sm:px-3 min-w-[60px]">
+                                    <span className="text-base sm:text-lg font-semibold">22</span>
+                                    <span className="text-[10px] sm:text-xs text-gray-400">EVs</span>
                                 </div>
 
-                                <div className="flex flex-col items-center justify-center px-3">
-                                    <span className="text-lg font-semibold">5539K</span>
-                                    <span className="text-xs text-gray-400">WB</span>
+                                {/* WB */}
+                                <div className="flex flex-col items-center justify-center px-2 sm:px-3 min-w-[60px]">
+                                    <span className="text-base sm:text-lg font-semibold">5539K</span>
+                                    <span className="text-[10px] sm:text-xs text-gray-400">WB</span>
                                 </div>
 
-                                <div className="flex flex-col items-center justify-center px-3">
-                                    <MapPin className="h-5 w-5 mb-1" />
-                                    <span className="text-xs text-gray-400">GPS</span>
+                                {/* GPS */}
+                                <div className="flex flex-col items-center justify-center px-2 sm:px-3 min-w-[60px]">
+                                    <MapPin className="h-4 w-4 sm:h-5 sm:w-5 mb-0.5 sm:mb-1" />
+                                    <span className="text-[10px] sm:text-xs text-gray-400">GPS</span>
                                 </div>
-
-
-
                             </div>
                         </div>
 
@@ -200,9 +202,9 @@ function ProductSidebar() {
                         <div className="space-y-0 h-[calc(90vh-90px)] relative">
                             {/* ... (your existing scrollable content) ... */}
                             {/* Square Ad */}
-                            <div className="overflow-hidden  p-6">
-                                <div className="flex h-[300px] w-full rounded-lg items-center justify-center bg-black/40 backdrop-blur-sm">
-                                    <span className="text-sm text-gray-400">Advertisement</span>
+                            <div className="overflow-hidden p-4 sm:p-6">
+                                <div className="flex h-[200px] sm:h-[250px] md:h-[300px] w-full rounded-lg items-center justify-center bg-black/40 backdrop-blur-sm">
+                                    <span className="text-xs sm:text-sm text-gray-400">Advertisement</span>
                                 </div>
                             </div>
 
@@ -214,25 +216,31 @@ function ProductSidebar() {
                                 {/* Tags */}
                                 <ProductTags />
 
-                                <div className="w-full font-Oswald bg-gradient-to-br from-gray-900 to-gray-800 p-3  shadow-lg ">
-                                    <div className="flex items-center ">
-                                        <div className="flex h-8 w-8 items-center justify-center rounded mx-4 mb-2 text-white">
-                                            <img src="rslogo1.png" className="h-10 w-10" alt="" />
+                                <div className="w-full font-Oswald bg-gradient-to-br from-gray-900 to-gray-800 p-3 sm:p-4 shadow-lg rounded-lg">
+                                    <div className="flex items-center justify-center sm:justify-start">
+                                        <div className="flex h-8 w-8 sm:h-10 sm:w-10 items-center justify-center rounded mx-2 sm:mx-4 mb-2 sm:mb-3 text-white">
+                                            <img
+                                                src="rslogo1.png"
+                                                className="h-8 w-8 sm:h-10 sm:w-10 object-contain"
+                                                alt="Patreon Logo"
+                                            />
                                         </div>
-                                        <h2 className="text-lg font-medium text-white">Support Us on Patreon</h2>
+                                        <h2 className="text-base sm:text-lg font-medium text-white">
+                                            Support Us on Patreon
+                                        </h2>
                                     </div>
 
-                                    <p className="mt-0 text-center text-md font-bold font-Alumni text-gray-300">
+                                    <p className="mt-1 sm:mt-2 text-center sm:text-left text-sm sm:text-md font-bold font-Alumni text-gray-300 px-1 sm:px-0">
                                         Unlock exclusive assets, premium tutorials, and ad-free experience by supporting us on Patreon!
                                     </p>
 
                                     <Link
                                         href="https://patreon.com/cghaven"
                                         target="_blank"
-                                        className="mt-1 flex w-full items-center justify-center gap-1.5 rounded-md bg-purple-600 py-2 text-sm font-medium text-white transition-colors hover:bg-purple-700"
+                                        className="mt-2 sm:mt-3 flex w-full sm:w-auto items-center justify-center gap-1.5 rounded-md bg-purple-600 hover:bg-purple-700 py-2 px-4 text-xs sm:text-sm font-medium text-white transition-colors duration-200"
                                     >
                                         Join Now on Patreon
-                                        <ExternalLink size={14} />
+                                        <ExternalLink size={12} className="sm:size-[14px]" />
                                     </Link>
                                 </div>
 
