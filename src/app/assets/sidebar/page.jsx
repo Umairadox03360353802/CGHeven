@@ -24,7 +24,7 @@ export default function Sidebar() {
     <div className="relative">
      <button
       onClick={() => setIsCollapsed(!isCollapsed)}
-      className="mb-4 p-2 z-50 bg-gray-700 rounded-full hover:bg-gray-600 transition-colors left-4 fixed  top-28 sm:static"
+      className="mb-4 p-2 z-50 bg-gray-700 rounded-full hover:bg-gray-600 transition-colors right-0 fixed  top-32 sm:static"
     >
       {isCollapsed ? (
         <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 text-teal-500" />
@@ -34,7 +34,7 @@ export default function Sidebar() {
     </button>
     <aside 
     className={`bg-gray-800    p-2 sm:p-4 transition-all font-Oswald fixed sm:sticky z-40 left-0 top-0 h-screen sm:top-[-10px] duration-300 ease-in-out ${
-      isCollapsed ? "w-0 sm:w-16 " : "w-full sm:w-72 max-w-[80vw]"
+      isCollapsed ? "opacity-0 w-0 sm:w-16 " : "opacity-100 w-full sm:w-72 max-w-[80vw]"
     }`}
   >
     {/* <button
