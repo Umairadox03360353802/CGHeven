@@ -8,7 +8,7 @@ function SupportUs() {
     <>
       
       <section className="space-y-6 bg-gray-800 font-Oswald p-8 rounded-lg text-white">
-      <h1 className='font-extrabold font-Oswald text-6xl text-center mb-8 mt-2'>Support CGHEVEN</h1>
+      <h1 className='font-extrabold font-Oswald text-4xl sm:text-5xl md:text-6xl text-center mb-6 sm:mb-8 mt-0 sm:mt-2'>Support CGHEVEN</h1>
       <p className="text-center text-lg text-gray-300">
           Your support helps us create more free assets and tutorials for the community
         </p>
