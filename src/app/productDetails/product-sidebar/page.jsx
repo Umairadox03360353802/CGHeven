@@ -216,7 +216,7 @@ function ProductSidebar() {
                                 {/* Tags */}
                                 <ProductTags />
 
-                                <div className="w-full font-Oswald bg-gradient-to-br from-gray-900 to-gray-800 p-3 sm:p-4 shadow-lg rounded-lg">
+                                <div className="w-full font-Oswald bg-gradient-to-br from-gray-900 to-gray-800 p-3 mb-6 sm:p-4 shadow-lg rounded-lg">
                                     <div className="flex items-center justify-center sm:justify-start">
                                         <div className="flex h-8 w-8 sm:h-10 sm:w-10 items-center justify-center rounded mx-2 sm:mx-4 mb-2 sm:mb-3 text-white">
                                             <img
