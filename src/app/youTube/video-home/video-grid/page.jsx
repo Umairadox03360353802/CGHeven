@@ -135,14 +135,14 @@ export default function VideoGrid() {
 
             // ads card
             <div key={asset.id} className="overflow-hidden py-2">
-              <div className="flex h-full w-full rounded-lg items-center justify-center bg-black/40 backdrop-blur-sm">
+              <div className="flex aspect-video w-full rounded-lg items-center justify-center bg-black/40 backdrop-blur-sm">
                 <span className="text-sm text-gray-400">Advertisement</span>
               </div>
             </div> :
             isVideoAd(index) ?
               // video model ad
               <div key={asset.id} className="overflow-hidden py-2">
-                <div className="flex h-full w-full rounded-lg items-center justify-center bg-black/40 backdrop-blur-sm">
+                <div className="flex aspect-video w-full rounded-lg items-center justify-center bg-black/40 backdrop-blur-sm">
                   <span className="text-sm text-gray-400">Model video</span>
                 </div>
               </div>
@@ -207,7 +207,7 @@ export default function VideoGrid() {
 
             // ads card
             <div key={asset.id} className="overflow-hidden py-2">
-              <div className="flex h-full w-full rounded-lg items-center justify-center bg-black/40 backdrop-blur-sm">
+              <div className="flex aspect-video w-full rounded-lg items-center justify-center bg-black/40 backdrop-blur-sm">
                 <span className="text-sm text-gray-400">Advertisement</span>
               </div>
             </div> :
